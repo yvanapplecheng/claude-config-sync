@@ -80,7 +80,7 @@ npm start
 ## Part C: Git Sync (CLAUDE.md + Memory + Skills)
 
 ### C1. Git repo
-`~/.claude/` is a git repo. `.gitignore` only allows: `CLAUDE.md`, `projects/*/memory/`, `config-sync.ps1`, `bootstrap-other-machine.ps1`, `sync-skills.ps1`.
+`~/.claude/` git repo at `https://github.com/yvanapplecheng/claude-config-sync.git` (private).
 
 ### C2. Auto-pull on startup
 `~/.claude/settings.json` SessionStart hook runs `config-sync.ps1` — pulls config repo + all skill repos at Claude Code launch.
