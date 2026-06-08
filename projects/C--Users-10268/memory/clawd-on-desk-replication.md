@@ -75,5 +75,34 @@ npm start
 - `~\.clawd\mobile-token.json` (machine-bound token)
 - `~\.claude\settings.json` (machine-specific paths; let `install:claude-hooks` regenerate)
 
+---
+
+## Part C: Git Sync (CLAUDE.md + Memory + Skills)
+
+### C1. Git repo
+`~/.claude/` is a git repo. `.gitignore` only allows: `CLAUDE.md`, `projects/*/memory/`, `config-sync.ps1`, `bootstrap-other-machine.ps1`, `sync-skills.ps1`.
+
+### C2. Auto-pull on startup
+`~/.claude/settings.json` SessionStart hook runs `config-sync.ps1` — pulls config repo + all skill repos at Claude Code launch.
+
+### C3. Bootstrap on target machine
+```powershell
+git clone <private-repo-url> $env:TEMP\claude-sync
+Copy-Item $env:TEMP\claude-sync\* $env:USERPROFILE\.claude\ -Recurse -Force
+Remove-Item $env:TEMP\claude-sync -Recurse -Force
+cd $env:USERPROFILE\.claude
+git init; git remote add origin <private-repo-url>
+git fetch origin; git checkout origin/master -- .
+git branch --set-upstream-to=origin/master master
+```
+Then run `bootstrap-other-machine.ps1` for plugins/skills install.
+
+### What does NOT sync
+- `settings.json` (machine-specific paths, proxy, clawd hooks)
+- `~/.claude.json` (MCP keys, session metrics)
+- `~/.claude/plugins/` cache (must `claude plugin install` per machine)
+- `%APPDATA%\clawd-on-desk\clawd-prefs.json` (copy once manually)
+- Session JSONL transcripts (too large)
+
 **Why:** User wants identical Claude Code environment across multiple Windows machines. Layers identified by auditing .claude/ settings, plugin list, marketplace configs, and clawd hooks.
 **How to apply:** Run the bootstrap steps above on target machine. Do NOT copy settings.json directly; let clawd's install:claude-hooks regenerate it.
