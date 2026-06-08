@@ -1,0 +1,19 @@
+{
+  "marketplaces": [
+    {"name": "claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official.git"},
+    {"name": "anthropic-agent-skills", "url": "https://github.com/anthropics/skills.git"},
+    {"name": "caveman", "url": "https://github.com/JuliusBrussee/caveman.git"}
+  ],
+  "plugins": [
+    "caveman@caveman",
+    "claude-md-management@claude-plugins-official",
+    "document-skills@anthropic-agent-skills",
+    "frontend-design@claude-plugins-official",
+    "github@claude-plugins-official",
+    "skill-creator@claude-plugins-official"
+  ],
+  "skills": [
+    {"name": "humanizer-zh", "url": "https://github.com/anthropic-skills/humanizer-zh.git"},
+    {"name": "code-review-graph", "url": "https://github.com/anthropic-skills/code-review-graph.git"}
+  ]
+}

@@ -1,10 +1,9 @@
-# config-sync.ps1 — Auto-pull Claude config repo + skills on startup
+# config-sync.ps1 — Auto-pull Claude config repo + skills + plugins on startup
 # Hooked via SessionStart in ~/.claude/settings.json
-# This script lives in the sync repo itself — updates propagate automatically
-$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Continue"
 $syncDir = "$env:USERPROFILE\.claude"
 
-# 1. Pull config repo (CLAUDE.md + memory + scripts)
+# 1. Pull config repo (CLAUDE.md + memory + scripts + manifest)
 if (Test-Path "$syncDir\.git") {
     try {
         $result = git -C $syncDir pull --rebase 2>&1
@@ -20,7 +19,19 @@ if (Test-Path "$syncDir\.git") {
     Write-Output "[sync] no .git in $syncDir — skipping config pull"
 }
 
-# 2. Pull each skill repo
+# 2. Install missing plugins/skills from manifest (merges cross-machine)
+$manifestPath = "$syncDir\plugin-skill-manifest.json"
+if (Test-Path $manifestPath) {
+    try {
+        & "$syncDir\sync-plugins-skills.ps1" 2>&1 | Write-Output
+    } catch {
+        Write-Output "[sync] plugin/skill sync error: $_"
+    }
+} else {
+    Write-Output "[sync] no manifest — run export-plugins-skills.ps1 first"
+}
+
+# 3. Pull each installed skill repo for updates
 $skillsDir = "$syncDir\skills"
 if (Test-Path $skillsDir) {
     Get-ChildItem $skillsDir -Directory | ForEach-Object {

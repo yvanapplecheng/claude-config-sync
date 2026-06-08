@@ -16,7 +16,10 @@ settings.local.json
 .last-cleanup
 .last-update-result.json
 
-# Session data inside project dirs ? keep only memory/
+# Skills dir excluded — managed via plugin-skill-manifest.json + sync-plugins-skills.ps1
+# skills/ is NOT synced; each machine clones per manifest
+
+# Session data inside project dirs — keep only memory/
 projects/*/*.jsonl
 projects/*/tool-results/
 projects/*/subagents/
