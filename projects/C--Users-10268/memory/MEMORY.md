@@ -1,0 +1,3 @@
+- [Master Profile](master-profile.md) — PMO Director at Venus Medtech, structural heart devices
+- [Session Index](sessions-index.md) — Human-readable session registry
+- [Clawd Replication](clawd-on-desk-replication.md) — Cross-machine Claude Code setup bootstrap

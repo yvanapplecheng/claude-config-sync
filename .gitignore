@@ -1,0 +1,23 @@
+# Machine-specific / ephemeral
+backups/
+cache/
+file-history/
+plans/
+plugins/
+sessions/
+tasks/
+telemetry/
+scripts/
+skills/
+history.jsonl
+settings.json
+settings.local.json
+.caveman-active
+.last-cleanup
+.last-update-result.json
+
+# Session data inside project dirs ? keep only memory/
+projects/*/*.jsonl
+projects/*/tool-results/
+projects/*/subagents/
+projects/*/*.meta.json
