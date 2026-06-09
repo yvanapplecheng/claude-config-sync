@@ -15,6 +15,18 @@ settings.local.json
 .caveman-active
 .last-cleanup
 .last-update-result.json
+sync.log
+daemon/
+daemon.lock
+daemon.log
+daemon.status.json
+channels/
+config.json
+jobs/
+shell-snapshots/
+mcp-needs-auth-cache.json
+image-cache/
+paste-cache/
 
 # Skills dir excluded — managed via plugin-skill-manifest.json + sync-plugins-skills.ps1
 # skills/ is NOT synced; each machine clones per manifest
