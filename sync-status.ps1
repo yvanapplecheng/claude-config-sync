@@ -144,7 +144,33 @@ foreach ($s in $standalone) { Write-Host "       [standalone] $($s.Name)" }
 $sources = $allSkills.GetEnumerator() | Group-Object Value | Sort-Object Count -Descending
 foreach ($src in $sources) { Write-Host "       $($src.Name): $($src.Count)" }
 
-# === 7. Sync log ===
+# === 7. Clawd Desktop Pet ===
+Write-Host "`n--- Clawd Pet ---" -ForegroundColor Yellow
+$clawdPrefs = "$env:APPDATA\clawd-on-desk\clawd-prefs.json"
+$clawdDir = "$env:USERPROFILE\clawd-on-desk-main"
+$clawdNodeModules = "$clawdDir\node_modules"
+$clawdRunning = (Get-Process "electron" -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowTitle -match 'clawd|Clawd' } | Measure-Object).Count -gt 0
+# Graceful fallback: any electron process count
+if (-not $clawdRunning) {
+    $clawdRunning = (Get-Process "electron" -ErrorAction SilentlyContinue | Measure-Object).Count -ge 2
+}
+
+$clawdOK = 0
+if (Test-Path $clawdDir) { $clawdOK++ } else { Write-Host "  [!!] clawd-on-desk-main MISSING" -ForegroundColor Red; $errors++ }
+if (Test-Path $clawdNodeModules) { $clawdOK++ } else { Write-Host "  [!!] clawd node_modules MISSING (run npm install)" -ForegroundColor Red; $errors++ }
+if (Test-Path $clawdPrefs) { $clawdOK++ } else { Write-Host "  [!!] clawd-prefs.json MISSING" -ForegroundColor Red; $errors++ }
+if ($clawdRunning) { $clawdOK++ } else { Write-Host "  [--] clawd not running" -ForegroundColor DarkYellow }
+
+if ($clawdOK -ge 3) {
+    $theme = "?"
+    if (Test-Path $clawdPrefs) {
+        try { $prefs = Get-Content $clawdPrefs -Encoding utf8 | ConvertFrom-Json; $theme = $prefs.theme } catch {}
+    }
+    Write-Host "  [OK] Clawd installed (repo + node_modules + prefs), theme=$theme"
+    if ($clawdRunning) { Write-Host "  [OK] Clawd running" } else { Write-Host "  [--] Not running (npm start to launch)" }
+}
+
+# === 8. Sync log ===
 Write-Host "`n--- Last Sync ---" -ForegroundColor Yellow
 $logFile = "$syncDir\sync.log"
 if (Test-Path $logFile) {
