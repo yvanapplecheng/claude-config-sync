@@ -10,7 +10,16 @@
     "document-skills@anthropic-agent-skills",
     "frontend-design@claude-plugins-official",
     "github@claude-plugins-official",
-    "skill-creator@claude-plugins-official"
+    "skill-creator@claude-plugins-official",
+    "pm-toolkit@pm-skills",
+    "pm-product-strategy@pm-skills",
+    "pm-product-discovery@pm-skills",
+    "pm-market-research@pm-skills",
+    "pm-data-analytics@pm-skills",
+    "pm-marketing-growth@pm-skills",
+    "pm-go-to-market@pm-skills",
+    "pm-execution@pm-skills",
+    "pm-ai-shipping@pm-skills"
   ],
   "skills": [
     {"name": "humanizer-zh", "url": "https://github.com/anthropic-skills/humanizer-zh.git"},
