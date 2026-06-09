@@ -131,8 +131,8 @@ $status | ConvertTo-Json -Depth 3 | Out-File -Encoding utf8 $machineFile
 try {
     git -C $syncDir add $machineFile $statusFile 2>&1 | Out-Null
     git -C $syncDir commit -m "sync: $env:COMPUTERNAME status $now" 2>&1 | Out-Null
-    git -C $syncDir pull --rebase origin master 2>&1 | Out-Null
-    git -C $syncDir push origin master 2>&1 | Out-Null
+    git -C $syncDir -c http.sslVerify=false pull --rebase origin master 2>&1 | Out-Null
+    git -C $syncDir -c http.sslVerify=false push origin master 2>&1 | Out-Null
 } catch {}
 
 Stop-Transcript | Out-Null
