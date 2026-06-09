@@ -24,3 +24,8 @@ projects/*/*.jsonl
 projects/*/tool-results/
 projects/*/subagents/
 projects/*/*.meta.json
+
+# Per-machine status files TRACKED for cross-machine comparison dashboard
+# status-PCNAME.json is committed+synced via git
+!status-*.json
+!status.json

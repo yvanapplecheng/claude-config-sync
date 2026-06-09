@@ -7,7 +7,10 @@ $logFile = "$syncDir\sync.log"
 $statusFile = "$syncDir\status.json"
 $remoteUrl = "https://github.com/yvanapplecheng/claude-config-sync.git"
 
+Start-Transcript -Path $logFile -Force | Out-Null
 $now = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+Write-Host "=== sync $now ==="
+
 $status = @{
     machine = $env:COMPUTERNAME
     lastSync = $now
@@ -36,6 +39,7 @@ if (Test-Path "$syncDir\.git") {
         $result = git -C $syncDir pull --rebase origin master 2>&1
         if ($LASTEXITCODE -eq 0) {
             $status.pull = if ($result -match 'Already up to date') { "unchanged" } else { "updated" }
+            Write-Host "[pull] $($result -join ' ')" -ForegroundColor DarkGray
         } else {
             $status.pull = "FAIL"
             $status.errors += "pull"
@@ -86,8 +90,7 @@ try {
 $manifestPath = "$syncDir\plugin-skill-manifest.json"
 if (Test-Path $manifestPath) {
     try {
-        $syncOutput = & "$syncDir\sync-plugins-skills.ps1" 2>&1
-        $syncOutput | ForEach-Object { Write-Host $_ }
+        & "$syncDir\sync-plugins-skills.ps1"
         $status.manifestSync = "ok"
     } catch {
         $status.manifestSync = "ERROR"
@@ -111,13 +114,17 @@ if (Test-Path "$syncDir\skills") {
 
 # Print summary to terminal on launch
 Write-Host ""
-Write-Host "  [sync] $env:COMPUTERNAME | CLAUDE.md=$($status.claudeMd) | memory=$($status.memory) | plugins=$($status.plugins) | skills=$($status.skills) | clawd=$($status.clawdRunning)" -ForegroundColor Cyan
+Write-Host "============================================" -ForegroundColor Cyan
+Write-Host "  Claude Sync — $env:COMPUTERNAME" -ForegroundColor Cyan
+Write-Host "  CLAUDE.md=$($status.claudeMd) | memory=$($status.memory) | plugins=$($status.plugins) | skills=$($status.skills) | clawd=$($status.clawdRunning)" -ForegroundColor Cyan
+Write-Host "============================================" -ForegroundColor Cyan
 Write-Host ""
+
 $status.ok = ([string]$status.errors).Length -eq 0
 $status | ConvertTo-Json -Depth 3 | Out-File -Encoding utf8 $statusFile
-
-Write-Host ""
 
 # Also write machine-named file for cross-machine comparison
 $machineFile = "$syncDir\status-$($env:COMPUTERNAME).json"
 $status | ConvertTo-Json -Depth 3 | Out-File -Encoding utf8 $machineFile
+
+Stop-Transcript | Out-Null

@@ -1,0 +1,18 @@
+﻿{
+    "skills":  2,
+    "memory":  true,
+    "lastSync":  "2026-06-09 10:51:27",
+    "pull":  "FAIL",
+    "init":  "already",
+    "machine":  "PMO-10268",
+    "claudeMd":  true,
+    "plugins":  6,
+    "errors":  [
+                   "pull"
+               ],
+    "hook":  true,
+    "clawdInstalled":  true,
+    "clawdRunning":  true,
+    "ok":  false,
+    "manifestSync":  "ok"
+}

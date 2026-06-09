@@ -4,17 +4,17 @@ $syncDir = "$env:USERPROFILE\.claude"
 $manifestPath = "$syncDir\plugin-skill-manifest.json"
 
 if (-not (Test-Path $manifestPath)) {
-    Write-Output "[sync-plugins] No manifest found."
+    Write-Host "[sync-plugins] No manifest found." -ForegroundColor Red
     exit 1
 }
 
 $manifest = Get-Content $manifestPath | ConvertFrom-Json
 
 # --- 1. Add marketplaces ---
-Write-Output "[sync-plugins] Marketplaces..."
+Write-Host "[sync-plugins] Marketplaces..." -ForegroundColor Yellow
 foreach ($mp in $manifest.marketplaces) {
     claude plugin marketplace add $mp.url 2>$null
-    Write-Output "  ok: $($mp.name)"
+    Write-Host "  ok: $($mp.name)" -ForegroundColor Green
 }
 
 # --- 2. Read currently installed plugins from settings ---
@@ -34,18 +34,18 @@ if ($curJson.enabledPlugins) {
 }
 
 # --- 3. Install missing plugins ---
-Write-Output "[sync-plugins] Plugins..."
+Write-Host "[sync-plugins] Plugins..." -ForegroundColor Yellow
 foreach ($plugin in $manifest.plugins) {
     if (-not $currentPlugins.ContainsKey($plugin)) {
-        Write-Output "  installing: $plugin"
-        claude plugin install $plugin 2>&1 | Write-Output
+        Write-Host "  installing: $plugin" -ForegroundColor Magenta
+        claude plugin install $plugin 2>&1 | ForEach-Object { Write-Host $_ }
     } else {
-        Write-Output "  ok: $plugin"
+        Write-Host "  ok: $plugin" -ForegroundColor Green
     }
 }
 
 # --- 4. Clone/update skills ---
-Write-Output "[sync-plugins] Skills..."
+Write-Host "[sync-plugins] Skills..." -ForegroundColor Yellow
 $skillsDir = "$syncDir\skills"
 if (-not (Test-Path $skillsDir)) { New-Item -ItemType Directory -Force $skillsDir | Out-Null }
 
@@ -55,29 +55,28 @@ foreach ($skill in $manifest.skills) {
     # Handle pip: prefix
     if ($skill.url -match '^pip:(.+)$') {
         $pkg = $Matches[1]
-        Write-Output "  pip install: $pkg"
         $pipResult = pip install $pkg --disable-pip-version-check 2>&1
         $statusLine = ($pipResult | Select-String "Requirement already satisfied: $pkg|Successfully installed $pkg|Installing collected packages: $pkg" | Select-Object -First 1)
         if ($statusLine) {
-            Write-Output "  ok: $pkg ($($statusLine.Line.Trim()))"
+            Write-Host "  ok: $pkg ($($statusLine.Line.Trim()))" -ForegroundColor Green
         } elseif ($LASTEXITCODE -ne 0) {
             $errLine = ($pipResult | Select-String "ERROR|error" | Select-Object -Last 1)
-            Write-Output "  FAIL: $pkg — $errLine"
+            Write-Host "  FAIL: $pkg — $errLine" -ForegroundColor Red
         } else {
-            Write-Output "  ok: $pkg"
+            Write-Host "  ok: $pkg" -ForegroundColor Green
         }
         continue
     }
 
     if (Test-Path $target) {
         if (Test-Path (Join-Path $target ".git")) {
-            git -C $target pull --rebase 2>&1 | Write-Output
+            git -C $target pull --rebase 2>&1 | ForEach-Object { Write-Host $_ }
         }
-        Write-Output "  ok: $($skill.name)"
+        Write-Host "  ok: $($skill.name)" -ForegroundColor Green
     } else {
-        Write-Output "  cloning: $($skill.name) <- $($skill.url)"
-        git clone $skill.url $target 2>&1 | Write-Output
+        Write-Host "  cloning: $($skill.name) <- $($skill.url)" -ForegroundColor Magenta
+        git clone $skill.url $target 2>&1 | ForEach-Object { Write-Host $_ }
     }
 }
 
-Write-Output "[sync-plugins] Done."
+Write-Host "[sync-plugins] Done." -ForegroundColor Yellow
