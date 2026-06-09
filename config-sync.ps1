@@ -1,17 +1,21 @@
 # config-sync.ps1 — Auto-pull Claude config repo + skills + plugins on startup
 # Hooked via SessionStart in ~/.claude/settings.json
-# Writes to sync.log for cross-machine verification
+# Writes status.json for cross-machine dashboard
 $ErrorActionPreference = "Continue"
 $syncDir = "$env:USERPROFILE\.claude"
 $logFile = "$syncDir\sync.log"
+$statusFile = "$syncDir\status.json"
 $remoteUrl = "https://github.com/yvanapplecheng/claude-config-sync.git"
 
-# Timestamp log header
 $now = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-$logLines = @()
-$logLines += "=== sync $now ==="
+$status = @{
+    machine = $env:COMPUTERNAME
+    lastSync = $now
+    ok = $true
+    errors = @()
+}
 
-# 0. Auto-init .git if missing (zip-bootstrap scenario)
+# 0. Auto-init .git if missing
 if (-not (Test-Path "$syncDir\.git")) {
     try {
         git -C $syncDir init 2>&1 | Out-Null
@@ -19,58 +23,95 @@ if (-not (Test-Path "$syncDir\.git")) {
         git -C $syncDir fetch origin master 2>&1 | Out-Null
         git -C $syncDir branch -M master 2>&1 | Out-Null
         git -C $syncDir reset --hard origin/master 2>&1 | Out-Null
-        $logLines += "[init] .git created, synced from remote"
+        $status.init = "ok"
     } catch {
-        $logLines += "[init] ERROR: $_"
+        $status.init = "FAIL"
+        $status.errors += "init"
     }
-}
+} else { $status.init = "already" }
 
-# 1. Pull config repo (CLAUDE.md + memory + scripts + manifest)
+# 1. Pull config repo
 if (Test-Path "$syncDir\.git") {
     try {
         $result = git -C $syncDir pull --rebase origin master 2>&1
         if ($LASTEXITCODE -eq 0) {
-            $logLines += "[pull] $result"
+            $status.pull = if ($result -match 'Already up to date') { "unchanged" } else { "updated" }
         } else {
-            $logLines += "[pull] FAIL: $result"
+            $status.pull = "FAIL"
+            $status.errors += "pull"
         }
     } catch {
-        $logLines += "[pull] ERROR: $_"
+        $status.pull = "ERROR"
+        $status.errors += "pull"
     }
-} else {
-    $logLines += "[pull] SKIP: no .git"
-}
+} else { $status.pull = "no-.git" }
 
+# 2. CLAUDE.md + Memory
+$status.claudeMd = Test-Path "$syncDir\CLAUDE.md"
+$status.memory = Test-Path "$syncDir\projects\C--Users-10268\memory\MEMORY.md"
 
-# 2. Install missing plugins/skills from manifest (merges cross-machine)
+# 3. Plugins count
+try {
+    $settings = Get-Content "$syncDir\settings.json" -Raw | ConvertFrom-Json
+    $plugCount = 0
+    if ($settings.enabledPlugins) {
+        $settings.enabledPlugins.PSObject.Properties | ForEach-Object { if ($_.Value) { $plugCount++ } }
+    }
+    $status.plugins = $plugCount
+} catch { $status.plugins = 0 }
+
+# 4. Skills count (standalone only for status)
+if (Test-Path "$syncDir\skills") {
+    $status.skills = (Get-ChildItem "$syncDir\skills" -Directory -ErrorAction SilentlyContinue).Count
+} else { $status.skills = 0 }
+
+# 5. Clawd pet
+$clawdDir = "$env:USERPROFILE\clawd-on-desk-main"
+$clawdPrefs = "$env:APPDATA\clawd-on-desk\clawd-prefs.json"
+$status.clawdInstalled = (Test-Path $clawdDir)
+$status.clawdRunning = (Get-Process "electron" -ErrorAction SilentlyContinue | Measure-Object).Count -ge 2
+
+# 6. Hook
+$status.hook = $false
+try {
+    $j = Get-Content "$syncDir\settings.json" -Raw | ConvertFrom-Json
+    foreach ($entry in $j.hooks.SessionStart) {
+        foreach ($h in $entry.hooks) {
+            if ($h.command -match 'config-sync') { $status.hook = $true }
+        }
+    }
+} catch {}
+
+# 7. Manifest sync
 $manifestPath = "$syncDir\plugin-skill-manifest.json"
 if (Test-Path $manifestPath) {
     try {
-        $syncResult = & "$syncDir\sync-plugins-skills.ps1" 2>&1
-        $logLines += $syncResult
+        & "$syncDir\sync-plugins-skills.ps1" 2>&1 | Out-Null
+        $status.manifestSync = "ok"
     } catch {
-        $logLines += "[sync-plugins] ERROR: $_"
+        $status.manifestSync = "ERROR"
     }
-} else {
-    $logLines += "[sync-plugins] SKIP: no manifest"
+} else { $status.manifestSync = "no-manifest" }
+
+# Refresh skill count
+if (Test-Path "$syncDir\skills") {
+    $status.skills = (Get-ChildItem "$syncDir\skills" -Directory -ErrorAction SilentlyContinue).Count
 }
 
-# 3. Pull each installed skill repo for updates
-$skillsDir = "$syncDir\skills"
-if (Test-Path $skillsDir) {
-    Get-ChildItem $skillsDir -Directory | ForEach-Object {
+# Pull standalone skill repos
+if (Test-Path "$syncDir\skills") {
+    Get-ChildItem "$syncDir\skills" -Directory | ForEach-Object {
         $gitDir = Join-Path $_.FullName ".git"
         if (Test-Path $gitDir) {
-            try {
-                $result = git -C $_.FullName pull --rebase 2>&1
-                $logLines += "[skill:$($_.Name)] $result"
-            } catch {
-                $logLines += "[skill:$($_.Name)] ERROR: $_"
-            }
+            try { git -C $_.FullName pull --rebase 2>&1 | Out-Null } catch {}
         }
     }
 }
 
-$logLines += "[done]"
-# Write log
-$logLines | Out-File -Encoding utf8 $logFile
+$status.errors = ($status.errors -join ",")
+$status.ok = ([string]$status.errors).Length -eq 0
+$status | ConvertTo-Json -Depth 3 | Out-File -Encoding utf8 $statusFile
+
+# Also write machine-named file for cross-machine comparison
+$machineFile = "$syncDir\status-$($env:COMPUTERNAME).json"
+$status | ConvertTo-Json -Depth 3 | Out-File -Encoding utf8 $machineFile

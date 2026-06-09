@@ -1,7 +1,7 @@
 # sync-status.ps1 — Unified cross-machine sync checklist
-# Run: powershell -ExecutionPolicy Bypass -File sync-status.ps1
+# Run: . "$env:USERPROFILE\.claude\sync-status.ps1"
 param(
-    [switch]$Quiet  # -Quiet returns exit code only (0=OK, 1=stale)
+    [switch]$Quiet  # -Quiet returns exit code only (0=OK, 1=issues)
 )
 
 $syncDir = "$env:USERPROFILE\.claude"
@@ -26,15 +26,14 @@ if (Test-Path $claudeMd) {
     $errors++
 }
 
-# === 2. Memory files ===
+# === 2. Memory ===
 Write-Host "`n--- Memory ---" -ForegroundColor Yellow
 $memDir = "$syncDir\projects\C--Users-10268\memory"
 if (Test-Path "$memDir\MEMORY.md") {
     $count = (Get-ChildItem $memDir -Filter "*.md" | Measure-Object).Count
     Write-Host "  [OK] Memory: $count files"
     Get-ChildItem $memDir -Filter "*.md" | ForEach-Object {
-        $mt = $_.LastWriteTime.ToString("MM-dd HH:mm")
-        Write-Host "       $($_.Name) ($mt)"
+        Write-Host "       $($_.Name) ($($_.LastWriteTime.ToString('MM-dd HH:mm')))"
     }
 } else {
     Write-Host "  [!!] MEMORY.md MISSING" -ForegroundColor Red
@@ -59,7 +58,7 @@ if (Test-Path $manifestPath) {
     $errors++
 }
 
-# === 5. Plugins (enabled) ===
+# === 5. Plugins ===
 Write-Host "`n--- Plugins ---" -ForegroundColor Yellow
 $settingsPath = "$syncDir\settings.json"
 $settingsLocalPath = "$syncDir\settings.local.json"
@@ -79,129 +78,104 @@ if ($curJson.enabledPlugins) {
     Write-Host "  [--] No enabledPlugins found"
 }
 
-# === 6. Skills ===
+# === 6. Skills (all sources) ===
 Write-Host "`n--- Skills ---" -ForegroundColor Yellow
-
-# Collect all skill names from all sources
 $allSkills = @{}
-
-# 6a. Standalone skills (~/.claude/skills/)
-$skillsDir = "$syncDir\skills"
-if (Test-Path $skillsDir) {
-    Get-ChildItem $skillsDir -Directory -ErrorAction SilentlyContinue | ForEach-Object {
-        $allSkills[$_.Name] = "standalone"
-    }
+if (Test-Path "$syncDir\skills") {
+    Get-ChildItem "$syncDir\skills" -Directory -ErrorAction SilentlyContinue | ForEach-Object { $allSkills[$_.Name] = "standalone" }
 }
-
-# 6b. Plugin-provided skills (~/.claude/plugins/marketplaces/*/skills/)
 $mpSkillsDir = "$syncDir\plugins\marketplaces"
 if (Test-Path $mpSkillsDir) {
     Get-ChildItem $mpSkillsDir -Directory -ErrorAction SilentlyContinue | ForEach-Object {
         $mpSkills = Join-Path $_.FullName "skills"
         if (Test-Path $mpSkills) {
             Get-ChildItem $mpSkills -Directory -ErrorAction SilentlyContinue | ForEach-Object {
-                if (-not $allSkills.ContainsKey($_.Name)) {
-                    $allSkills[$_.Name] = "plugin:$($_.Parent.Parent.Name)"
-                }
+                if (-not $allSkills.ContainsKey($_.Name)) { $allSkills[$_.Name] = "plugin:$($_.Parent.Parent.Name)" }
             }
         }
     }
 }
-
-# 6c. Skills from installed plugins cache (~/.claude/plugins/cache/*/plugins/*/skills/)
-$cacheDir = "$syncDir\plugins\cache"
-if (Test-Path $cacheDir) {
-    Get-ChildItem $cacheDir -Directory -ErrorAction SilentlyContinue | ForEach-Object {
-        Get-ChildItem $_.FullName -Directory -ErrorAction SilentlyContinue | ForEach-Object {
-            $ps = Join-Path $_.FullName "skills"
-            if (Test-Path $ps) {
-                Get-ChildItem $ps -Directory -ErrorAction SilentlyContinue | ForEach-Object {
-                    if (-not $allSkills.ContainsKey($_.Name)) {
-                        $allSkills[$_.Name] = "plugin"
-                    }
-                }
-            }
-        }
-    }
-}
-
-# 6d. ECC plugin skills (~/.claude/plugins/ecc/skills/)
 if (Test-Path "$syncDir\plugins\ecc\skills") {
     Get-ChildItem "$syncDir\plugins\ecc\skills" -Directory -ErrorAction SilentlyContinue | ForEach-Object {
-        if (-not $allSkills.ContainsKey($_.Name)) {
-            $allSkills[$_.Name] = "plugin:ecc"
-        }
+        if (-not $allSkills.ContainsKey($_.Name)) { $allSkills[$_.Name] = "plugin:ecc" }
     }
 }
-
 $standaloneCount = ($allSkills.GetEnumerator() | Where-Object { $_.Value -eq "standalone" } | Measure-Object).Count
 $pluginCount = ($allSkills.GetEnumerator() | Where-Object { $_.Value -match "^plugin" } | Measure-Object).Count
 Write-Host "  [OK] Total: $($allSkills.Count) skills ($standaloneCount standalone, $pluginCount from plugins)"
-# Show first 5 standalone if any
-$standalone = $allSkills.GetEnumerator() | Where-Object { $_.Value -eq "standalone" } | Select-Object -First 5
-foreach ($s in $standalone) { Write-Host "       [standalone] $($s.Name)" }
-# Show count per source
-$sources = $allSkills.GetEnumerator() | Group-Object Value | Sort-Object Count -Descending
-foreach ($src in $sources) { Write-Host "       $($src.Name): $($src.Count)" }
 
 # === 7. Clawd Desktop Pet ===
 Write-Host "`n--- Clawd Pet ---" -ForegroundColor Yellow
-$clawdPrefs = "$env:APPDATA\clawd-on-desk\clawd-prefs.json"
 $clawdDir = "$env:USERPROFILE\clawd-on-desk-main"
+$clawdPrefs = "$env:APPDATA\clawd-on-desk\clawd-prefs.json"
 $clawdNodeModules = "$clawdDir\node_modules"
-$clawdRunning = (Get-Process "electron" -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowTitle -match 'clawd|Clawd' } | Measure-Object).Count -gt 0
-# Graceful fallback: any electron process count
-if (-not $clawdRunning) {
-    $clawdRunning = (Get-Process "electron" -ErrorAction SilentlyContinue | Measure-Object).Count -ge 2
+$electronCount = (Get-Process "electron" -ErrorAction SilentlyContinue | Measure-Object).Count
+$clawdRunning = $electronCount -ge 2
+
+$clawdIndicators = @()
+if (Test-Path $clawdDir) { $clawdIndicators += "[OK] repo" } else { $clawdIndicators += "[!!] repo MISSING"; $errors++ }
+if (Test-Path $clawdNodeModules) { $clawdIndicators += "[OK] node_modules" } else { $clawdIndicators += "[!!] node_modules MISSING"; $errors++ }
+if (Test-Path $clawdPrefs) { $clawdIndicators += "[OK] prefs" } else { $clawdIndicators += "[!!] prefs MISSING"; $errors++ }
+if ($clawdRunning) { $clawdIndicators += "[OK] RUNNING ($electronCount electrons)" } else { $clawdIndicators += "[!!] NOT RUNNING ($electronCount electrons)"; $errors++ }
+
+Write-Host "  $($clawdIndicators -join ' | ')"
+if ($clawdRunning) { Write-Host "  Status: Clawd is ALIVE" -ForegroundColor Green } else { Write-Host "  Status: Clawd is DEAD" -ForegroundColor Red }
+
+# === 8. Hook ===
+Write-Host "`n--- Hook ---" -ForegroundColor Yellow
+$hookFound = $false
+if (Test-Path $settingsPath) {
+    try {
+        $j = Get-Content $settingsPath -Raw | ConvertFrom-Json
+        if ($j.hooks.SessionStart) {
+            foreach ($entry in $j.hooks.SessionStart) {
+                foreach ($h in $entry.hooks) { if ($h.command -match 'config-sync') { $hookFound = $true } }
+            }
+        }
+    } catch {}
 }
+if ($hookFound) { Write-Host "  [OK] SessionStart hook installed" } else { Write-Host "  [!!] SessionStart hook MISSING" -ForegroundColor Red; $errors++ }
 
-$clawdOK = 0
-if (Test-Path $clawdDir) { $clawdOK++ } else { Write-Host "  [!!] clawd-on-desk-main MISSING" -ForegroundColor Red; $errors++ }
-if (Test-Path $clawdNodeModules) { $clawdOK++ } else { Write-Host "  [!!] clawd node_modules MISSING (run npm install)" -ForegroundColor Red; $errors++ }
-if (Test-Path $clawdPrefs) { $clawdOK++ } else { Write-Host "  [!!] clawd-prefs.json MISSING" -ForegroundColor Red; $errors++ }
-if ($clawdRunning) { $clawdOK++ } else { Write-Host "  [--] clawd not running" -ForegroundColor DarkYellow }
-
-if ($clawdOK -ge 3) {
-    $theme = "?"
-    if (Test-Path $clawdPrefs) {
-        try { $prefs = Get-Content $clawdPrefs -Encoding utf8 | ConvertFrom-Json; $theme = $prefs.theme } catch {}
-    }
-    Write-Host "  [OK] Clawd installed (repo + node_modules + prefs), theme=$theme"
-    if ($clawdRunning) { Write-Host "  [OK] Clawd running" } else { Write-Host "  [--] Not running (npm start to launch)" }
-}
-
-# === 8. Sync log ===
+# === 9. Last Sync ===
 Write-Host "`n--- Last Sync ---" -ForegroundColor Yellow
 $logFile = "$syncDir\sync.log"
 if (Test-Path $logFile) {
     $lines = Get-Content $logFile
     $lastSync = $lines | Select-String "^=== sync" | Select-Object -Last 1
-    $lastDone = $lines | Select-String "\[done\]"
     if ($lastSync) { Write-Host "  $lastSync" }
-    if ($lastDone) { Write-Host "  [OK] sync completed" } else { Write-Host "  [??] No [done] marker in log" -ForegroundColor DarkYellow }
-    # Show last 3 lines
-    $lines | Select-Object -Last 5 | ForEach-Object { Write-Host "       $_" -ForegroundColor DarkGray }
+    if ($lines | Select-String "\[done\]" | Select-Object -Last 1) { Write-Host "  [OK] sync completed" }
 } else {
-    Write-Host "  [!!] No sync.log — hook hasn't fired yet" -ForegroundColor Red
+    Write-Host "  [!!] No sync.log" -ForegroundColor Red
     $errors++
 }
 
-# === 8. Hook check ===
-Write-Host "`n--- Hook ---" -ForegroundColor Yellow
-if (Test-Path $settingsPath) {
-    $j = Get-Content $settingsPath -Raw | ConvertFrom-Json
-    $found = $false
-    if ($j.hooks.SessionStart) {
-        foreach ($entry in $j.hooks.SessionStart) {
-            foreach ($h in $entry.hooks) {
-                if ($h.command -match 'config-sync') { $found = $true }
+# === 10. Cross-Machine Comparison ===
+$statusFiles = Get-ChildItem "$syncDir\status-*.json" -ErrorAction SilentlyContinue
+if ($statusFiles.Count -ge 2) {
+    Write-Host "`n--- Cross-Machine ---" -ForegroundColor Yellow
+    $rows = @()
+    foreach ($sf in $statusFiles) {
+        try {
+            $s = Get-Content $sf.FullName -Raw | ConvertFrom-Json
+            $rows += [PSCustomObject]@{
+                Machine = $s.machine
+                Sync = $s.lastSync
+                CLAUDE = if($s.claudeMd){"✅"}else{"❌"}
+                Memory = if($s.memory){"✅"}else{"❌"}
+                Plugins = $s.plugins
+                Clawd = if($s.clawdRunning){"🟢"}else{"🔴"}
+                Hook = if($s.hook){"✅"}else{"❌"}
             }
-        }
+        } catch {}
     }
-    if ($found) { Write-Host "  [OK] SessionStart hook installed" } else { Write-Host "  [!!] SessionStart hook MISSING" -ForegroundColor Red; $errors++ }
-} else {
-    Write-Host "  [!!] No settings.json" -ForegroundColor Red
-    $errors++
+    $rows | Format-Table -AutoSize
+    Write-Host ""
+    # Match check
+    if ($rows.Count -ge 2) {
+        $match = ($rows[0].CLAUDE -eq $rows[1].CLAUDE) -and ($rows[0].Memory -eq $rows[1].Memory) -and ($rows[0].Plugins -eq $rows[1].Plugins) -and ($rows[0].Hook -eq $rows[1].Hook)
+        if ($match) { Write-Host "  [OK] Machines match on core config" -ForegroundColor Green }
+        else { Write-Host "  [!!] Machines DIFFER — check above" -ForegroundColor Red; $errors++ }
+    }
 }
 
 # === SUMMARY ===
@@ -210,7 +184,6 @@ if ($errors -eq 0) {
     Write-Host "  ALL GREEN — $hostname is in sync, Master." -ForegroundColor Green
 } else {
     Write-Host "  $errors issue(s) found on $hostname." -ForegroundColor Red
-    Write-Host "  Run: claude-sync.bat (double-click)" -ForegroundColor Yellow
 }
 Write-Host "============================================" -ForegroundColor Cyan
 Write-Host ""
