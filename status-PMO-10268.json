@@ -1,12 +1,13 @@
 ﻿{
     "skills":  2,
     "memory":  true,
-    "lastSync":  "2026-06-09 11:49:39",
+    "lastSync":  "2026-06-09 13:06:03",
     "pull":  "FAIL",
+    "manifestUpdated":  "ERROR",
     "init":  "already",
     "machine":  "PMO-10268",
     "claudeMd":  true,
-    "plugins":  6,
+    "plugins":  15,
     "errors":  [
                    "pull"
                ],
