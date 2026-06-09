@@ -12,12 +12,12 @@ Write-Host "[Clawd] Installing..."
 # 1. Clone repo
 if (Test-Path $clawdDir) {
     Write-Host "  [skip] clawd repo exists — pulling..."
-    git -C $clawdDir pull --rebase 2>&1 | Out-Null
+    git -C $clawdDir -c http.sslVerify=false pull --rebase 2>&1 | Out-Null
 } else {
     Write-Host "  cloning clawd-on-desk..."
-    git clone $clawdRepo $clawdDir 2>&1 | Out-Null
+    git -c http.sslVerify=false clone $clawdRepo $clawdDir 2>&1
     if (-not (Test-Path $clawdDir)) {
-        Write-Host "  [FAIL] Clone failed."
+        Write-Host "  [FAIL] Clone failed. Try manual: git -c http.sslVerify=false clone $clawdRepo $clawdDir"
         exit 1
     }
 }
