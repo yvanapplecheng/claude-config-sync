@@ -2,7 +2,8 @@
   "marketplaces": [
     {"name": "claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official.git"},
     {"name": "anthropic-agent-skills", "url": "https://github.com/anthropics/skills.git"},
-    {"name": "caveman", "url": "https://github.com/JuliusBrussee/caveman.git"}
+    {"name": "caveman", "url": "https://github.com/JuliusBrussee/caveman.git"},
+    {"name": "pm-skills", "url": "https://github.com/phuryn/pm-skills.git"}
   ],
   "plugins": [
     "caveman@caveman",
