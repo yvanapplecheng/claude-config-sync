@@ -1,0 +1,1141 @@
+/tmp/cc-skills-extract/clawd-on-desk-main/:
+total 12
+drwxr-xr-x 1 yvan1 197609 0 Jun  4 15:08 .
+drwxr-xr-x 1 yvan1 197609 0 Jun  4 15:08 ..
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 clawd-on-desk-main
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main:
+total 665
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609      0 Jun  4 15:08 ..
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 .github
+-rw-r--r-- 1 yvan1 197609   2709 Jun  3 15:36 .gitignore
+-rw-r--r-- 1 yvan1 197609  15497 Jun  3 15:36 AGENTS.md
+-rw-r--r-- 1 yvan1 197609     10 Jun  3 15:36 CLAUDE.md
+-rw-r--r-- 1 yvan1 197609  34523 Jun  3 15:36 LICENSE
+-rw-r--r-- 1 yvan1 197609   1304 Jun  3 15:36 NOTICE.md
+-rw-r--r-- 1 yvan1 197609  32962 Jun  3 15:36 README.ja-JP.md
+-rw-r--r-- 1 yvan1 197609  31502 Jun  3 15:36 README.ko-KR.md
+-rw-r--r-- 1 yvan1 197609  29155 Jun  3 15:36 README.md
+-rw-r--r-- 1 yvan1 197609  24085 Jun  3 15:36 README.zh-CN.md
+-rw-r--r-- 1 yvan1 197609  24069 Jun  3 15:36 README.zh-TW.md
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 agents
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 assets
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 bin
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 build
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 docs
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 extensions
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 hooks
+-rwxr-xr-x 1 yvan1 197609    859 Jun  3 15:36 launch.js
+-rw-r--r-- 1 yvan1 197609 181585 Jun  3 15:36 package-lock.json
+-rw-r--r-- 1 yvan1 197609   5546 Jun  3 15:36 package.json
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 perf
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 pwa
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 scripts
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 src
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 test
+-rwxr-xr-x 1 yvan1 197609    983 Jun  3 15:36 test-demo.sh
+-rwxr-xr-x 1 yvan1 197609  10572 Jun  3 15:36 test-macos.sh
+-rwxr-xr-x 1 yvan1 197609   1004 Jun  3 15:36 test-mini.sh
+-rwxr-xr-x 1 yvan1 197609   2058 Jun  3 15:36 test-oneshot-gate.sh
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 themes
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 tools
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/.github:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 ..
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 workflows
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/.github/workflows:
+total 4
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 2334 Jun  3 15:36 build.yml
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/agents:
+total 114
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609   848 Jun  3 15:36 antigravity-cli.js
+-rw-r--r-- 1 yvan1 197609   963 Jun  3 15:36 claude-code.js
+-rw-r--r-- 1 yvan1 197609  1087 Jun  3 15:36 codebuddy.js
+-rw-r--r-- 1 yvan1 197609 28013 Jun  3 15:36 codex-log-monitor.js
+-rw-r--r-- 1 yvan1 197609  2490 Jun  3 15:36 codex-subagent-classifier.js
+-rw-r--r-- 1 yvan1 197609  2171 Jun  3 15:36 codex.js
+-rw-r--r-- 1 yvan1 197609  1388 Jun  3 15:36 copilot-cli.js
+-rw-r--r-- 1 yvan1 197609   953 Jun  3 15:36 cursor-agent.js
+-rw-r--r-- 1 yvan1 197609   979 Jun  3 15:36 gemini-cli.js
+-rw-r--r-- 1 yvan1 197609  9181 Jun  3 15:36 gemini-log-monitor.js
+-rw-r--r-- 1 yvan1 197609   698 Jun  3 15:36 hermes.js
+-rw-r--r-- 1 yvan1 197609   990 Jun  3 15:36 kimi-cli.js
+-rw-r--r-- 1 yvan1 197609   245 Jun  3 15:36 kimi-log-monitor.js
+-rw-r--r-- 1 yvan1 197609   755 Jun  3 15:36 kiro-cli.js
+-rw-r--r-- 1 yvan1 197609  1110 Jun  3 15:36 openclaw.js
+-rw-r--r-- 1 yvan1 197609  1541 Jun  3 15:36 opencode.js
+-rw-r--r-- 1 yvan1 197609  1186 Jun  3 15:36 pi.js
+-rw-r--r-- 1 yvan1 197609   731 Jun  3 15:36 qwen-code.js
+-rw-r--r-- 1 yvan1 197609  1559 Jun  3 15:36 registry.js
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets:
+total 7063
+drwxr-xr-x 1 yvan1 197609       0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609       0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609     955 Jun  3 15:36 LICENSE
+-rw-r--r-- 1 yvan1 197609 1117490 Jun  3 15:36 dock-icon.png
+drwxr-xr-x 1 yvan1 197609       0 Jun  3 15:36 gif
+-rw-r--r-- 1 yvan1 197609 1645214 Jun  3 15:36 hero.gif
+-rw-r--r-- 1 yvan1 197609  270622 Jun  3 15:36 icon.ico
+-rw-r--r-- 1 yvan1 197609 1460311 Jun  3 15:36 icon.png
+drwxr-xr-x 1 yvan1 197609       0 Jun  3 15:36 icons
+-rw-r--r-- 1 yvan1 197609  365695 Jun  3 15:36 screenshot-context-menu.png
+-rw-r--r-- 1 yvan1 197609   55143 Jun  3 15:36 screenshot-permission-bubble.png
+-rw-r--r-- 1 yvan1 197609  767469 Jun  3 15:36 screenshot-remote-ssh.png
+drwxr-xr-x 1 yvan1 197609       0 Jun  3 15:36 sounds
+drwxr-xr-x 1 yvan1 197609       0 Jun  3 15:36 source
+drwxr-xr-x 1 yvan1 197609       0 Jun  3 15:36 svg
+-rw-r--r-- 1 yvan1 197609     502 Jun  3 15:36 tray-icon-flash.png
+-rw-r--r-- 1 yvan1 197609 1460311 Jun  3 15:36 tray-icon.png
+-rw-r--r-- 1 yvan1 197609     125 Jun  3 15:36 tray-iconTemplate.png
+-rw-r--r-- 1 yvan1 197609     149 Jun  3 15:36 tray-iconTemplate@2x.png
+drwxr-xr-x 1 yvan1 197609       0 Jun  3 15:36 videos
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/gif:
+total 10456
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 333245 Jun  3 15:36 calico-building.gif
+-rw-r--r-- 1 yvan1 197609 297521 Jun  3 15:36 calico-carrying.gif
+-rw-r--r-- 1 yvan1 197609 318922 Jun  3 15:36 calico-conducting.gif
+-rw-r--r-- 1 yvan1 197609 252100 Jun  3 15:36 calico-error.gif
+-rw-r--r-- 1 yvan1 197609 602891 Jun  3 15:36 calico-happy.gif
+-rw-r--r-- 1 yvan1 197609 326683 Jun  3 15:36 calico-idle.gif
+-rw-r--r-- 1 yvan1 197609 361024 Jun  3 15:36 calico-juggling.gif
+-rw-r--r-- 1 yvan1 197609 277583 Jun  3 15:36 calico-mini-alert.gif
+-rw-r--r-- 1 yvan1 197609 418602 Jun  3 15:36 calico-mini-happy.gif
+-rw-r--r-- 1 yvan1 197609 379158 Jun  3 15:36 calico-mini-idle.gif
+-rw-r--r-- 1 yvan1 197609 108432 Jun  3 15:36 calico-mini-peek.gif
+-rw-r--r-- 1 yvan1 197609 322223 Jun  3 15:36 calico-notification.gif
+-rw-r--r-- 1 yvan1 197609 342833 Jun  3 15:36 calico-sleeping.gif
+-rw-r--r-- 1 yvan1 197609 329651 Jun  3 15:36 calico-sweeping.gif
+-rw-r--r-- 1 yvan1 197609 315566 Jun  3 15:36 calico-thinking.gif
+-rw-r--r-- 1 yvan1 197609 663622 Jun  3 15:36 calico-typing.gif
+-rw-r--r-- 1 yvan1 197609  63186 Jun  3 15:36 clawd-bubble.gif
+-rw-r--r-- 1 yvan1 197609  89980 Jun  3 15:36 clawd-building.gif
+-rw-r--r-- 1 yvan1 197609  68149 Jun  3 15:36 clawd-carrying.gif
+-rw-r--r-- 1 yvan1 197609  52500 Jun  3 15:36 clawd-conducting.gif
+-rw-r--r-- 1 yvan1 197609  79482 Jun  3 15:36 clawd-debugger.gif
+-rw-r--r-- 1 yvan1 197609  55847 Jun  3 15:36 clawd-error.gif
+-rw-r--r-- 1 yvan1 197609  47944 Jun  3 15:36 clawd-happy.gif
+-rw-r--r-- 1 yvan1 197609  66648 Jun  3 15:36 clawd-headphones-groove.gif
+-rw-r--r-- 1 yvan1 197609  73538 Jun  3 15:36 clawd-idle-reading.gif
+-rw-r--r-- 1 yvan1 197609  40707 Jun  3 15:36 clawd-idle.gif
+-rw-r--r-- 1 yvan1 197609  57586 Jun  3 15:36 clawd-juggling.gif
+-rw-r--r-- 1 yvan1 197609 160486 Jun  3 15:36 clawd-mini-alert.gif
+-rw-r--r-- 1 yvan1 197609  76664 Jun  3 15:36 clawd-mini-crabwalk.gif
+-rw-r--r-- 1 yvan1 197609 111742 Jun  3 15:36 clawd-mini-enter.gif
+-rw-r--r-- 1 yvan1 197609 131098 Jun  3 15:36 clawd-mini-happy.gif
+-rw-r--r-- 1 yvan1 197609 158473 Jun  3 15:36 clawd-mini-idle.gif
+-rw-r--r-- 1 yvan1 197609 146251 Jun  3 15:36 clawd-mini-peek.gif
+-rw-r--r-- 1 yvan1 197609 126061 Jun  3 15:36 clawd-notification.gif
+-rw-r--r-- 1 yvan1 197609  42917 Jun  3 15:36 clawd-react-annoyed.gif
+-rw-r--r-- 1 yvan1 197609  45425 Jun  3 15:36 clawd-react-double-jump.gif
+-rw-r--r-- 1 yvan1 197609  40508 Jun  3 15:36 clawd-sleeping.gif
+-rw-r--r-- 1 yvan1 197609  53842 Jun  3 15:36 clawd-sweeping.gif
+-rw-r--r-- 1 yvan1 197609  57599 Jun  3 15:36 clawd-thinking.gif
+-rw-r--r-- 1 yvan1 197609 101039 Jun  3 15:36 clawd-typing.gif
+-rw-r--r-- 1 yvan1 197609 191945 Jun  3 15:36 cloudling-attention.gif
+-rw-r--r-- 1 yvan1 197609  88238 Jun  3 15:36 cloudling-building.gif
+-rw-r--r-- 1 yvan1 197609 125677 Jun  3 15:36 cloudling-carrying.gif
+-rw-r--r-- 1 yvan1 197609 135841 Jun  3 15:36 cloudling-conducting.gif
+-rw-r--r-- 1 yvan1 197609 279794 Jun  3 15:36 cloudling-error.gif
+-rw-r--r-- 1 yvan1 197609 312843 Jun  3 15:36 cloudling-idle-reading.gif
+-rw-r--r-- 1 yvan1 197609  97363 Jun  3 15:36 cloudling-idle.gif
+-rw-r--r-- 1 yvan1 197609  83079 Jun  3 15:36 cloudling-juggling.gif
+-rw-r--r-- 1 yvan1 197609 134541 Jun  3 15:36 cloudling-mini-alert.gif
+-rw-r--r-- 1 yvan1 197609  55628 Jun  3 15:36 cloudling-mini-crabwalk.gif
+-rw-r--r-- 1 yvan1 197609 226313 Jun  3 15:36 cloudling-mini-happy.gif
+-rw-r--r-- 1 yvan1 197609 133471 Jun  3 15:36 cloudling-mini-idle.gif
+-rw-r--r-- 1 yvan1 197609  49323 Jun  3 15:36 cloudling-mini-peek.gif
+-rw-r--r-- 1 yvan1 197609  98467 Jun  3 15:36 cloudling-mini-sleep.gif
+-rw-r--r-- 1 yvan1 197609 172469 Jun  3 15:36 cloudling-mini-working.gif
+-rw-r--r-- 1 yvan1 197609 109558 Jun  3 15:36 cloudling-notification.gif
+-rw-r--r-- 1 yvan1 197609 142546 Jun  3 15:36 cloudling-sleeping.gif
+-rw-r--r-- 1 yvan1 197609 243279 Jun  3 15:36 cloudling-sweeping.gif
+-rw-r--r-- 1 yvan1 197609 159476 Jun  3 15:36 cloudling-thinking.gif
+-rw-r--r-- 1 yvan1 197609 114656 Jun  3 15:36 cloudling-typing.gif
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/icons:
+total 257
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609  12460 Jun  3 15:36 128x128.png
+-rw-r--r-- 1 yvan1 197609    631 Jun  3 15:36 16x16.png
+-rw-r--r-- 1 yvan1 197609  41920 Jun  3 15:36 256x256.png
+-rw-r--r-- 1 yvan1 197609   1611 Jun  3 15:36 32x32.png
+-rw-r--r-- 1 yvan1 197609   2735 Jun  3 15:36 48x48.png
+-rw-r--r-- 1 yvan1 197609 171415 Jun  3 15:36 512x512.png
+-rw-r--r-- 1 yvan1 197609   4122 Jun  3 15:36 64x64.png
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 agents
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/icons/agents:
+total 92
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 6101 Jun  3 15:36 antigravity-cli.png
+-rw-r--r-- 1 yvan1 197609 7262 Jun  3 15:36 claude-code.png
+-rw-r--r-- 1 yvan1 197609 6420 Jun  3 15:36 codebuddy.png
+-rw-r--r-- 1 yvan1 197609 3440 Jun  3 15:36 codex.png
+-rw-r--r-- 1 yvan1 197609 5804 Jun  3 15:36 copilot-cli.png
+-rw-r--r-- 1 yvan1 197609 4079 Jun  3 15:36 cursor-agent.png
+-rw-r--r-- 1 yvan1 197609 6101 Jun  3 15:36 gemini-cli.png
+-rw-r--r-- 1 yvan1 197609 6009 Jun  3 15:36 hermes.png
+-rw-r--r-- 1 yvan1 197609 4622 Jun  3 15:36 kimi-cli.png
+-rw-r--r-- 1 yvan1 197609 3189 Jun  3 15:36 kiro-cli.png
+-rw-r--r-- 1 yvan1 197609 2841 Jun  3 15:36 openclaw.png
+-rw-r--r-- 1 yvan1 197609 1812 Jun  3 15:36 opencode.png
+-rw-r--r-- 1 yvan1 197609 1578 Jun  3 15:36 pi.png
+-rw-r--r-- 1 yvan1 197609 2469 Jun  3 15:36 qwen-code.png
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/sounds:
+total 36
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 16128 Jun  3 15:36 complete.mp3
+-rw-r--r-- 1 yvan1 197609 16128 Jun  3 15:36 confirm.mp3
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/source:
+total 12
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 ..
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 agent-icons
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 clawd-thinking
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 cloudling-codex-pet
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 cloudling-low-power
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 cloudling-pointer-bridge
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/source/agent-icons:
+total 187
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609  1164 Jun  3 15:36 README.md
+-rw-r--r-- 1 yvan1 197609  1998 Jun  3 15:36 antigravity-cli.png
+-rw-r--r-- 1 yvan1 197609  2938 Jun  3 15:36 claude-code.png
+-rw-r--r-- 1 yvan1 197609 46722 Jun  3 15:36 codebuddy.png
+-rw-r--r-- 1 yvan1 197609  1220 Jun  3 15:36 codex.png
+-rw-r--r-- 1 yvan1 197609  2088 Jun  3 15:36 copilot-cli.png
+-rw-r--r-- 1 yvan1 197609  1356 Jun  3 15:36 cursor-agent.png
+-rw-r--r-- 1 yvan1 197609  1998 Jun  3 15:36 gemini-cli.png
+-rw-r--r-- 1 yvan1 197609  4100 Jun  3 15:36 hermes.png
+-rw-r--r-- 1 yvan1 197609 63730 Jun  3 15:36 kimi-cli.png
+-rw-r--r-- 1 yvan1 197609  6677 Jun  3 15:36 kiro-cli.png
+-rw-r--r-- 1 yvan1 197609  1282 Jun  3 15:36 kiro-cli.svg
+-rw-r--r-- 1 yvan1 197609  1145 Jun  3 15:36 openclaw.png
+-rw-r--r-- 1 yvan1 197609  2275 Jun  3 15:36 openclaw.svg
+-rw-r--r-- 1 yvan1 197609   665 Jun  3 15:36 opencode.png
+-rw-r--r-- 1 yvan1 197609  2607 Jun  3 15:36 pi.png
+-rw-r--r-- 1 yvan1 197609   440 Jun  3 15:36 pi.svg
+-rw-r--r-- 1 yvan1 197609  2469 Jun  3 15:36 qwen-code.png
+-rw-r--r-- 1 yvan1 197609   343 Jun  3 15:36 source-manifest.json
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/source/clawd-thinking:
+total 28
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 24159 Jun  3 15:36 clawd-experiment-thinking-bubble-v24.svg
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/source/cloudling-codex-pet:
+total 24
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 17737 Jun  3 15:36 README.md
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 confirmed
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/source/cloudling-codex-pet/confirmed:
+total 24
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 16982 Jun  3 15:36 README.md
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 states
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/source/cloudling-codex-pet/confirmed/states:
+total 248
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 39057 Jun  3 15:36 carrying-eat-cloud-v5.svg.html
+-rw-r--r-- 1 yvan1 197609 39837 Jun  3 15:36 cloud-plane-orbit-explore.svg.html
+-rw-r--r-- 1 yvan1 197609 40119 Jun  3 15:36 conducting-task-sparks-v5.svg.html
+-rw-r--r-- 1 yvan1 197609 24041 Jun  3 15:36 error-thundercloud-loop-v9-tuned.svg.html
+-rw-r--r-- 1 yvan1 197609 35694 Jun  3 15:36 long-idle-cloud-bush-peek-v1.svg.html
+-rw-r--r-- 1 yvan1 197609 18954 Jun  3 15:36 mini-peek-hover-pose-v1.svg.html
+-rw-r--r-- 1 yvan1 197609 16768 Jun  3 15:36 sweeping-context-cards-orbit-loop-v1.svg.html
+-rw-r--r-- 1 yvan1 197609 21461 Jun  3 15:36 typing-original-polish-v2.svg.html
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/source/cloudling-low-power:
+total 20
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 14688 Jun  3 15:36 cloudling-dozing.svg
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/source/cloudling-pointer-bridge:
+total 28
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 10103 Jun  3 15:36 cloudling-idle.svg
+-rw-r--r-- 1 yvan1 197609 10912 Jun  3 15:36 cloudling-mini-idle.svg
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/svg:
+total 372
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609  7521 Jun  3 15:36 clawd-about-hero.svg
+-rw-r--r-- 1 yvan1 197609  9858 Jun  3 15:36 clawd-collapse-sleep.svg
+-rw-r--r-- 1 yvan1 197609  3118 Jun  3 15:36 clawd-error.svg
+-rw-r--r-- 1 yvan1 197609  5697 Jun  3 15:36 clawd-happy.svg
+-rw-r--r-- 1 yvan1 197609  7825 Jun  3 15:36 clawd-headphones-groove.svg
+-rw-r--r-- 1 yvan1 197609  8220 Jun  3 15:36 clawd-idle-bubble.svg
+-rw-r--r-- 1 yvan1 197609  3367 Jun  3 15:36 clawd-idle-collapse.svg
+-rw-r--r-- 1 yvan1 197609  2232 Jun  3 15:36 clawd-idle-doze.svg
+-rw-r--r-- 1 yvan1 197609  1914 Jun  3 15:36 clawd-idle-follow.svg
+-rw-r--r-- 1 yvan1 197609  7832 Jun  3 15:36 clawd-idle-living.svg
+-rw-r--r-- 1 yvan1 197609  3969 Jun  3 15:36 clawd-idle-look.svg
+-rw-r--r-- 1 yvan1 197609  9721 Jun  3 15:36 clawd-idle-reading.svg
+-rw-r--r-- 1 yvan1 197609  5300 Jun  3 15:36 clawd-idle-yawn.svg
+-rw-r--r-- 1 yvan1 197609  4373 Jun  3 15:36 clawd-mini-alert.svg
+-rw-r--r-- 1 yvan1 197609  3080 Jun  3 15:36 clawd-mini-crabwalk.svg
+-rw-r--r-- 1 yvan1 197609  1766 Jun  3 15:36 clawd-mini-enter-sleep.svg
+-rw-r--r-- 1 yvan1 197609  2843 Jun  3 15:36 clawd-mini-enter.svg
+-rw-r--r-- 1 yvan1 197609  4343 Jun  3 15:36 clawd-mini-happy.svg
+-rw-r--r-- 1 yvan1 197609  2690 Jun  3 15:36 clawd-mini-idle.svg
+-rw-r--r-- 1 yvan1 197609  2343 Jun  3 15:36 clawd-mini-peek.svg
+-rw-r--r-- 1 yvan1 197609  3936 Jun  3 15:36 clawd-mini-sleep.svg
+-rw-r--r-- 1 yvan1 197609  5296 Jun  3 15:36 clawd-mini-typing.svg
+-rw-r--r-- 1 yvan1 197609 20741 Jun  3 15:36 clawd-notification.svg
+-rw-r--r-- 1 yvan1 197609  6630 Jun  3 15:36 clawd-react-annoyed.svg
+-rw-r--r-- 1 yvan1 197609  8774 Jun  3 15:36 clawd-react-double-jump.svg
+-rw-r--r-- 1 yvan1 197609  3759 Jun  3 15:36 clawd-react-double.svg
+-rw-r--r-- 1 yvan1 197609  3228 Jun  3 15:36 clawd-react-drag.svg
+-rw-r--r-- 1 yvan1 197609  3322 Jun  3 15:36 clawd-react-left.svg
+-rw-r--r-- 1 yvan1 197609  3351 Jun  3 15:36 clawd-react-right.svg
+-rw-r--r-- 1 yvan1 197609  4554 Jun  3 15:36 clawd-sleeping.svg
+-rw-r--r-- 1 yvan1 197609   920 Jun  3 15:36 clawd-static-base.svg
+-rw-r--r-- 1 yvan1 197609  6568 Jun  3 15:36 clawd-wake.svg
+-rw-r--r-- 1 yvan1 197609 12191 Jun  3 15:36 clawd-working-building.svg
+-rw-r--r-- 1 yvan1 197609  6213 Jun  3 15:36 clawd-working-carrying.svg
+-rw-r--r-- 1 yvan1 197609  8154 Jun  3 15:36 clawd-working-debugger.svg
+-rw-r--r-- 1 yvan1 197609  6045 Jun  3 15:36 clawd-working-juggling.svg
+-rw-r--r-- 1 yvan1 197609  9767 Jun  3 15:36 clawd-working-sweeping.svg
+-rw-r--r-- 1 yvan1 197609 24541 Jun  3 15:36 clawd-working-thinking.svg
+-rw-r--r-- 1 yvan1 197609 15312 Jun  3 15:36 clawd-working-typing-boss.svg
+-rw-r--r-- 1 yvan1 197609 11526 Jun  3 15:36 clawd-working-typing.svg
+-rw-r--r-- 1 yvan1 197609  5874 Jun  3 15:36 clawd-working-ultrathink.svg
+-rw-r--r-- 1 yvan1 197609 14580 Jun  3 15:36 clawd-working-wizard.svg
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 old
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/svg/old:
+total 64
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 7382 Jun  3 15:36 clawd-idle-reading-old.svg
+-rw-r--r-- 1 yvan1 197609 5924 Jun  3 15:36 clawd-notification-retired-2026-05-12.svg
+-rw-r--r-- 1 yvan1 197609 7080 Jun  3 15:36 clawd-working-building-boxes.svg
+-rw-r--r-- 1 yvan1 197609 8605 Jun  3 15:36 clawd-working-conducting-retired-2026-05-12.svg
+-rw-r--r-- 1 yvan1 197609 5374 Jun  3 15:36 clawd-working-typing-old.svg
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/assets/videos:
+total 3428
+drwxr-xr-x 1 yvan1 197609       0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609       0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 3505491 Jun  3 15:36 clawd-multi-monitor-demo.mp4
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/bin:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 ..
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 cc-connect-clawd
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/bin/cc-connect-clawd:
+total 4
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 1981 Jun  3 15:36 README.md
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/build:
+total 24
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 1367 Jun  3 15:36 installer.nsh
+-rw-r--r-- 1 yvan1 197609 8338 Jun  3 15:36 uninstall-claude-hooks.ps1
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/docs:
+total 32
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 guides
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 investigations
+-rw-r--r-- 1 yvan1 197609 5395 Jun  3 15:36 mobile-protocol-v1.md
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 plans
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 project
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 releases
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/docs/guides:
+total 184
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 12244 Jun  3 15:36 codex-wsl-clarification.ko-KR.md
+-rw-r--r-- 1 yvan1 197609 10626 Jun  3 15:36 codex-wsl-clarification.md
+-rw-r--r-- 1 yvan1 197609 10976 Jun  3 15:36 codex-wsl-clarification.zh-CN.md
+-rw-r--r-- 1 yvan1 197609  6493 Jun  3 15:36 copilot-setup.md
+-rw-r--r-- 1 yvan1 197609  6114 Jun  3 15:36 copilot-setup.zh-CN.md
+-rw-r--r-- 1 yvan1 197609  4655 Jun  3 15:36 guide-remote-ssh.md
+-rw-r--r-- 1 yvan1 197609  4275 Jun  3 15:36 guide-remote-ssh.zh-CN.md
+-rw-r--r-- 1 yvan1 197609 23496 Jun  3 15:36 guide-theme-creation.md
+-rw-r--r-- 1 yvan1 197609  9295 Jun  3 15:36 known-limitations.md
+-rw-r--r-- 1 yvan1 197609  8928 Jun  3 15:36 known-limitations.zh-CN.md
+-rw-r--r-- 1 yvan1 197609 14944 Jun  3 15:36 setup-guide.md
+-rw-r--r-- 1 yvan1 197609 14329 Jun  3 15:36 setup-guide.zh-CN.md
+-rw-r--r-- 1 yvan1 197609  8274 Jun  3 15:36 state-mapping.md
+-rw-r--r-- 1 yvan1 197609  7650 Jun  3 15:36 state-mapping.zh-CN.md
+-rw-r--r-- 1 yvan1 197609  5393 Jun  3 15:36 telegram-approval.md
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/docs/investigations:
+total 16
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 2093 Jun  3 15:36 codex-subagent-session-meta.md
+-rw-r--r-- 1 yvan1 197609 5993 Jun  3 15:36 permission-hook-fail-deny-investigation.md
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/docs/plans:
+total 84
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 60769 Jun  3 15:36 plan-codex-pet-compatibility.md
+-rw-r--r-- 1 yvan1 197609 17522 Jun  3 15:36 plan-issue-244-low-power-idle.md
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/docs/project:
+total 44
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 18750 Jun  3 15:36 agent-runtime-architecture.md
+-rw-r--r-- 1 yvan1 197609  1628 Jun  3 15:36 release-process.md
+-rw-r--r-- 1 yvan1 197609 10548 Jun  3 15:36 theme-state-ui.md
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/docs/releases:
+total 84
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 3086 Jun  3 15:36 release-v0.5.5.md
+-rw-r--r-- 1 yvan1 197609 9310 Jun  3 15:36 release-v0.6.0.md
+-rw-r--r-- 1 yvan1 197609 4067 Jun  3 15:36 release-v0.6.1.md
+-rw-r--r-- 1 yvan1 197609 6048 Jun  3 15:36 release-v0.6.2.md
+-rw-r--r-- 1 yvan1 197609 8019 Jun  3 15:36 release-v0.6.3.md
+-rw-r--r-- 1 yvan1 197609 6403 Jun  3 15:36 release-v0.7.0.md
+-rw-r--r-- 1 yvan1 197609 9273 Jun  3 15:36 release-v0.7.1.md
+-rw-r--r-- 1 yvan1 197609 6902 Jun  3 15:36 release-v0.8.0.md
+-rw-r--r-- 1 yvan1 197609 9987 Jun  3 15:36 release-v0.8.1.md
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/extensions:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 ..
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 vscode
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/extensions/vscode:
+total 5
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 2629 Jun  3 15:36 extension.js
+-rw-r--r-- 1 yvan1 197609  371 Jun  3 15:36 package.json
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/hooks:
+total 513
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rwxr-xr-x 1 yvan1 197609 17999 Jun  3 15:36 antigravity-hook.js
+-rwxr-xr-x 1 yvan1 197609  8194 Jun  3 15:36 antigravity-install.js
+-rwxr-xr-x 1 yvan1 197609  4517 Jun  3 15:36 auto-start.js
+-rwxr-xr-x 1 yvan1 197609 15997 Jun  3 15:36 clawd-hook.js
+-rwxr-xr-x 1 yvan1 197609 11576 Jun  3 15:36 cleanup-integrations.js
+-rwxr-xr-x 1 yvan1 197609  2939 Jun  3 15:36 codebuddy-hook.js
+-rwxr-xr-x 1 yvan1 197609  8416 Jun  3 15:36 codebuddy-install.js
+-rw-r--r-- 1 yvan1 197609  6462 Jun  3 15:36 codex-assistant-output.js
+-rwxr-xr-x 1 yvan1 197609  2895 Jun  3 15:36 codex-debug-hook.js
+-rwxr-xr-x 1 yvan1 197609  1644 Jun  3 15:36 codex-debug-install.js
+-rwxr-xr-x 1 yvan1 197609 15222 Jun  3 15:36 codex-hook.js
+-rw-r--r-- 1 yvan1 197609 15587 Jun  3 15:36 codex-install-utils.js
+-rwxr-xr-x 1 yvan1 197609  1642 Jun  3 15:36 codex-install.js
+-rwxr-xr-x 1 yvan1 197609 11623 Jun  3 15:36 codex-remote-monitor.js
+-rw-r--r-- 1 yvan1 197609  2038 Jun  3 15:36 codex-session-index.js
+-rw-r--r-- 1 yvan1 197609  3399 Jun  3 15:36 codex-subagent-fields.js
+-rwxr-xr-x 1 yvan1 197609 23537 Jun  3 15:36 copilot-hook.js
+-rwxr-xr-x 1 yvan1 197609 18428 Jun  3 15:36 copilot-install.js
+-rwxr-xr-x 1 yvan1 197609  4078 Jun  3 15:36 cursor-hook.js
+-rwxr-xr-x 1 yvan1 197609  5908 Jun  3 15:36 cursor-install.js
+-rwxr-xr-x 1 yvan1 197609  5811 Jun  3 15:36 gemini-hook.js
+-rwxr-xr-x 1 yvan1 197609  8875 Jun  3 15:36 gemini-install.js
+-rwxr-xr-x 1 yvan1 197609 14178 Jun  3 15:36 hermes-install.js
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 hermes-plugin
+-rwxr-xr-x 1 yvan1 197609 46048 Jun  3 15:36 install.js
+-rw-r--r-- 1 yvan1 197609 15197 Jun  3 15:36 json-utils.js
+-rwxr-xr-x 1 yvan1 197609 13147 Jun  3 15:36 kimi-hook.js
+-rwxr-xr-x 1 yvan1 197609 10839 Jun  3 15:36 kimi-install.js
+-rwxr-xr-x 1 yvan1 197609  1992 Jun  3 15:36 kiro-hook.js
+-rwxr-xr-x 1 yvan1 197609 15359 Jun  3 15:36 kiro-install.js
+-rwxr-xr-x 1 yvan1 197609 12356 Jun  3 15:36 openclaw-install.js
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 openclaw-plugin
+-rwxr-xr-x 1 yvan1 197609  7631 Jun  3 15:36 opencode-install.js
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 opencode-plugin
+-rw-r--r-- 1 yvan1 197609  6429 Jun  3 15:36 pi-extension-core.js
+-rw-r--r-- 1 yvan1 197609  9676 Jun  3 15:36 pi-extension.ts
+-rwxr-xr-x 1 yvan1 197609  7863 Jun  3 15:36 pi-install.js
+-rwxr-xr-x 1 yvan1 197609 12778 Jun  3 15:36 qwen-code-hook.js
+-rwxr-xr-x 1 yvan1 197609  9292 Jun  3 15:36 qwen-code-install.js
+-rw-r--r-- 1 yvan1 197609 26636 Jun  3 15:36 server-config.js
+-rw-r--r-- 1 yvan1 197609 13532 Jun  3 15:36 shared-process.js
+-rwxr-xr-x 1 yvan1 197609   334 Jun  3 15:36 uninstall.js
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/hooks/hermes-plugin:
+total 57
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 39509 Jun  3 15:36 __init__.py
+-rw-r--r-- 1 yvan1 197609   304 Jun  3 15:36 plugin.yaml
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/hooks/openclaw-plugin:
+total 34
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 11970 Jun  3 15:36 index.js
+-rw-r--r-- 1 yvan1 197609   290 Jun  3 15:36 openclaw.plugin.json
+-rw-r--r-- 1 yvan1 197609   371 Jun  3 15:36 package.json
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/hooks/opencode-plugin:
+total 53
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 29721 Jun  3 15:36 index.mjs
+-rw-r--r-- 1 yvan1 197609   263 Jun  3 15:36 package.json
+-rw-r--r-- 1 yvan1 197609  3318 Jun  3 15:36 session-ids.mjs
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/perf:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 ..
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 k6
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 results
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/perf/k6:
+total 9
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609  199 Jun  3 15:36 .env.example
+-rw-r--r-- 1 yvan1 197609 5088 Jun  3 15:36 clawdbot-stress.js
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/perf/results:
+total 4
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 ..
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 ab-releaseobject-20260404-141130
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/perf/results/ab-releaseobject-20260404-141130:
+total 10
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 1055 Jun  3 15:36 README.md
+-rw-r--r-- 1 yvan1 197609  162 Jun  3 15:36 main-summary.txt
+-rw-r--r-- 1 yvan1 197609  161 Jun  3 15:36 releaseobject-only-summary.txt
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/pwa:
+total 69
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 20478 Jun  3 15:36 app.js
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 icons
+-rw-r--r-- 1 yvan1 197609 10755 Jun  3 15:36 icons.js
+-rw-r--r-- 1 yvan1 197609  2738 Jun  3 15:36 index.html
+-rw-r--r-- 1 yvan1 197609   436 Jun  3 15:36 manifest.json
+-rw-r--r-- 1 yvan1 197609 12501 Jun  3 15:36 style.css
+-rw-r--r-- 1 yvan1 197609  1682 Jun  3 15:36 sw.js
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/pwa/icons:
+total 216
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609  41920 Jun  3 15:36 icon-256.png
+-rw-r--r-- 1 yvan1 197609 171415 Jun  3 15:36 icon-512.png
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/scripts:
+total 116
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609  6404 Jun  3 15:36 create-theme.js
+-rw-r--r-- 1 yvan1 197609  6714 Jun  3 15:36 ensure-sidecar-binaries.js
+-rw-r--r-- 1 yvan1 197609  7242 Jun  3 15:36 export-agent-icons.js
+-rw-r--r-- 1 yvan1 197609 14359 Jun  3 15:36 fetch-sidecar-binaries.js
+-rw-r--r-- 1 yvan1 197609  8334 Jun  3 15:36 monitor-clawd-power.ps1
+-rwxr-xr-x 1 yvan1 197609  4901 Jun  3 15:36 monitor-clawd-resources.sh
+-rwxr-xr-x 1 yvan1 197609  8948 Jun  3 15:36 remote-deploy.sh
+-rwxr-xr-x 1 yvan1 197609  1500 Jun  3 15:36 run-clawdbot-stress.sh
+-rwxr-xr-x 1 yvan1 197609 23776 Jun  3 15:36 validate-theme.js
+-rw-r--r-- 1 yvan1 197609  3297 Jun  3 15:36 verify-sidecar-binaries.js
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/src:
+total 2740
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609   1589 Jun  3 15:36 agent-gate.js
+-rw-r--r-- 1 yvan1 197609   6725 Jun  3 15:36 agent-runtime-main.js
+-rw-r--r-- 1 yvan1 197609  17560 Jun  3 15:36 animation-cycle.js
+-rw-r--r-- 1 yvan1 197609   4060 Jun  3 15:36 bubble-format.js
+-rw-r--r-- 1 yvan1 197609   5254 Jun  3 15:36 bubble-policy.js
+-rw-r--r-- 1 yvan1 197609  40082 Jun  3 15:36 bubble-renderer.js
+-rw-r--r-- 1 yvan1 197609  11820 Jun  3 15:36 bubble.css
+-rw-r--r-- 1 yvan1 197609   1417 Jun  3 15:36 bubble.html
+-rw-r--r-- 1 yvan1 197609  12092 Jun  3 15:36 claude-settings-watcher.js
+-rw-r--r-- 1 yvan1 197609   1014 Jun  3 15:36 codex-monitor-callback.js
+-rw-r--r-- 1 yvan1 197609  35919 Jun  3 15:36 codex-pet-adapter.js
+-rw-r--r-- 1 yvan1 197609  22395 Jun  3 15:36 codex-pet-importer.js
+-rw-r--r-- 1 yvan1 197609  26289 Jun  3 15:36 codex-pet-main.js
+-rw-r--r-- 1 yvan1 197609  13061 Jun  3 15:36 dashboard-renderer.js
+-rw-r--r-- 1 yvan1 197609   6964 Jun  3 15:36 dashboard.html
+-rw-r--r-- 1 yvan1 197609   7870 Jun  3 15:36 dashboard.js
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 doctor-detectors
+-rw-r--r-- 1 yvan1 197609   7741 Jun  3 15:36 doctor-hook-activity.js
+-rw-r--r-- 1 yvan1 197609   3935 Jun  3 15:36 doctor-ipc.js
+-rw-r--r-- 1 yvan1 197609   3336 Jun  3 15:36 doctor-logs.js
+-rw-r--r-- 1 yvan1 197609  10012 Jun  3 15:36 doctor-report.js
+-rw-r--r-- 1 yvan1 197609   1986 Jun  3 15:36 doctor.js
+-rw-r--r-- 1 yvan1 197609   1932 Jun  3 15:36 drag-position.js
+-rw-r--r-- 1 yvan1 197609   2184 Jun  3 15:36 floating-window-runtime.js
+-rw-r--r-- 1 yvan1 197609  52790 Jun  3 15:36 focus.js
+-rw-r--r-- 1 yvan1 197609  36288 Jun  3 15:36 hardware-buddy-adapter.js
+-rw-r--r-- 1 yvan1 197609   3027 Jun  3 15:36 hardware-buddy-settings.js
+-rw-r--r-- 1 yvan1 197609   7558 Jun  3 15:36 hit-geometry.js
+-rw-r--r-- 1 yvan1 197609   7590 Jun  3 15:36 hit-renderer.js
+-rw-r--r-- 1 yvan1 197609    419 Jun  3 15:36 hit.html
+-rw-r--r-- 1 yvan1 197609  31455 Jun  3 15:36 i18n.js
+-rw-r--r-- 1 yvan1 197609    487 Jun  3 15:36 index.html
+-rw-r--r-- 1 yvan1 197609  15660 Jun  3 15:36 integration-sync.js
+-rw-r--r-- 1 yvan1 197609   1195 Jun  3 15:36 log-rotate.js
+-rw-r--r-- 1 yvan1 197609   2078 Jun  3 15:36 login-item.js
+-rw-r--r-- 1 yvan1 197609   7837 Jun  3 15:36 mac-window.js
+-rw-r--r-- 1 yvan1 197609 124671 Jun  3 15:36 main.js
+-rw-r--r-- 1 yvan1 197609  14103 Jun  3 15:36 menu.js
+-rw-r--r-- 1 yvan1 197609  22625 Jun  3 15:36 mini.js
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 network
+-rw-r--r-- 1 yvan1 197609  70014 Jun  3 15:36 permission.js
+-rw-r--r-- 1 yvan1 197609   3573 Jun  3 15:36 pet-geometry-main.js
+-rw-r--r-- 1 yvan1 197609   6046 Jun  3 15:36 pet-interaction-ipc.js
+-rw-r--r-- 1 yvan1 197609  25802 Jun  3 15:36 pet-window-runtime.js
+-rw-r--r-- 1 yvan1 197609  33938 Jun  3 15:36 prefs.js
+-rw-r--r-- 1 yvan1 197609    407 Jun  3 15:36 preload-bubble.js
+-rw-r--r-- 1 yvan1 197609   1418 Jun  3 15:36 preload-dashboard.js
+-rw-r--r-- 1 yvan1 197609   2028 Jun  3 15:36 preload-hit.js
+-rw-r--r-- 1 yvan1 197609   1333 Jun  3 15:36 preload-session-hud.js
+-rw-r--r-- 1 yvan1 197609   9195 Jun  3 15:36 preload-settings.js
+-rw-r--r-- 1 yvan1 197609    419 Jun  3 15:36 preload-update-bubble.js
+-rw-r--r-- 1 yvan1 197609   2637 Jun  3 15:36 preload.js
+-rw-r--r-- 1 yvan1 197609   2544 Jun  3 15:36 remote-ssh-decode.js
+-rw-r--r-- 1 yvan1 197609  14934 Jun  3 15:36 remote-ssh-deploy.js
+-rw-r--r-- 1 yvan1 197609  16610 Jun  3 15:36 remote-ssh-ipc.js
+-rw-r--r-- 1 yvan1 197609  11765 Jun  3 15:36 remote-ssh-node.js
+-rw-r--r-- 1 yvan1 197609  12440 Jun  3 15:36 remote-ssh-profile.js
+-rw-r--r-- 1 yvan1 197609   3791 Jun  3 15:36 remote-ssh-quote.js
+-rw-r--r-- 1 yvan1 197609  44616 Jun  3 15:36 remote-ssh-runtime.js
+-rw-r--r-- 1 yvan1 197609   4868 Jun  3 15:36 remote-ssh-shell-detect.js
+-rw-r--r-- 1 yvan1 197609  48703 Jun  3 15:36 renderer.js
+-rw-r--r-- 1 yvan1 197609   1013 Jun  3 15:36 server-agent-id.js
+-rw-r--r-- 1 yvan1 197609   3084 Jun  3 15:36 server-codex-official-turns.js
+-rw-r--r-- 1 yvan1 197609   2983 Jun  3 15:36 server-hook-events.js
+-rw-r--r-- 1 yvan1 197609   7029 Jun  3 15:36 server-permission-utils.js
+-rw-r--r-- 1 yvan1 197609  47627 Jun  3 15:36 server-route-permission.js
+-rw-r--r-- 1 yvan1 197609   9858 Jun  3 15:36 server-route-state.js
+-rw-r--r-- 1 yvan1 197609  10400 Jun  3 15:36 server.js
+-rw-r--r-- 1 yvan1 197609   4010 Jun  3 15:36 session-alias.js
+-rw-r--r-- 1 yvan1 197609   1189 Jun  3 15:36 session-focus-handoff.js
+-rw-r--r-- 1 yvan1 197609   2297 Jun  3 15:36 session-focus.js
+-rw-r--r-- 1 yvan1 197609  12258 Jun  3 15:36 session-hud-renderer.js
+-rw-r--r-- 1 yvan1 197609   6030 Jun  3 15:36 session-hud.html
+-rw-r--r-- 1 yvan1 197609  21873 Jun  3 15:36 session-hud.js
+-rw-r--r-- 1 yvan1 197609   2955 Jun  3 15:36 session-ipc.js
+-rw-r--r-- 1 yvan1 197609   7129 Jun  3 15:36 settings-actions-agents.js
+-rw-r--r-- 1 yvan1 197609   9936 Jun  3 15:36 settings-actions-shortcuts.js
+-rw-r--r-- 1 yvan1 197609   6952 Jun  3 15:36 settings-actions-system.js
+-rw-r--r-- 1 yvan1 197609  25489 Jun  3 15:36 settings-actions-theme-overrides.js
+-rw-r--r-- 1 yvan1 197609  47189 Jun  3 15:36 settings-actions.js
+-rw-r--r-- 1 yvan1 197609   3439 Jun  3 15:36 settings-agent-order.js
+-rw-r--r-- 1 yvan1 197609   6483 Jun  3 15:36 settings-anim-overrides-merge.js
+-rw-r--r-- 1 yvan1 197609  53124 Jun  3 15:36 settings-animation-overrides-main.js
+-rw-r--r-- 1 yvan1 197609   1943 Jun  3 15:36 settings-animation-preview.html
+-rw-r--r-- 1 yvan1 197609  19312 Jun  3 15:36 settings-controller.js
+-rw-r--r-- 1 yvan1 197609  36135 Jun  3 15:36 settings-doctor-modal.js
+-rw-r--r-- 1 yvan1 197609  10312 Jun  3 15:36 settings-effect-router.js
+-rw-r--r-- 1 yvan1 197609  17972 Jun  3 15:36 settings-hardware-buddy-panel.js
+-rw-r--r-- 1 yvan1 197609 222198 Jun  3 15:36 settings-i18n.js
+-rw-r--r-- 1 yvan1 197609  19525 Jun  3 15:36 settings-ipc.js
+-rw-r--r-- 1 yvan1 197609   5045 Jun  3 15:36 settings-renderer.js
+-rw-r--r-- 1 yvan1 197609   2498 Jun  3 15:36 settings-size-preview-session.js
+-rw-r--r-- 1 yvan1 197609   6876 Jun  3 15:36 settings-size-slider.js
+-rw-r--r-- 1 yvan1 197609   3249 Jun  3 15:36 settings-store.js
+-rw-r--r-- 1 yvan1 197609  13869 Jun  3 15:36 settings-tab-about.js
+-rw-r--r-- 1 yvan1 197609  13608 Jun  3 15:36 settings-tab-agents.js
+-rw-r--r-- 1 yvan1 197609   5774 Jun  3 15:36 settings-tab-anim-map.js
+-rw-r--r-- 1 yvan1 197609  82090 Jun  3 15:36 settings-tab-anim-overrides.js
+-rw-r--r-- 1 yvan1 197609  59075 Jun  3 15:36 settings-tab-general.js
+-rw-r--r-- 1 yvan1 197609   5516 Jun  3 15:36 settings-tab-mobile.js
+-rw-r--r-- 1 yvan1 197609  25902 Jun  3 15:36 settings-tab-remote-ssh.js
+-rw-r--r-- 1 yvan1 197609   7904 Jun  3 15:36 settings-tab-shortcuts.js
+-rw-r--r-- 1 yvan1 197609  37963 Jun  3 15:36 settings-tab-telegram-approval.js
+-rw-r--r-- 1 yvan1 197609  21385 Jun  3 15:36 settings-tab-theme.js
+-rw-r--r-- 1 yvan1 197609   6781 Jun  3 15:36 settings-theme-importer.js
+-rw-r--r-- 1 yvan1 197609  44091 Jun  3 15:36 settings-ui-core.js
+-rw-r--r-- 1 yvan1 197609   2354 Jun  3 15:36 settings-validators.js
+-rw-r--r-- 1 yvan1 197609   3185 Jun  3 15:36 settings-window-icon.js
+-rw-r--r-- 1 yvan1 197609   8846 Jun  3 15:36 settings-window.js
+-rw-r--r-- 1 yvan1 197609  84910 Jun  3 15:36 settings.css
+-rw-r--r-- 1 yvan1 197609   1464 Jun  3 15:36 settings.html
+-rw-r--r-- 1 yvan1 197609  11410 Jun  3 15:36 shortcut-actions.js
+-rw-r--r-- 1 yvan1 197609   5662 Jun  3 15:36 shortcut-runtime.js
+-rw-r--r-- 1 yvan1 197609   2452 Jun  3 15:36 size-utils.js
+-rw-r--r-- 1 yvan1 197609   1614 Jun  3 15:36 state-agent-icons.js
+-rw-r--r-- 1 yvan1 197609    740 Jun  3 15:36 state-hitbox-resolver.js
+-rw-r--r-- 1 yvan1 197609   2459 Jun  3 15:36 state-priority.js
+-rw-r--r-- 1 yvan1 197609   1242 Jun  3 15:36 state-session-events.js
+-rw-r--r-- 1 yvan1 197609  13007 Jun  3 15:36 state-session-snapshot.js
+-rw-r--r-- 1 yvan1 197609   5221 Jun  3 15:36 state-stale-cleanup.js
+-rw-r--r-- 1 yvan1 197609   5555 Jun  3 15:36 state-visual-resolver.js
+-rw-r--r-- 1 yvan1 197609  69796 Jun  3 15:36 state.js
+-rw-r--r-- 1 yvan1 197609    948 Jun  3 15:36 styles.css
+-rw-r--r-- 1 yvan1 197609    845 Jun  3 15:36 taskbar.js
+-rw-r--r-- 1 yvan1 197609   4230 Jun  3 15:36 telegram-approval-client.js
+-rw-r--r-- 1 yvan1 197609  26736 Jun  3 15:36 telegram-approval-runtime-status.js
+-rw-r--r-- 1 yvan1 197609  14731 Jun  3 15:36 telegram-approval-settings.js
+-rw-r--r-- 1 yvan1 197609  19697 Jun  3 15:36 telegram-approval-sidecar.js
+-rw-r--r-- 1 yvan1 197609  12340 Jun  3 15:36 telegram-companion.js
+-rw-r--r-- 1 yvan1 197609  23565 Jun  3 15:36 telegram-direct-send.js
+-rw-r--r-- 1 yvan1 197609   6124 Jun  3 15:36 telegram-migration-controller.js
+-rw-r--r-- 1 yvan1 197609  12493 Jun  3 15:36 telegram-migration-state.js
+-rw-r--r-- 1 yvan1 197609   8164 Jun  3 15:36 telegram-native-client.js
+-rw-r--r-- 1 yvan1 197609  25067 Jun  3 15:36 telegram-native-runner.js
+-rw-r--r-- 1 yvan1 197609   5490 Jun  3 15:36 telegram-owner-manager.js
+-rw-r--r-- 1 yvan1 197609   3394 Jun  3 15:36 telegram-token-store.js
+-rw-r--r-- 1 yvan1 197609   7962 Jun  3 15:36 theme-assets-cache.js
+-rw-r--r-- 1 yvan1 197609   4620 Jun  3 15:36 theme-context.js
+-rw-r--r-- 1 yvan1 197609   4882 Jun  3 15:36 theme-fade-sequencer.js
+-rw-r--r-- 1 yvan1 197609  17722 Jun  3 15:36 theme-loader.js
+-rw-r--r-- 1 yvan1 197609   5917 Jun  3 15:36 theme-metadata.js
+-rw-r--r-- 1 yvan1 197609  11685 Jun  3 15:36 theme-runtime.js
+-rw-r--r-- 1 yvan1 197609   7930 Jun  3 15:36 theme-sanitizer.js
+-rw-r--r-- 1 yvan1 197609  23670 Jun  3 15:36 theme-schema.js
+-rw-r--r-- 1 yvan1 197609  12516 Jun  3 15:36 theme-variants.js
+-rw-r--r-- 1 yvan1 197609  14660 Jun  3 15:36 tick.js
+-rw-r--r-- 1 yvan1 197609   8873 Jun  3 15:36 topmost-runtime.js
+-rw-r--r-- 1 yvan1 197609   8973 Jun  3 15:36 update-bubble.html
+-rw-r--r-- 1 yvan1 197609  14469 Jun  3 15:36 update-bubble.js
+-rw-r--r-- 1 yvan1 197609  47285 Jun  3 15:36 updater.js
+-rw-r--r-- 1 yvan1 197609   5297 Jun  3 15:36 visible-margins.js
+-rw-r--r-- 1 yvan1 197609   2740 Jun  3 15:36 window-opacity-transition.js
+-rw-r--r-- 1 yvan1 197609   6865 Jun  3 15:36 work-area.js
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/src/doctor-detectors:
+total 164
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609  6748 Jun  3 15:36 agent-descriptors.js
+-rw-r--r-- 1 yvan1 197609 51235 Jun  3 15:36 agent-integrations.js
+-rw-r--r-- 1 yvan1 197609  6262 Jun  3 15:36 agent-node-bin-parser.js
+-rw-r--r-- 1 yvan1 197609  7484 Jun  3 15:36 codex-features-check.js
+-rw-r--r-- 1 yvan1 197609  1106 Jun  3 15:36 local-server.js
+-rw-r--r-- 1 yvan1 197609  1647 Jun  3 15:36 openclaw-entry-validator.js
+-rw-r--r-- 1 yvan1 197609   922 Jun  3 15:36 opencode-entry-validator.js
+-rw-r--r-- 1 yvan1 197609  1146 Jun  3 15:36 permission-bubble-policy.js
+-rw-r--r-- 1 yvan1 197609  1126 Jun  3 15:36 theme-health.js
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/src/network:
+total 76
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 10790 Jun  3 15:36 mobile-preview-server.js
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/test:
+total 3200
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609  19786 Jun  3 15:36 agent-gate.test.js
+-rw-r--r-- 1 yvan1 197609   7977 Jun  3 15:36 agent-runtime-main.test.js
+-rw-r--r-- 1 yvan1 197609   6097 Jun  3 15:36 agents.test.js
+-rw-r--r-- 1 yvan1 197609   7089 Jun  3 15:36 animation-cycle.test.js
+-rw-r--r-- 1 yvan1 197609  11498 Jun  3 15:36 antigravity-hook.test.js
+-rw-r--r-- 1 yvan1 197609  13678 Jun  3 15:36 antigravity-install.test.js
+-rw-r--r-- 1 yvan1 197609   2488 Jun  3 15:36 auto-start.test.js
+-rw-r--r-- 1 yvan1 197609   3208 Jun  3 15:36 bubble-elicitation-other.test.js
+-rw-r--r-- 1 yvan1 197609   2231 Jun  3 15:36 bubble-elicitation-overflow.test.js
+-rw-r--r-- 1 yvan1 197609   4913 Jun  3 15:36 bubble-elicitation-stepper.test.js
+-rw-r--r-- 1 yvan1 197609   5252 Jun  3 15:36 bubble-format.test.js
+-rw-r--r-- 1 yvan1 197609   1292 Jun  3 15:36 bubble-html-assets.test.js
+-rw-r--r-- 1 yvan1 197609   4483 Jun  3 15:36 bubble-policy.test.js
+-rw-r--r-- 1 yvan1 197609  17757 Jun  3 15:36 claude-settings-watcher.test.js
+-rw-r--r-- 1 yvan1 197609  33367 Jun  3 15:36 clawd-hook.test.js
+-rw-r--r-- 1 yvan1 197609   1711 Jun  3 15:36 clawd-mini-enter-rendering.test.js
+-rw-r--r-- 1 yvan1 197609   6296 Jun  3 15:36 cleanup-integrations.test.js
+-rw-r--r-- 1 yvan1 197609  12203 Jun  3 15:36 cloudling-theme.test.js
+-rw-r--r-- 1 yvan1 197609   8555 Jun  3 15:36 codebuddy-install.test.js
+-rw-r--r-- 1 yvan1 197609   3557 Jun  3 15:36 codex-debug-hook.test.js
+-rw-r--r-- 1 yvan1 197609   9165 Jun  3 15:36 codex-debug-install.test.js
+-rw-r--r-- 1 yvan1 197609  19951 Jun  3 15:36 codex-hook.test.js
+-rw-r--r-- 1 yvan1 197609  11672 Jun  3 15:36 codex-install.test.js
+-rw-r--r-- 1 yvan1 197609  40003 Jun  3 15:36 codex-log-monitor.test.js
+-rw-r--r-- 1 yvan1 197609   1636 Jun  3 15:36 codex-notify-subgate.test.js
+-rw-r--r-- 1 yvan1 197609  25401 Jun  3 15:36 codex-pet-adapter.test.js
+-rw-r--r-- 1 yvan1 197609  16074 Jun  3 15:36 codex-pet-importer.test.js
+-rw-r--r-- 1 yvan1 197609  12006 Jun  3 15:36 codex-pet-main.test.js
+-rw-r--r-- 1 yvan1 197609   9678 Jun  3 15:36 codex-remote-monitor.test.js
+-rw-r--r-- 1 yvan1 197609   2724 Jun  3 15:36 codex-subagent-classifier.test.js
+-rw-r--r-- 1 yvan1 197609   2039 Jun  3 15:36 codex-subagent-fields.test.js
+-rw-r--r-- 1 yvan1 197609  15226 Jun  3 15:36 copilot-doctor.test.js
+-rw-r--r-- 1 yvan1 197609  37309 Jun  3 15:36 copilot-hook.test.js
+-rw-r--r-- 1 yvan1 197609  45140 Jun  3 15:36 copilot-install.test.js
+-rw-r--r-- 1 yvan1 197609   3070 Jun  3 15:36 create-theme.test.js
+-rw-r--r-- 1 yvan1 197609   6102 Jun  3 15:36 cursor-install.test.js
+-rw-r--r-- 1 yvan1 197609   8292 Jun  3 15:36 dashboard.test.js
+-rw-r--r-- 1 yvan1 197609   8616 Jun  3 15:36 doctor-agent-descriptors.test.js
+-rw-r--r-- 1 yvan1 197609  43401 Jun  3 15:36 doctor-agent-integrations.test.js
+-rw-r--r-- 1 yvan1 197609   3814 Jun  3 15:36 doctor-codex-features.test.js
+-rw-r--r-- 1 yvan1 197609   2053 Jun  3 15:36 doctor-find-hook-commands.test.js
+-rw-r--r-- 1 yvan1 197609   1894 Jun  3 15:36 doctor-find-kimi-hook-commands.test.js
+-rw-r--r-- 1 yvan1 197609   4502 Jun  3 15:36 doctor-hook-activity.test.js
+-rw-r--r-- 1 yvan1 197609   3234 Jun  3 15:36 doctor-installer-defaults.test.js
+-rw-r--r-- 1 yvan1 197609   2232 Jun  3 15:36 doctor-ipc.test.js
+-rw-r--r-- 1 yvan1 197609   2225 Jun  3 15:36 doctor-local-server.test.js
+-rw-r--r-- 1 yvan1 197609   3230 Jun  3 15:36 doctor-logs.test.js
+-rw-r--r-- 1 yvan1 197609   5650 Jun  3 15:36 doctor-node-bin-parser.test.js
+-rw-r--r-- 1 yvan1 197609   2295 Jun  3 15:36 doctor-opencode-entry.test.js
+-rw-r--r-- 1 yvan1 197609   1536 Jun  3 15:36 doctor-permission-bubble-policy.test.js
+-rw-r--r-- 1 yvan1 197609   8881 Jun  3 15:36 doctor-report.test.js
+-rw-r--r-- 1 yvan1 197609   1891 Jun  3 15:36 doctor.test.js
+-rw-r--r-- 1 yvan1 197609   3797 Jun  3 15:36 drag-position.test.js
+-rw-r--r-- 1 yvan1 197609   1809 Jun  3 15:36 elicitation.test.js
+-rw-r--r-- 1 yvan1 197609   6219 Jun  3 15:36 ensure-sidecar-binaries.test.js
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 fakes
+-rw-r--r-- 1 yvan1 197609   8439 Jun  3 15:36 fetch-sidecar-binaries.test.js
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 fixtures
+-rw-r--r-- 1 yvan1 197609   3782 Jun  3 15:36 floating-window-runtime.test.js
+-rw-r--r-- 1 yvan1 197609  13074 Jun  3 15:36 focus-cmux.test.js
+-rw-r--r-- 1 yvan1 197609   7509 Jun  3 15:36 focus-iterm-tab.test.js
+-rw-r--r-- 1 yvan1 197609   9440 Jun  3 15:36 focus-mac-extras.test.js
+-rw-r--r-- 1 yvan1 197609   4440 Jun  3 15:36 focus-superset.test.js
+-rw-r--r-- 1 yvan1 197609  19185 Jun  3 15:36 focus-windows.test.js
+-rw-r--r-- 1 yvan1 197609   9077 Jun  3 15:36 gemini-hook.test.js
+-rw-r--r-- 1 yvan1 197609  10382 Jun  3 15:36 gemini-install.test.js
+-rw-r--r-- 1 yvan1 197609  21975 Jun  3 15:36 gemini-log-monitor.test.js
+-rw-r--r-- 1 yvan1 197609  34007 Jun  3 15:36 hardware-buddy-adapter.test.js
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 helpers
+-rw-r--r-- 1 yvan1 197609  13829 Jun  3 15:36 hermes-install.test.js
+-rw-r--r-- 1 yvan1 197609  25050 Jun  3 15:36 hermes-plugin.test.js
+-rw-r--r-- 1 yvan1 197609  10241 Jun  3 15:36 hit-geometry.test.js
+-rw-r--r-- 1 yvan1 197609   9158 Jun  3 15:36 hit-renderer.test.js
+-rw-r--r-- 1 yvan1 197609    481 Jun  3 15:36 hook-http-blocker.js
+-rw-r--r-- 1 yvan1 197609   4325 Jun  3 15:36 i18n.test.js
+-rw-r--r-- 1 yvan1 197609  52582 Jun  3 15:36 install.test.js
+-rw-r--r-- 1 yvan1 197609   6605 Jun  3 15:36 integration-sync.test.js
+-rw-r--r-- 1 yvan1 197609   7239 Jun  3 15:36 json-utils.test.js
+-rw-r--r-- 1 yvan1 197609    633 Jun  3 15:36 kimi-agent-config.test.js
+-rw-r--r-- 1 yvan1 197609  19941 Jun  3 15:36 kimi-hook.test.js
+-rw-r--r-- 1 yvan1 197609  16562 Jun  3 15:36 kimi-install.test.js
+-rw-r--r-- 1 yvan1 197609    933 Jun  3 15:36 kimi-log-monitor.test.js
+-rw-r--r-- 1 yvan1 197609  17443 Jun  3 15:36 kiro-install.test.js
+-rw-r--r-- 1 yvan1 197609   2440 Jun  3 15:36 log-rotate.test.js
+-rw-r--r-- 1 yvan1 197609   2146 Jun  3 15:36 main-codex-callback.test.js
+-rw-r--r-- 1 yvan1 197609    548 Jun  3 15:36 main-codex-log-suppress.test.js
+-rw-r--r-- 1 yvan1 197609   2510 Jun  3 15:36 main-codex-pet-protocol.test.js
+-rw-r--r-- 1 yvan1 197609   6556 Jun  3 15:36 main-codex-pet-theme-sync.test.js
+-rw-r--r-- 1 yvan1 197609    537 Jun  3 15:36 main-gemini-hook-only.test.js
+-rw-r--r-- 1 yvan1 197609   1311 Jun  3 15:36 main-mac-dock-icon.test.js
+-rw-r--r-- 1 yvan1 197609    652 Jun  3 15:36 main-mini-animation-cycle.test.js
+-rw-r--r-- 1 yvan1 197609   2339 Jun  3 15:36 main-theme-transition.test.js
+-rw-r--r-- 1 yvan1 197609   1575 Jun  3 15:36 menu-autostart.test.js
+-rw-r--r-- 1 yvan1 197609  13619 Jun  3 15:36 menu-display.test.js
+-rw-r--r-- 1 yvan1 197609   4599 Jun  3 15:36 menu-size-preview.test.js
+-rw-r--r-- 1 yvan1 197609  18643 Jun  3 15:36 mini.test.js
+-rw-r--r-- 1 yvan1 197609   6990 Jun  3 15:36 mobile-preview-server.test.js
+-rw-r--r-- 1 yvan1 197609   8292 Jun  3 15:36 openclaw-install.test.js
+-rw-r--r-- 1 yvan1 197609  18833 Jun  3 15:36 openclaw-plugin.test.js
+-rw-r--r-- 1 yvan1 197609   8918 Jun  3 15:36 opencode-install.test.js
+-rw-r--r-- 1 yvan1 197609  13737 Jun  3 15:36 opencode-plugin-session.test.js
+-rw-r--r-- 1 yvan1 197609  11688 Jun  3 15:36 package-build-config.test.js
+-rw-r--r-- 1 yvan1 197609  12263 Jun  3 15:36 permission-autoclose-dismiss.test.js
+-rw-r--r-- 1 yvan1 197609  15486 Jun  3 15:36 permission-codex-response.test.js
+-rw-r--r-- 1 yvan1 197609   4870 Jun  3 15:36 permission-elicitation-deny-focus.test.js
+-rw-r--r-- 1 yvan1 197609   9752 Jun  3 15:36 permission-notify-autoclose.test.js
+-rw-r--r-- 1 yvan1 197609  12235 Jun  3 15:36 permission-plan-feedback.test.js
+-rw-r--r-- 1 yvan1 197609  11619 Jun  3 15:36 permission-reposition.test.js
+-rw-r--r-- 1 yvan1 197609  14261 Jun  3 15:36 permission-telegram-approval.test.js
+-rw-r--r-- 1 yvan1 197609   3320 Jun  3 15:36 permission-update-bubble-ipc.test.js
+-rw-r--r-- 1 yvan1 197609   7264 Jun  3 15:36 pet-geometry-main.test.js
+-rw-r--r-- 1 yvan1 197609   9086 Jun  3 15:36 pet-interaction-ipc.test.js
+-rw-r--r-- 1 yvan1 197609  14551 Jun  3 15:36 pet-window-runtime.test.js
+-rw-r--r-- 1 yvan1 197609   8155 Jun  3 15:36 pi-extension-core.test.js
+-rw-r--r-- 1 yvan1 197609   5858 Jun  3 15:36 pi-install.test.js
+-rw-r--r-- 1 yvan1 197609  44158 Jun  3 15:36 prefs.test.js
+-rw-r--r-- 1 yvan1 197609   7328 Jun  3 15:36 qwen-code-hook.test.js
+-rw-r--r-- 1 yvan1 197609  11425 Jun  3 15:36 qwen-code-install.test.js
+-rw-r--r-- 1 yvan1 197609   2279 Jun  3 15:36 readme-contributors.test.js
+-rw-r--r-- 1 yvan1 197609    557 Jun  3 15:36 registry-kimi.test.js
+-rw-r--r-- 1 yvan1 197609  14292 Jun  3 15:36 registry.test.js
+-rw-r--r-- 1 yvan1 197609   2297 Jun  3 15:36 remote-deploy.test.js
+-rw-r--r-- 1 yvan1 197609   2774 Jun  3 15:36 remote-ssh-decode.test.js
+-rw-r--r-- 1 yvan1 197609  23546 Jun  3 15:36 remote-ssh-deploy.test.js
+-rw-r--r-- 1 yvan1 197609  26126 Jun  3 15:36 remote-ssh-ipc.test.js
+-rw-r--r-- 1 yvan1 197609   7656 Jun  3 15:36 remote-ssh-node.test.js
+-rw-r--r-- 1 yvan1 197609  36580 Jun  3 15:36 remote-ssh-profile.test.js
+-rw-r--r-- 1 yvan1 197609   6530 Jun  3 15:36 remote-ssh-quote.test.js
+-rw-r--r-- 1 yvan1 197609  49649 Jun  3 15:36 remote-ssh-runtime.test.js
+-rw-r--r-- 1 yvan1 197609   4967 Jun  3 15:36 remote-ssh-shell-detect.test.js
+-rw-r--r-- 1 yvan1 197609  14978 Jun  3 15:36 renderer-low-power.test.js
+-rw-r--r-- 1 yvan1 197609    626 Jun  3 15:36 run-tests.js
+-rw-r--r-- 1 yvan1 197609   9499 Jun  3 15:36 server-codex-permission.test.js
+-rw-r--r-- 1 yvan1 197609  26353 Jun  3 15:36 server-config.test.js
+-rw-r--r-- 1 yvan1 197609  20135 Jun  3 15:36 server-hook-management.test.js
+-rw-r--r-- 1 yvan1 197609   6375 Jun  3 15:36 server-permission-input.test.js
+-rw-r--r-- 1 yvan1 197609  14537 Jun  3 15:36 server-permission-state-cleanup.test.js
+-rw-r--r-- 1 yvan1 197609   4197 Jun  3 15:36 server-permission-subgate.test.js
+-rw-r--r-- 1 yvan1 197609   6691 Jun  3 15:36 server-qwen-permission.test.js
+-rw-r--r-- 1 yvan1 197609  12586 Jun  3 15:36 server-ringbuffer.test.js
+-rw-r--r-- 1 yvan1 197609  35959 Jun  3 15:36 server-route-permission.test.js
+-rw-r--r-- 1 yvan1 197609  11340 Jun  3 15:36 server-route-state.test.js
+-rw-r--r-- 1 yvan1 197609   8975 Jun  3 15:36 server-state-title.test.js
+-rw-r--r-- 1 yvan1 197609   4083 Jun  3 15:36 session-alias.test.js
+-rw-r--r-- 1 yvan1 197609   2735 Jun  3 15:36 session-focus-handoff.test.js
+-rw-r--r-- 1 yvan1 197609   4015 Jun  3 15:36 session-focus.test.js
+-rw-r--r-- 1 yvan1 197609   4495 Jun  3 15:36 session-hud-style.test.js
+-rw-r--r-- 1 yvan1 197609  16905 Jun  3 15:36 session-hud.test.js
+-rw-r--r-- 1 yvan1 197609   9245 Jun  3 15:36 session-ipc.test.js
+-rw-r--r-- 1 yvan1 197609   3436 Jun  3 15:36 settings-actions-agents.test.js
+-rw-r--r-- 1 yvan1 197609   2617 Jun  3 15:36 settings-actions-shortcuts.test.js
+-rw-r--r-- 1 yvan1 197609   4315 Jun  3 15:36 settings-actions-system.test.js
+-rw-r--r-- 1 yvan1 197609   6709 Jun  3 15:36 settings-actions-theme-overrides.test.js
+-rw-r--r-- 1 yvan1 197609  83180 Jun  3 15:36 settings-actions.test.js
+-rw-r--r-- 1 yvan1 197609   4481 Jun  3 15:36 settings-agent-order.test.js
+-rw-r--r-- 1 yvan1 197609  14717 Jun  3 15:36 settings-animation-overrides-main.test.js
+-rw-r--r-- 1 yvan1 197609  30467 Jun  3 15:36 settings-controller.test.js
+-rw-r--r-- 1 yvan1 197609   2840 Jun  3 15:36 settings-effect-router-notify-autoclose.test.js
+-rw-r--r-- 1 yvan1 197609  12173 Jun  3 15:36 settings-effect-router.test.js
+-rw-r--r-- 1 yvan1 197609  25305 Jun  3 15:36 settings-ipc.test.js
+-rw-r--r-- 1 yvan1 197609 249583 Jun  3 15:36 settings-renderer-browser-env.test.js
+-rw-r--r-- 1 yvan1 197609   1874 Jun  3 15:36 settings-size-preview-session.test.js
+-rw-r--r-- 1 yvan1 197609   3709 Jun  3 15:36 settings-size-slider.test.js
+-rw-r--r-- 1 yvan1 197609   3450 Jun  3 15:36 settings-store.test.js
+-rw-r--r-- 1 yvan1 197609   8989 Jun  3 15:36 settings-tab-remote-ssh.test.js
+-rw-r--r-- 1 yvan1 197609   2298 Jun  3 15:36 settings-validators.test.js
+-rw-r--r-- 1 yvan1 197609   5610 Jun  3 15:36 settings-window-icon.test.js
+-rw-r--r-- 1 yvan1 197609   8717 Jun  3 15:36 settings-window.test.js
+-rw-r--r-- 1 yvan1 197609  14644 Jun  3 15:36 shared-process.test.js
+-rw-r--r-- 1 yvan1 197609   8430 Jun  3 15:36 shortcut-actions.test.js
+-rw-r--r-- 1 yvan1 197609   9129 Jun  3 15:36 shortcut-runtime.test.js
+-rw-r--r-- 1 yvan1 197609   2988 Jun  3 15:36 size-utils.test.js
+-rw-r--r-- 1 yvan1 197609   5626 Jun  3 15:36 state-agent-icons.test.js
+-rw-r--r-- 1 yvan1 197609   3103 Jun  3 15:36 state-display-svg.test.js
+-rw-r--r-- 1 yvan1 197609   2317 Jun  3 15:36 state-hitbox-resolver.test.js
+-rw-r--r-- 1 yvan1 197609  13889 Jun  3 15:36 state-kimi-permission.test.js
+-rw-r--r-- 1 yvan1 197609  19170 Jun  3 15:36 state-notification-hook-gate.test.js
+-rw-r--r-- 1 yvan1 197609   3737 Jun  3 15:36 state-priority.test.js
+-rw-r--r-- 1 yvan1 197609   2590 Jun  3 15:36 state-session-events.test.js
+-rw-r--r-- 1 yvan1 197609  18042 Jun  3 15:36 state-session-snapshot.test.js
+-rw-r--r-- 1 yvan1 197609  11681 Jun  3 15:36 state-stale-cleanup.test.js
+-rw-r--r-- 1 yvan1 197609   3302 Jun  3 15:36 state-startup-recovery-detect.test.js
+-rw-r--r-- 1 yvan1 197609   5160 Jun  3 15:36 state-visual-resolver.test.js
+-rw-r--r-- 1 yvan1 197609 105140 Jun  3 15:36 state.test.js
+-rw-r--r-- 1 yvan1 197609   1598 Jun  3 15:36 taskbar.test.js
+-rw-r--r-- 1 yvan1 197609   4655 Jun  3 15:36 telegram-approval-client.test.js
+-rw-r--r-- 1 yvan1 197609  13868 Jun  3 15:36 telegram-approval-runtime-status.test.js
+-rw-r--r-- 1 yvan1 197609  11166 Jun  3 15:36 telegram-approval-settings.test.js
+-rw-r--r-- 1 yvan1 197609  15850 Jun  3 15:36 telegram-approval-sidecar.test.js
+-rw-r--r-- 1 yvan1 197609  12042 Jun  3 15:36 telegram-companion.test.js
+-rw-r--r-- 1 yvan1 197609  26919 Jun  3 15:36 telegram-direct-send.test.js
+-rw-r--r-- 1 yvan1 197609   7879 Jun  3 15:36 telegram-migration-controller.test.js
+-rw-r--r-- 1 yvan1 197609   6711 Jun  3 15:36 telegram-migration-state.test.js
+-rw-r--r-- 1 yvan1 197609  13501 Jun  3 15:36 telegram-native-client.test.js
+-rw-r--r-- 1 yvan1 197609  34312 Jun  3 15:36 telegram-native-runner.test.js
+-rw-r--r-- 1 yvan1 197609   9543 Jun  3 15:36 telegram-owner-manager.test.js
+-rw-r--r-- 1 yvan1 197609    718 Jun  3 15:36 telegram-status-command-main.test.js
+-rw-r--r-- 1 yvan1 197609   5012 Jun  3 15:36 telegram-token-store.test.js
+-rw-r--r-- 1 yvan1 197609   8081 Jun  3 15:36 theme-assets-cache.test.js
+-rw-r--r-- 1 yvan1 197609   8536 Jun  3 15:36 theme-context.test.js
+-rw-r--r-- 1 yvan1 197609   7291 Jun  3 15:36 theme-fade-sequencer.test.js
+-rw-r--r-- 1 yvan1 197609   5760 Jun  3 15:36 theme-loader-validate-shape.test.js
+-rw-r--r-- 1 yvan1 197609  44650 Jun  3 15:36 theme-loader.test.js
+-rw-r--r-- 1 yvan1 197609   7615 Jun  3 15:36 theme-metadata.test.js
+-rw-r--r-- 1 yvan1 197609  18014 Jun  3 15:36 theme-override.test.js
+-rw-r--r-- 1 yvan1 197609  12051 Jun  3 15:36 theme-runtime.test.js
+-rw-r--r-- 1 yvan1 197609   2810 Jun  3 15:36 theme-sanitizer.test.js
+-rw-r--r-- 1 yvan1 197609   7120 Jun  3 15:36 theme-schema.test.js
+-rw-r--r-- 1 yvan1 197609   6978 Jun  3 15:36 theme-variants.test.js
+-rw-r--r-- 1 yvan1 197609  15649 Jun  3 15:36 tick.test.js
+-rw-r--r-- 1 yvan1 197609  13614 Jun  3 15:36 topmost-runtime.test.js
+-rw-r--r-- 1 yvan1 197609   4389 Jun  3 15:36 update-bubble-autoclose.test.js
+-rw-r--r-- 1 yvan1 197609   6223 Jun  3 15:36 update-bubble-position.test.js
+-rw-r--r-- 1 yvan1 197609   2228 Jun  3 15:36 update-bubble-style.test.js
+-rw-r--r-- 1 yvan1 197609  54201 Jun  3 15:36 updater.test.js
+-rw-r--r-- 1 yvan1 197609   2953 Jun  3 15:36 verify-sidecar-binaries.test.js
+-rw-r--r-- 1 yvan1 197609   9596 Jun  3 15:36 visible-margins.test.js
+-rw-r--r-- 1 yvan1 197609    963 Jun  3 15:36 vscode-extension.test.js
+-rw-r--r-- 1 yvan1 197609   3086 Jun  3 15:36 window-opacity-transition.test.js
+-rw-r--r-- 1 yvan1 197609  11743 Jun  3 15:36 windows-uninstall-cleanup.test.js
+-rw-r--r-- 1 yvan1 197609  11325 Jun  3 15:36 work-area.test.js
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/test/fakes:
+total 152
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 18203 Jun  3 15:36 migration-transitions.js
+-rw-r--r-- 1 yvan1 197609  3166 Jun  3 15:36 telegram-server.js
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/test/fixtures:
+total 128
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 ..
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 codex-pets
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/test/fixtures/codex-pets:
+total 0
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 ..
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 tiny-atlas-png
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/test/fixtures/codex-pets/tiny-atlas-png:
+total 46
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609   454 Jun  3 15:36 README.md
+-rw-r--r-- 1 yvan1 197609   181 Jun  3 15:36 pet.json
+-rw-r--r-- 1 yvan1 197609 43558 Jun  3 15:36 spritesheet.png
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/test/helpers:
+total 132
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 1384 Jun  3 15:36 load-focus-with-mock.js
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/themes:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 ..
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 calico
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 clawd
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 cloudling
+drwxr-xr-x 1 yvan1 197609 0 Jun  3 15:36 template
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/themes/calico:
+total 20
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 assets
+-rw-r--r-- 1 yvan1 197609 8671 Jun  3 15:36 theme.json
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/themes/calico/assets:
+total 11184
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609      0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 393976 Jun  3 15:36 calico-collapsing.apng
+-rw-r--r-- 1 yvan1 197609 468766 Jun  3 15:36 calico-dozing.apng
+-rw-r--r-- 1 yvan1 197609 304043 Jun  3 15:36 calico-error.apng
+-rw-r--r-- 1 yvan1 197609 737666 Jun  3 15:36 calico-happy.apng
+-rw-r--r-- 1 yvan1 197609  42606 Jun  3 15:36 calico-idle-follow.svg
+-rw-r--r-- 1 yvan1 197609 391264 Jun  3 15:36 calico-idle.apng
+-rw-r--r-- 1 yvan1 197609 339391 Jun  3 15:36 calico-mini-alert.apng
+-rw-r--r-- 1 yvan1 197609 360450 Jun  3 15:36 calico-mini-crabwalk.apng
+-rw-r--r-- 1 yvan1 197609 239534 Jun  3 15:36 calico-mini-enter.apng
+-rw-r--r-- 1 yvan1 197609 522438 Jun  3 15:36 calico-mini-happy.apng
+-rw-r--r-- 1 yvan1 197609 460253 Jun  3 15:36 calico-mini-idle.apng
+-rw-r--r-- 1 yvan1 197609 130822 Jun  3 15:36 calico-mini-peek.apng
+-rw-r--r-- 1 yvan1 197609 465539 Jun  3 15:36 calico-mini-sleep.apng
+-rw-r--r-- 1 yvan1 197609 385722 Jun  3 15:36 calico-notification.apng
+-rw-r--r-- 1 yvan1 197609 343433 Jun  3 15:36 calico-react-drag.apng
+-rw-r--r-- 1 yvan1 197609 387884 Jun  3 15:36 calico-react-left.apng
+-rw-r--r-- 1 yvan1 197609 391385 Jun  3 15:36 calico-react-poke.apng
+-rw-r--r-- 1 yvan1 197609 744525 Jun  3 15:36 calico-sleeping.apng
+-rw-r--r-- 1 yvan1 197609 389443 Jun  3 15:36 calico-thinking.apng
+-rw-r--r-- 1 yvan1 197609 389738 Jun  3 15:36 calico-waking.apng
+-rw-r--r-- 1 yvan1 197609 395074 Jun  3 15:36 calico-working-building.apng
+-rw-r--r-- 1 yvan1 197609 339332 Jun  3 15:36 calico-working-carrying.apng
+-rw-r--r-- 1 yvan1 197609 378387 Jun  3 15:36 calico-working-conducting.apng
+-rw-r--r-- 1 yvan1 197609 433078 Jun  3 15:36 calico-working-juggling.apng
+-rw-r--r-- 1 yvan1 197609 415869 Jun  3 15:36 calico-working-sweeping.apng
+-rw-r--r-- 1 yvan1 197609 819515 Jun  3 15:36 calico-working-typing.apng
+-rw-r--r-- 1 yvan1 197609 713303 Jun  3 15:36 calico-yawning.apng
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/themes/clawd:
+total 8
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 5851 Jun  3 15:36 theme.json
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/themes/cloudling:
+total 16
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 assets
+-rw-r--r-- 1 yvan1 197609 7459 Jun  3 15:36 theme.json
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/themes/cloudling/assets:
+total 628
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 16622 Jun  3 15:36 cloudling-attention.svg
+-rw-r--r-- 1 yvan1 197609 29043 Jun  3 15:36 cloudling-building.svg
+-rw-r--r-- 1 yvan1 197609 28863 Jun  3 15:36 cloudling-carrying.svg
+-rw-r--r-- 1 yvan1 197609 27871 Jun  3 15:36 cloudling-conducting.svg
+-rw-r--r-- 1 yvan1 197609 25394 Jun  3 15:36 cloudling-dozing-to-sleeping.svg
+-rw-r--r-- 1 yvan1 197609 14688 Jun  3 15:36 cloudling-dozing.svg
+-rw-r--r-- 1 yvan1 197609 20835 Jun  3 15:36 cloudling-error.svg
+-rw-r--r-- 1 yvan1 197609 28734 Jun  3 15:36 cloudling-idle-reading.svg
+-rw-r--r-- 1 yvan1 197609 22994 Jun  3 15:36 cloudling-idle-to-dozing.svg
+-rw-r--r-- 1 yvan1 197609 38117 Jun  3 15:36 cloudling-idle-to-sleeping.svg
+-rw-r--r-- 1 yvan1 197609 10103 Jun  3 15:36 cloudling-idle.svg
+-rw-r--r-- 1 yvan1 197609 26820 Jun  3 15:36 cloudling-juggling.svg
+-rw-r--r-- 1 yvan1 197609 16721 Jun  3 15:36 cloudling-mini-alert.svg
+-rw-r--r-- 1 yvan1 197609 14025 Jun  3 15:36 cloudling-mini-crabwalk.svg
+-rw-r--r-- 1 yvan1 197609  9250 Jun  3 15:36 cloudling-mini-enter-roll-in.svg
+-rw-r--r-- 1 yvan1 197609  9422 Jun  3 15:36 cloudling-mini-enter-sleep.svg
+-rw-r--r-- 1 yvan1 197609 17953 Jun  3 15:36 cloudling-mini-happy.svg
+-rw-r--r-- 1 yvan1 197609 10912 Jun  3 15:36 cloudling-mini-idle.svg
+-rw-r--r-- 1 yvan1 197609 13063 Jun  3 15:36 cloudling-mini-peek.svg
+-rw-r--r-- 1 yvan1 197609 11154 Jun  3 15:36 cloudling-mini-sleep.svg
+-rw-r--r-- 1 yvan1 197609 30530 Jun  3 15:36 cloudling-mini-typing.svg
+-rw-r--r-- 1 yvan1 197609 25707 Jun  3 15:36 cloudling-notification.svg
+-rw-r--r-- 1 yvan1 197609  4695 Jun  3 15:36 cloudling-react-drag.svg
+-rw-r--r-- 1 yvan1 197609 26169 Jun  3 15:36 cloudling-sleeping-to-idle.svg
+-rw-r--r-- 1 yvan1 197609 21635 Jun  3 15:36 cloudling-sleeping.svg
+-rw-r--r-- 1 yvan1 197609 13118 Jun  3 15:36 cloudling-sweeping.svg
+-rw-r--r-- 1 yvan1 197609 32171 Jun  3 15:36 cloudling-thinking.svg
+-rw-r--r-- 1 yvan1 197609 14068 Jun  3 15:36 cloudling-typing.svg
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/themes/template:
+total 8
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 assets
+-rw-r--r-- 1 yvan1 197609 4840 Jun  3 15:36 theme.json
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/themes/template/assets:
+total 4
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 2649 Jun  3 15:36 idle-follow.svg
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/tools:
+total 72
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 42802 Jun  3 15:36 calico-final.svg
+-rw-r--r-- 1 yvan1 197609  4182 Jun  3 15:36 calico-test.html
+drwxr-xr-x 1 yvan1 197609     0 Jun  3 15:36 copilot-permission-capture
+-rwxr-xr-x 1 yvan1 197609  5756 Jun  3 15:36 png2svg.py
+
+/tmp/cc-skills-extract/clawd-on-desk-main/clawd-on-desk-main/tools/copilot-permission-capture:
+total 28
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 .
+drwxr-xr-x 1 yvan1 197609    0 Jun  3 15:36 ..
+-rw-r--r-- 1 yvan1 197609 4270 Jun  3 15:36 README.md
+-rwxr-xr-x 1 yvan1 197609 4514 Jun  3 15:36 capture.js
+-rwxr-xr-x 1 yvan1 197609 7704 Jun  3 15:36 e2e-hook.js

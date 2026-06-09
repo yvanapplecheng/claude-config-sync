@@ -1,0 +1,1017 @@
+/tmp/cc-skills-extract/planning-with-files-master/:
+total 12
+drwxr-xr-x 1 yvan1 197609 0 Jun  4 15:08 .
+drwxr-xr-x 1 yvan1 197609 0 Jun  4 15:08 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files-master
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master:
+total 197
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 Jun  4 15:08 ..
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .claude-plugin
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .codebuddy
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .codex
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .continue
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .cursor
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .factory
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .gemini
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .github
+-rw-r--r-- 1 yvan1 197609   568 May 22 23:17 .gitignore
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .hermes
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .kiro
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .mastracode
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .opencode
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .pi
+-rw-r--r-- 1 yvan1 197609  5473 May 22 23:17 AGENTS.md
+-rw-r--r-- 1 yvan1 197609 77584 May 22 23:17 CHANGELOG.md
+-rw-r--r-- 1 yvan1 197609   797 May 22 23:17 CITATION.cff
+-rw-r--r-- 1 yvan1 197609 24847 May 22 23:17 CONTRIBUTORS.md
+-rw-r--r-- 1 yvan1 197609  1066 May 22 23:17 LICENSE
+-rw-r--r-- 1 yvan1 197609  3018 May 22 23:17 MIGRATION.md
+-rw-r--r-- 1 yvan1 197609 29571 May 22 23:17 README.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 commands
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 docs
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 examples
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 media
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 skills
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 templates
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 tests
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.claude-plugin:
+total 13
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  459 May 22 23:17 marketplace.json
+-rw-r--r-- 1 yvan1 197609 1029 May 22 23:17 plugin.json
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.codebuddy:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 skills
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.codebuddy/skills:
+total 4
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.codebuddy/skills/planning-with-files:
+total 28
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 16979 May 22 23:17 SKILL.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 references
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.codebuddy/skills/planning-with-files/references:
+total 20
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 4518 May 22 23:17 examples.md
+-rw-r--r-- 1 yvan1 197609 8066 May 22 23:17 reference.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.codebuddy/skills/planning-with-files/scripts:
+total 80
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  3950 May 22 23:17 attest-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  6500 May 22 23:17 attest-plan.sh
+-rw-r--r-- 1 yvan1 197609  1797 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  2523 May 22 23:17 check-complete.sh
+-rw-r--r-- 1 yvan1 197609  3806 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  7275 May 22 23:17 init-session.sh
+-rw-r--r-- 1 yvan1 197609  1227 May 22 23:17 resolve-plan-dir.ps1
+-rwxr-xr-x 1 yvan1 197609  3884 May 22 23:17 resolve-plan-dir.sh
+-rwxr-xr-x 1 yvan1 197609 21583 May 22 23:17 session-catchup.py
+-rw-r--r-- 1 yvan1 197609  1600 May 22 23:17 set-active-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  1505 May 22 23:17 set-active-plan.sh
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.codebuddy/skills/planning-with-files/templates:
+total 20
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 3561 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609 4001 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 4613 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.codex:
+total 16
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 hooks
+-rw-r--r-- 1 yvan1 197609 1941 May 22 23:17 hooks.json
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 skills
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.codex/hooks:
+total 36
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 __pycache__
+-rwxr-xr-x 1 yvan1 197609 2486 May 22 23:17 codex_hook_adapter.py
+-rwxr-xr-x 1 yvan1 197609  967 May 22 23:17 permission_request.py
+-rwxr-xr-x 1 yvan1 197609  404 May 22 23:17 post-tool-use.sh
+-rwxr-xr-x 1 yvan1 197609  516 May 22 23:17 post_tool_use.py
+-rwxr-xr-x 1 yvan1 197609  418 May 22 23:17 pre-tool-use.sh
+-rwxr-xr-x 1 yvan1 197609  739 May 22 23:17 pre_tool_use.py
+-rwxr-xr-x 1 yvan1 197609 2199 May 22 23:17 resolve-plan-dir.sh
+-rwxr-xr-x 1 yvan1 197609  580 May 22 23:17 session-start.sh
+-rwxr-xr-x 1 yvan1 197609  884 May 22 23:17 stop.py
+-rwxr-xr-x 1 yvan1 197609 1325 May 22 23:17 stop.sh
+-rwxr-xr-x 1 yvan1 197609 1054 May 22 23:17 user-prompt-submit.sh
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.codex/hooks/__pycache__:
+total 12
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 5576 May 22 23:17 codex_hook_adapter.cpython-314.pyc
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.codex/skills:
+total 4
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.codex/skills/planning-with-files:
+total 28
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 17052 May 22 23:17 SKILL.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 references
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.codex/skills/planning-with-files/references:
+total 20
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 4518 May 22 23:17 examples.md
+-rw-r--r-- 1 yvan1 197609 8066 May 22 23:17 reference.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.codex/skills/planning-with-files/scripts:
+total 80
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  3950 May 22 23:17 attest-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  6500 May 22 23:17 attest-plan.sh
+-rw-r--r-- 1 yvan1 197609  1797 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  2523 May 22 23:17 check-complete.sh
+-rw-r--r-- 1 yvan1 197609  3806 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  7275 May 22 23:17 init-session.sh
+-rw-r--r-- 1 yvan1 197609  1227 May 22 23:17 resolve-plan-dir.ps1
+-rwxr-xr-x 1 yvan1 197609  3884 May 22 23:17 resolve-plan-dir.sh
+-rwxr-xr-x 1 yvan1 197609 21583 May 22 23:17 session-catchup.py
+-rw-r--r-- 1 yvan1 197609  1600 May 22 23:17 set-active-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  1505 May 22 23:17 set-active-plan.sh
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.codex/skills/planning-with-files/templates:
+total 20
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 3561 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609 4001 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 4613 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.continue:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 prompts
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 skills
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.continue/prompts:
+total 4
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 1790 May 22 23:17 planning-with-files.prompt
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.continue/skills:
+total 0
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.continue/skills/planning-with-files:
+total 24
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 3090 May 22 23:17 SKILL.md
+-rw-r--r-- 1 yvan1 197609 4518 May 22 23:17 examples.md
+-rw-r--r-- 1 yvan1 197609 8066 May 22 23:17 reference.md
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 scripts
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.continue/skills/planning-with-files/scripts:
+total 76
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  3950 May 22 23:17 attest-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  6500 May 22 23:17 attest-plan.sh
+-rw-r--r-- 1 yvan1 197609  1797 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  2523 May 22 23:17 check-complete.sh
+-rw-r--r-- 1 yvan1 197609  3806 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  7275 May 22 23:17 init-session.sh
+-rw-r--r-- 1 yvan1 197609  1227 May 22 23:17 resolve-plan-dir.ps1
+-rwxr-xr-x 1 yvan1 197609  3884 May 22 23:17 resolve-plan-dir.sh
+-rwxr-xr-x 1 yvan1 197609 21583 May 22 23:17 session-catchup.py
+-rw-r--r-- 1 yvan1 197609  1600 May 22 23:17 set-active-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  1505 May 22 23:17 set-active-plan.sh
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.cursor:
+total 21
+drwxr-xr-x 1 yvan1 197609   0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609   0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609   0 May 22 23:17 hooks
+-rw-r--r-- 1 yvan1 197609 603 May 22 23:17 hooks.json
+-rw-r--r-- 1 yvan1 197609 771 May 22 23:17 hooks.windows.json
+drwxr-xr-x 1 yvan1 197609   0 May 22 23:17 skills
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.cursor/hooks:
+total 25
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  317 May 22 23:17 post-tool-use.ps1
+-rwxr-xr-x 1 yvan1 197609  306 May 22 23:17 post-tool-use.sh
+-rw-r--r-- 1 yvan1 197609  357 May 22 23:17 pre-tool-use.ps1
+-rwxr-xr-x 1 yvan1 197609  390 May 22 23:17 pre-tool-use.sh
+-rw-r--r-- 1 yvan1 197609 1465 May 22 23:17 stop.ps1
+-rwxr-xr-x 1 yvan1 197609 1672 May 22 23:17 stop.sh
+-rw-r--r-- 1 yvan1 197609  675 May 22 23:17 user-prompt-submit.ps1
+-rwxr-xr-x 1 yvan1 197609  535 May 22 23:17 user-prompt-submit.sh
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.cursor/skills:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.cursor/skills/planning-with-files:
+total 40
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 17006 May 22 23:17 SKILL.md
+-rw-r--r-- 1 yvan1 197609  4518 May 22 23:17 examples.md
+-rw-r--r-- 1 yvan1 197609  8066 May 22 23:17 reference.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.cursor/skills/planning-with-files/templates:
+total 20
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 3561 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609 4001 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 4613 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.factory:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 skills
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.factory/skills:
+total 4
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.factory/skills/planning-with-files:
+total 44
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 17053 May 22 23:17 SKILL.md
+-rw-r--r-- 1 yvan1 197609  4518 May 22 23:17 examples.md
+-rw-r--r-- 1 yvan1 197609  8066 May 22 23:17 references.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.factory/skills/planning-with-files/scripts:
+total 80
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  3950 May 22 23:17 attest-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  6500 May 22 23:17 attest-plan.sh
+-rw-r--r-- 1 yvan1 197609  1797 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  2523 May 22 23:17 check-complete.sh
+-rw-r--r-- 1 yvan1 197609  3806 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  7275 May 22 23:17 init-session.sh
+-rw-r--r-- 1 yvan1 197609  1227 May 22 23:17 resolve-plan-dir.ps1
+-rwxr-xr-x 1 yvan1 197609  3884 May 22 23:17 resolve-plan-dir.sh
+-rwxr-xr-x 1 yvan1 197609 21583 May 22 23:17 session-catchup.py
+-rw-r--r-- 1 yvan1 197609  1600 May 22 23:17 set-active-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  1505 May 22 23:17 set-active-plan.sh
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.factory/skills/planning-with-files/templates:
+total 20
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 3561 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609 4001 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 4613 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.gemini:
+total 16
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 hooks
+-rw-r--r-- 1 yvan1 197609 1966 May 22 23:17 settings.json
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 skills
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.gemini/hooks:
+total 21
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rwxr-xr-x 1 yvan1 197609  427 May 22 23:17 after-tool.sh
+-rwxr-xr-x 1 yvan1 197609  895 May 22 23:17 before-model.sh
+-rwxr-xr-x 1 yvan1 197609  749 May 22 23:17 before-tool.sh
+-rwxr-xr-x 1 yvan1 197609  827 May 22 23:17 session-end.sh
+-rwxr-xr-x 1 yvan1 197609 1197 May 22 23:17 session-start.sh
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.gemini/skills:
+total 4
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.gemini/skills/planning-with-files:
+total 16
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 5652 May 22 23:17 SKILL.md
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 references
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.gemini/skills/planning-with-files/references:
+total 20
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 4518 May 22 23:17 examples.md
+-rw-r--r-- 1 yvan1 197609 8066 May 22 23:17 reference.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.gemini/skills/planning-with-files/scripts:
+total 80
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  3950 May 22 23:17 attest-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  6500 May 22 23:17 attest-plan.sh
+-rw-r--r-- 1 yvan1 197609  1797 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  2523 May 22 23:17 check-complete.sh
+-rw-r--r-- 1 yvan1 197609  3806 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  7275 May 22 23:17 init-session.sh
+-rw-r--r-- 1 yvan1 197609  1227 May 22 23:17 resolve-plan-dir.ps1
+-rwxr-xr-x 1 yvan1 197609  3884 May 22 23:17 resolve-plan-dir.sh
+-rwxr-xr-x 1 yvan1 197609 21583 May 22 23:17 session-catchup.py
+-rw-r--r-- 1 yvan1 197609  1600 May 22 23:17 set-active-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  1505 May 22 23:17 set-active-plan.sh
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.gemini/skills/planning-with-files/templates:
+total 20
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 3561 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609 4001 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 4613 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.github:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 hooks
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 workflows
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.github/hooks:
+total 8
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 1107 May 22 23:17 planning-with-files.json
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 scripts
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.github/hooks/scripts:
+total 41
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 2012 May 22 23:17 agent-stop.ps1
+-rwxr-xr-x 1 yvan1 197609 1707 May 22 23:17 agent-stop.sh
+-rw-r--r-- 1 yvan1 197609 1028 May 22 23:17 error-occurred.ps1
+-rwxr-xr-x 1 yvan1 197609 1360 May 22 23:17 error-occurred.sh
+-rw-r--r-- 1 yvan1 197609  668 May 22 23:17 post-tool-use.ps1
+-rwxr-xr-x 1 yvan1 197609  460 May 22 23:17 post-tool-use.sh
+-rw-r--r-- 1 yvan1 197609 1028 May 22 23:17 pre-tool-use.ps1
+-rwxr-xr-x 1 yvan1 197609 1142 May 22 23:17 pre-tool-use.sh
+-rw-r--r-- 1 yvan1 197609 1730 May 22 23:17 session-start.ps1
+-rwxr-xr-x 1 yvan1 197609 1726 May 22 23:17 session-start.sh
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.github/workflows:
+total 8
+drwxr-xr-x 1 yvan1 197609   0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609   0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 753 May 22 23:17 skill-optimize-apply.yml
+-rw-r--r-- 1 yvan1 197609 820 May 22 23:17 skill-review.yml
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.hermes:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 commands
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 plugins
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 skills
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.hermes/commands:
+total 2
+drwxr-xr-x 1 yvan1 197609   0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609   0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 206 May 22 23:17 plan-status.md
+-rw-r--r-- 1 yvan1 197609 400 May 22 23:17 plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.hermes/plugins:
+total 4
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.hermes/plugins/planning-with-files:
+total 35
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 2638 May 22 23:17 __init__.py
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 __pycache__
+-rw-r--r-- 1 yvan1 197609  208 May 22 23:17 constants.py
+-rw-r--r-- 1 yvan1 197609  487 May 22 23:17 hook_state.py
+-rw-r--r-- 1 yvan1 197609 2570 May 22 23:17 hooks.py
+-rw-r--r-- 1 yvan1 197609 2528 May 22 23:17 paths.py
+-rw-r--r-- 1 yvan1 197609 6655 May 22 23:17 planning_files.py
+-rw-r--r-- 1 yvan1 197609  347 May 22 23:17 plugin.yaml
+-rw-r--r-- 1 yvan1 197609 1579 May 22 23:17 tools.py
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.hermes/plugins/planning-with-files/__pycache__:
+total 49
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  2689 May 22 23:17 __init__.cpython-314.pyc
+-rw-r--r-- 1 yvan1 197609   521 May 22 23:17 constants.cpython-314.pyc
+-rw-r--r-- 1 yvan1 197609  1340 May 22 23:17 hook_state.cpython-314.pyc
+-rw-r--r-- 1 yvan1 197609  4298 May 22 23:17 hooks.cpython-314.pyc
+-rw-r--r-- 1 yvan1 197609  5182 May 22 23:17 paths.cpython-314.pyc
+-rw-r--r-- 1 yvan1 197609 10578 May 22 23:17 planning_files.cpython-314.pyc
+-rw-r--r-- 1 yvan1 197609  2851 May 22 23:17 tools.cpython-314.pyc
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.hermes/skills:
+total 0
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.hermes/skills/planning-with-files:
+total 16
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 8027 May 22 23:17 SKILL.md
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.hermes/skills/planning-with-files/scripts:
+total 52
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  1797 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  1737 May 22 23:17 check-complete.sh
+-rwxr-xr-x 1 yvan1 197609  1013 May 22 23:17 check-continue.sh
+-rw-r--r-- 1 yvan1 197609  3806 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  3706 May 22 23:17 init-session.sh
+-rwxr-xr-x 1 yvan1 197609 12829 May 22 23:17 session-catchup.py
+-rwxr-xr-x 1 yvan1 197609  9718 May 22 23:17 sync-ide-folders.py
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.hermes/skills/planning-with-files/templates:
+total 28
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 3336 May 22 23:17 analytics_findings.md
+-rw-r--r-- 1 yvan1 197609 3980 May 22 23:17 analytics_task_plan.md
+-rw-r--r-- 1 yvan1 197609 3561 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609 4001 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 4613 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.kiro:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 skills
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.kiro/skills:
+total 0
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.kiro/skills/planning-with-files:
+total 12
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 4415 May 22 23:17 SKILL.md
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 assets
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 references
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.kiro/skills/planning-with-files/assets:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.kiro/skills/planning-with-files/assets/scripts:
+total 24
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 1867 May 22 23:17 bootstrap.ps1
+-rwxr-xr-x 1 yvan1 197609 1484 May 22 23:17 bootstrap.sh
+-rw-r--r-- 1 yvan1 197609 1413 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609 1477 May 22 23:17 check-complete.sh
+-rwxr-xr-x 1 yvan1 197609 3778 May 22 23:17 session-catchup.py
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.kiro/skills/planning-with-files/assets/templates:
+total 21
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 3561 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609  339 May 22 23:17 planning-context.md
+-rw-r--r-- 1 yvan1 197609 4001 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 4613 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.kiro/skills/planning-with-files/references:
+total 16
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 3705 May 22 23:17 manus-principles.md
+-rw-r--r-- 1 yvan1 197609 1277 May 22 23:17 planning-rules.md
+-rw-r--r-- 1 yvan1 197609 1814 May 22 23:17 planning-templates.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.mastracode:
+total 12
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 1540 May 22 23:17 hooks.json
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 skills
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.mastracode/skills:
+total 4
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.mastracode/skills/planning-with-files:
+total 28
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 17025 May 22 23:17 SKILL.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 references
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.mastracode/skills/planning-with-files/references:
+total 20
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 4518 May 22 23:17 examples.md
+-rw-r--r-- 1 yvan1 197609 8066 May 22 23:17 reference.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.mastracode/skills/planning-with-files/scripts:
+total 32
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 1678 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609 1737 May 22 23:17 check-complete.sh
+-rw-r--r-- 1 yvan1 197609 2431 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609 2254 May 22 23:17 init-session.sh
+-rwxr-xr-x 1 yvan1 197609 8188 May 22 23:17 session-catchup.py
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.mastracode/skills/planning-with-files/templates:
+total 20
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 3561 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609 4001 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 4613 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.opencode:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 skills
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.opencode/skills:
+total 4
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.opencode/skills/planning-with-files:
+total 44
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 17041 May 22 23:17 SKILL.md
+-rw-r--r-- 1 yvan1 197609  4518 May 22 23:17 examples.md
+-rw-r--r-- 1 yvan1 197609  8066 May 22 23:17 reference.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.opencode/skills/planning-with-files/scripts:
+total 48
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  1678 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  1618 May 22 23:17 check-complete.sh
+-rw-r--r-- 1 yvan1 197609  2431 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  2254 May 22 23:17 init-session.sh
+-rwxr-xr-x 1 yvan1 197609 21583 May 22 23:17 session-catchup.py
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.opencode/skills/planning-with-files/templates:
+total 20
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 3561 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609 4001 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 4613 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.pi:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 skills
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.pi/skills:
+total 4
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.pi/skills/planning-with-files:
+total 44
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  2289 May 22 23:17 README.md
+-rw-r--r-- 1 yvan1 197609 10769 May 22 23:17 SKILL.md
+-rw-r--r-- 1 yvan1 197609  4518 May 22 23:17 examples.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 extensions
+-rw-r--r-- 1 yvan1 197609   909 May 22 23:17 package.json
+-rw-r--r-- 1 yvan1 197609  8066 May 22 23:17 reference.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.pi/skills/planning-with-files/extensions:
+total 8
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.pi/skills/planning-with-files/extensions/planning-with-files:
+total 42
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609   672 May 22 23:17 README.md
+-rw-r--r-- 1 yvan1 197609  1396 May 22 23:17 attestation.ts
+-rw-r--r-- 1 yvan1 197609  1525 May 22 23:17 constants.ts
+-rw-r--r-- 1 yvan1 197609   211 May 22 23:17 index.ts
+-rw-r--r-- 1 yvan1 197609  5124 May 22 23:17 plan.ts
+-rw-r--r-- 1 yvan1 197609 19112 May 22 23:17 runtime.ts
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.pi/skills/planning-with-files/scripts:
+total 80
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  3950 May 22 23:17 attest-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  6500 May 22 23:17 attest-plan.sh
+-rw-r--r-- 1 yvan1 197609  1797 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  2523 May 22 23:17 check-complete.sh
+-rw-r--r-- 1 yvan1 197609  3806 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  7275 May 22 23:17 init-session.sh
+-rw-r--r-- 1 yvan1 197609  1227 May 22 23:17 resolve-plan-dir.ps1
+-rwxr-xr-x 1 yvan1 197609  3884 May 22 23:17 resolve-plan-dir.sh
+-rwxr-xr-x 1 yvan1 197609 21583 May 22 23:17 session-catchup.py
+-rw-r--r-- 1 yvan1 197609  1600 May 22 23:17 set-active-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  1505 May 22 23:17 set-active-plan.sh
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/.pi/skills/planning-with-files/templates:
+total 20
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 3561 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609 4001 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 4613 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/commands:
+total 34
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  727 May 22 23:17 plan-ar.md
+-rw-r--r-- 1 yvan1 197609 1508 May 22 23:17 plan-attest.md
+-rw-r--r-- 1 yvan1 197609  580 May 22 23:17 plan-de.md
+-rw-r--r-- 1 yvan1 197609  639 May 22 23:17 plan-es.md
+-rw-r--r-- 1 yvan1 197609 1804 May 22 23:17 plan-goal.md
+-rw-r--r-- 1 yvan1 197609 2070 May 22 23:17 plan-loop.md
+-rw-r--r-- 1 yvan1 197609  515 May 22 23:17 plan-zh.md
+-rw-r--r-- 1 yvan1 197609  508 May 22 23:17 plan.md
+-rw-r--r-- 1 yvan1 197609  417 May 22 23:17 start.md
+-rw-r--r-- 1 yvan1 197609 1265 May 22 23:17 status.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/docs:
+total 200
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  4918 May 22 23:17 adal.md
+-rw-r--r-- 1 yvan1 197609  6674 May 22 23:17 antigravity.md
+-rw-r--r-- 1 yvan1 197609  5942 May 22 23:17 article-v2.md
+-rw-r--r-- 1 yvan1 197609 10279 May 22 23:17 article.md
+-rw-r--r-- 1 yvan1 197609  6607 May 22 23:17 boxlite.md
+-rw-r--r-- 1 yvan1 197609  5631 May 22 23:17 cache-safe-diagram.md
+-rw-r--r-- 1 yvan1 197609  6633 May 22 23:17 codebuddy.md
+-rw-r--r-- 1 yvan1 197609  5517 May 22 23:17 codex.md
+-rw-r--r-- 1 yvan1 197609  2166 May 22 23:17 continue.md
+-rw-r--r-- 1 yvan1 197609  3863 May 22 23:17 copilot.md
+-rw-r--r-- 1 yvan1 197609  5523 May 22 23:17 cursor.md
+-rw-r--r-- 1 yvan1 197609  8473 May 22 23:17 evals.md
+-rw-r--r-- 1 yvan1 197609  6978 May 22 23:17 factory.md
+-rw-r--r-- 1 yvan1 197609  6178 May 22 23:17 gemini.md
+-rw-r--r-- 1 yvan1 197609  6292 May 22 23:17 hermes.md
+-rw-r--r-- 1 yvan1 197609  3368 May 22 23:17 installation.md
+-rw-r--r-- 1 yvan1 197609  6326 May 22 23:17 kilocode.md
+-rw-r--r-- 1 yvan1 197609  3586 May 22 23:17 kiro.md
+-rw-r--r-- 1 yvan1 197609  5702 May 22 23:17 mastra.md
+-rw-r--r-- 1 yvan1 197609  2896 May 22 23:17 openclaw.md
+-rw-r--r-- 1 yvan1 197609  3124 May 22 23:17 opencode.md
+-rw-r--r-- 1 yvan1 197609  2865 May 22 23:17 pi-agent.md
+-rw-r--r-- 1 yvan1 197609  6775 May 22 23:17 quickstart.md
+-rw-r--r-- 1 yvan1 197609  5789 May 22 23:17 troubleshooting.md
+-rw-r--r-- 1 yvan1 197609  2794 May 22 23:17 windows.md
+-rw-r--r-- 1 yvan1 197609 11972 May 22 23:17 workflow.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/examples:
+total 28
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 17749 May 22 23:17 README.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 boxlite
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/examples/boxlite:
+total 5
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  616 May 22 23:17 README.md
+-rw-r--r-- 1 yvan1 197609 3959 May 22 23:17 quickstart.py
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/media:
+total 1792
+drwxr-xr-x 1 yvan1 197609       0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609       0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 1823958 May 22 23:17 banner.png
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/scripts:
+total 116
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 10740 May 22 23:17 _v240_update_hook_bodies.py
+-rw-r--r-- 1 yvan1 197609  3950 May 22 23:17 attest-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  6500 May 22 23:17 attest-plan.sh
+-rwxr-xr-x 1 yvan1 197609  6808 May 22 23:17 bump-version.py
+-rw-r--r-- 1 yvan1 197609  1797 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  2523 May 22 23:17 check-complete.sh
+-rwxr-xr-x 1 yvan1 197609  1021 May 22 23:17 check-continue.sh
+-rw-r--r-- 1 yvan1 197609  3806 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  7275 May 22 23:17 init-session.sh
+-rw-r--r-- 1 yvan1 197609  1227 May 22 23:17 resolve-plan-dir.ps1
+-rwxr-xr-x 1 yvan1 197609  3884 May 22 23:17 resolve-plan-dir.sh
+-rwxr-xr-x 1 yvan1 197609 18876 May 22 23:17 session-catchup.py
+-rw-r--r-- 1 yvan1 197609  1600 May 22 23:17 set-active-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  1505 May 22 23:17 set-active-plan.sh
+-rwxr-xr-x 1 yvan1 197609  9919 May 22 23:17 sync-ide-folders.py
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills:
+total 16
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files-ar
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files-de
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files-es
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files-zh
+drwxr-xr-x 1 yvan1 197609 0 May 22 23:17 planning-with-files-zht
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files:
+total 52
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 23773 May 22 23:17 SKILL.md
+-rw-r--r-- 1 yvan1 197609  4518 May 22 23:17 examples.md
+-rw-r--r-- 1 yvan1 197609  8066 May 22 23:17 reference.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files/scripts:
+total 80
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  3950 May 22 23:17 attest-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  6500 May 22 23:17 attest-plan.sh
+-rw-r--r-- 1 yvan1 197609  1797 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  2523 May 22 23:17 check-complete.sh
+-rw-r--r-- 1 yvan1 197609  3806 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  7275 May 22 23:17 init-session.sh
+-rw-r--r-- 1 yvan1 197609  1227 May 22 23:17 resolve-plan-dir.ps1
+-rwxr-xr-x 1 yvan1 197609  3884 May 22 23:17 resolve-plan-dir.sh
+-rwxr-xr-x 1 yvan1 197609 21583 May 22 23:17 session-catchup.py
+-rw-r--r-- 1 yvan1 197609  1600 May 22 23:17 set-active-plan.ps1
+-rwxr-xr-x 1 yvan1 197609  1505 May 22 23:17 set-active-plan.sh
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files/templates:
+total 20
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 3561 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609 4001 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 4613 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-ar:
+total 32
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 21428 May 22 23:17 SKILL.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-ar/scripts:
+total 36
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  2310 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  2267 May 22 23:17 check-complete.sh
+-rw-r--r-- 1 yvan1 197609  3316 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  3147 May 22 23:17 init-session.sh
+-rwxr-xr-x 1 yvan1 197609 15765 May 22 23:17 session-catchup.py
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-ar/templates:
+total 24
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 4945 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609 5754 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 6578 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-de:
+total 28
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 19286 May 22 23:17 SKILL.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-de/scripts:
+total 36
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  1942 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  1889 May 22 23:17 check-complete.sh
+-rw-r--r-- 1 yvan1 197609  2688 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  2519 May 22 23:17 init-session.sh
+-rwxr-xr-x 1 yvan1 197609 15631 May 22 23:17 session-catchup.py
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-de/templates:
+total 24
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 4143 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609 4721 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 5501 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-es:
+total 28
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 19457 May 22 23:17 SKILL.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-es/scripts:
+total 36
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  1962 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  1914 May 22 23:17 check-complete.sh
+-rw-r--r-- 1 yvan1 197609  2684 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  2515 May 22 23:17 init-session.sh
+-rwxr-xr-x 1 yvan1 197609 15630 May 22 23:17 session-catchup.py
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-es/templates:
+total 24
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 4182 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609 4603 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 5242 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-zh:
+total 28
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 18037 May 22 23:17 SKILL.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-zh/scripts:
+total 36
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  1850 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  1804 May 22 23:17 check-complete.sh
+-rw-r--r-- 1 yvan1 197609  2479 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  2310 May 22 23:17 init-session.sh
+-rwxr-xr-x 1 yvan1 197609 15459 May 22 23:17 session-catchup.py
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-zh/templates:
+total 9
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  475 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609  909 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 1275 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-zht:
+total 28
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 18070 May 22 23:17 SKILL.md
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 scripts
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 templates
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-zht/scripts:
+total 36
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  1853 May 22 23:17 check-complete.ps1
+-rwxr-xr-x 1 yvan1 197609  1807 May 22 23:17 check-complete.sh
+-rw-r--r-- 1 yvan1 197609  2408 May 22 23:17 init-session.ps1
+-rwxr-xr-x 1 yvan1 197609  2239 May 22 23:17 init-session.sh
+-rwxr-xr-x 1 yvan1 197609 15494 May 22 23:17 session-catchup.py
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/skills/planning-with-files-zht/templates:
+total 9
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  475 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609  919 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 1284 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/templates:
+total 40
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609    0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609 3336 May 22 23:17 analytics_findings.md
+-rw-r--r-- 1 yvan1 197609 3980 May 22 23:17 analytics_task_plan.md
+-rw-r--r-- 1 yvan1 197609 3561 May 22 23:17 findings.md
+-rw-r--r-- 1 yvan1 197609 1613 May 22 23:17 loop.md
+-rw-r--r-- 1 yvan1 197609 4001 May 22 23:17 progress.md
+-rw-r--r-- 1 yvan1 197609 4613 May 22 23:17 task_plan.md
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/tests:
+total 196
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 __pycache__
+-rw-r--r-- 1 yvan1 197609  3670 May 22 23:17 test_canonical_script_sync.py
+-rw-r--r-- 1 yvan1 197609  5501 May 22 23:17 test_check_complete_resolver.py
+-rwxr-xr-x 1 yvan1 197609  6880 May 22 23:17 test_clear_recovery.sh
+-rw-r--r-- 1 yvan1 197609  6588 May 22 23:17 test_codex_hooks.py
+-rw-r--r-- 1 yvan1 197609  6555 May 22 23:17 test_codex_session_isolation.py
+-rw-r--r-- 1 yvan1 197609 18585 May 22 23:17 test_hermes_adapter.py
+-rw-r--r-- 1 yvan1 197609 10873 May 22 23:17 test_hook_body_v240.py
+-rw-r--r-- 1 yvan1 197609  7299 May 22 23:17 test_hook_resolver_integration.py
+-rw-r--r-- 1 yvan1 197609  4258 May 22 23:17 test_init_session_slug.py
+-rw-r--r-- 1 yvan1 197609  1747 May 22 23:17 test_path_fix.py
+-rw-r--r-- 1 yvan1 197609  1203 May 22 23:17 test_pi_docs_hook_support.py
+-rw-r--r-- 1 yvan1 197609  4721 May 22 23:17 test_pi_extension_capabilities.py
+-rw-r--r-- 1 yvan1 197609  1407 May 22 23:17 test_pi_extension_packaging.py
+-rw-r--r-- 1 yvan1 197609  6508 May 22 23:17 test_plan_attestation.py
+-rw-r--r-- 1 yvan1 197609  4349 May 22 23:17 test_precompact_hook.py
+-rw-r--r-- 1 yvan1 197609  9404 May 22 23:17 test_resolve_plan_dir.py
+-rw-r--r-- 1 yvan1 197609   814 May 22 23:17 test_script_permissions.py
+-rw-r--r-- 1 yvan1 197609  8306 May 22 23:17 test_session_catchup.py
+-rw-r--r-- 1 yvan1 197609  6459 May 22 23:17 test_session_catchup_opencode.py
+-rw-r--r-- 1 yvan1 197609  4360 May 22 23:17 test_set_active_plan.py
+-rw-r--r-- 1 yvan1 197609  5359 May 22 23:17 test_skill_md_version_parity.py
+-rw-r--r-- 1 yvan1 197609  2745 May 22 23:17 test_v238_command_files.py
+
+/tmp/cc-skills-extract/planning-with-files-master/planning-with-files-master/tests/__pycache__:
+total 168
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 .
+drwxr-xr-x 1 yvan1 197609     0 May 22 23:17 ..
+-rw-r--r-- 1 yvan1 197609  6607 May 22 23:17 test_canonical_script_sync.cpython-314-pytest-9.0.3.pyc
+-rw-r--r-- 1 yvan1 197609  9944 May 22 23:17 test_codex_hooks.cpython-314-pytest-9.0.3.pyc
+-rw-r--r-- 1 yvan1 197609 11038 May 22 23:17 test_codex_session_isolation.cpython-314-pytest-9.0.3.pyc
+-rw-r--r-- 1 yvan1 197609 37987 May 22 23:17 test_hermes_adapter.cpython-314-pytest-9.0.3.pyc
+-rw-r--r-- 1 yvan1 197609 13324 May 22 23:17 test_hook_resolver_integration.cpython-314-pytest-9.0.3.pyc
+-rw-r--r-- 1 yvan1 197609  9802 May 22 23:17 test_init_session_slug.cpython-314-pytest-9.0.3.pyc
+-rw-r--r-- 1 yvan1 197609  3155 May 22 23:17 test_path_fix.cpython-314-pytest-9.0.3.pyc
+-rw-r--r-- 1 yvan1 197609  9602 May 22 23:17 test_resolve_plan_dir.cpython-314-pytest-9.0.3.pyc
+-rw-r--r-- 1 yvan1 197609  2762 May 22 23:17 test_script_permissions.cpython-314-pytest-9.0.3.pyc
+-rw-r--r-- 1 yvan1 197609 12980 May 22 23:17 test_session_catchup.cpython-314-pytest-9.0.3.pyc
+-rw-r--r-- 1 yvan1 197609  4819 May 22 23:17 test_session_catchup.cpython-314.pyc
+-rw-r--r-- 1 yvan1 197609  8383 May 22 23:17 test_set_active_plan.cpython-314-pytest-9.0.3.pyc

@@ -1,0 +1,6 @@
+[2026-06-05T01:25:17.194Z] [supervisor] ─── daemon start ─── version=2.1.163 pid=2360 origin=transient
+[2026-06-05T01:25:18.106Z] [supervisor] auth: no token found, will re-check keychain every 30s
+[2026-06-05T01:25:18.378Z] [supervisor] workers=0
+[2026-06-05T01:25:18.640Z] [bg] bg spawned 772e1417 (spare)
+[2026-06-05T01:25:18.642Z] [bg] bg spawned ae3d62a0 (slash)
+[2026-06-05T02:25:19.270Z] [bg] bg settled 772e1417 (done)

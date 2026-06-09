@@ -1,0 +1,41 @@
+{
+  "state": "working",
+  "detail": "removed old registration; now re-registering",
+  "tempo": "idle",
+  "inFlight": {
+    "tasks": 0,
+    "queued": 0,
+    "kinds": []
+  },
+  "output": null,
+  "children": null,
+  "linkScanOffset": 1086756,
+  "linkScanPath": "C:\\Users\\yvan1\\.claude\\projects\\C--Users-yvan1\\ae3d62a0-f729-466c-8b99-563805c28c60.jsonl",
+  "template": "bg",
+  "respawnFlags": [
+    "--add-dir",
+    "C:/Users/yvan1",
+    "--permission-mode",
+    "auto"
+  ],
+  "intent": "make sure the session index is auto updated once a session is ctreated and closed.",
+  "name": "General project setup",
+  "nameSource": "auto",
+  "sessionId": "ae3d62a0-f729-466c-8b99-563805c28c60",
+  "resumeSessionId": "ae3d62a0-f729-466c-8b99-563805c28c60",
+  "daemonShort": "ae3d62a0",
+  "cliVersion": "2.1.163",
+  "cwd": "C:\\Users\\yvan1",
+  "bgIsolation": "none",
+  "providerEnv": {},
+  "sessionPermissionRules": {
+    "allow": [
+      "Edit(~/.claude/**)"
+    ],
+    "deny": []
+  },
+  "backend": "daemon",
+  "createdAt": "2026-06-05T01:25:11.462Z",
+  "updatedAt": "2026-06-05T02:09:47.798Z",
+  "firstTerminalAt": "2026-06-05T01:26:39.593Z"
+}

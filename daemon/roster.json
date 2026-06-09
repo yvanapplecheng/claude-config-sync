@@ -1,0 +1,63 @@
+{
+  "proto": 1,
+  "supervisorPid": 2360,
+  "updatedAt": 1780626319277,
+  "workers": {
+    "ae3d62a0": {
+      "pid": 12592,
+      "sessionId": "ae3d62a0-f729-466c-8b99-563805c28c60",
+      "rendezvousSock": "\\\\.\\pipe\\cc-daemon-5fd791095e059ff1-rv-ae3d62a0",
+      "ptySock": "\\\\.\\pipe\\cc-daemon-5fd791095e059ff1-pty-ae3d62a0",
+      "cliVersion": "2.1.163",
+      "startedAt": 1780622718641,
+      "attempt": 1,
+      "cwd": "C:\\Users\\yvan1",
+      "dispatch": {
+        "proto": 1,
+        "short": "ae3d62a0",
+        "nonce": "c82f404d",
+        "sessionId": "ae3d62a0-f729-466c-8b99-563805c28c60",
+        "createdAt": 1780622711601,
+        "source": "slash",
+        "cwd": "C:\\Users\\yvan1",
+        "launch": {
+          "mode": "resume",
+          "sessionId": "C:\\Users\\yvan1\\.claude\\projects\\C--Users-yvan1\\0ee86502-13d6-4327-a84a-22388c6ec704.jsonl",
+          "fork": true,
+          "flagArgs": [
+            "--add-dir",
+            "C:/Users/yvan1",
+            "--permission-mode",
+            "auto"
+          ]
+        },
+        "env": {
+          "CLAUDE_BG_ISOLATION": "none",
+          "CLAUDE_BG_SESSION_PERMISSION_RULES": "{\"allow\":[\"Edit(~/.claude/**)\"],\"deny\":[]}"
+        },
+        "isolation": "none",
+        "respawnFlags": [
+          "--add-dir",
+          "C:/Users/yvan1",
+          "--permission-mode",
+          "auto"
+        ],
+        "seed": {
+          "intent": "make sure the session index is auto updated once a session is ctreated and closed.",
+          "name": "General project setup"
+        },
+        "cols": 88,
+        "rows": 51
+      },
+      "decModes": [
+        1004,
+        1000,
+        1002,
+        1003,
+        1006,
+        2004,
+        2031
+      ]
+    }
+  }
+}

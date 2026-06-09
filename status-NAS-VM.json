@@ -1,0 +1,18 @@
+﻿{
+    "skills":  271,
+    "memory":  true,
+    "lastSync":  "2026-06-09 11:51:34",
+    "pull":  "FAIL",
+    "init":  "already",
+    "machine":  "NAS-VM",
+    "claudeMd":  true,
+    "plugins":  0,
+    "errors":  [
+                   "pull"
+               ],
+    "hook":  true,
+    "clawdInstalled":  false,
+    "clawdRunning":  false,
+    "ok":  false,
+    "manifestSync":  "ok"
+}

@@ -1,0 +1,252 @@
+.claude\backups\.claude.json.backup.1780632700436:129:        "C:/Users/yvan1/.claude/scripts/cc-wechat-fixed/dist/server.js"
+.claude\backups\.claude.json.backup.1780636039148:131:        "C:/Users/yvan1/.claude/scripts/cc-wechat-fixed/dist/server.js"
+.claude\backups\.claude.json.backup.1780636190327:130:        "C:/Users/yvan1/.claude/scripts/cc-wechat-fixed/dist/server.js"
+.claude\history.jsonl:58:{"display":"cc-wechat then","pastedContents":{},"timestamp":1780623993862,"project":"C:\\Users\\yvan1","sessionId":"ae3d62a0-f729-466c-8b99-563805c28c60"}
+.claude\history.jsonl:70:{"display":"check the cc-wechat","pastedContents":{},"timestamp":1780625570425,"project":"C:\\Users\\yvan1","sessionId":"354b1657-02d8-41c8-980e-8398aef2dc18"}
+.claude\history.jsonl:72:{"display":"npx cc-wechat? this is after i scanned","pastedContents":{},"timestamp":1780625958053,"project":"C:\\Users\\yvan1","sessionId":"354b1657-02d8-41c8-980e-8398aef2dc18"}
+.claude\history.jsonl:80:{"display":"pc restarted, claude code restarted, how's cc-wechat","pastedContents":{},"timestamp":1780627533977,"project":"C:\\Users\\yvan1","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\history.jsonl:91:{"display":"uninstall cc-wechat","pastedContents":{},"timestamp":1780636809151,"project":"C:\\Users\\yvan1","sessionId":"54f75f73-d4d5-4387-a60a-eaa28af5f1ba"}
+.claude\backups\.claude.json.backup.1780636770782:130:        "C:/Users/yvan1/.claude/scripts/cc-wechat-fixed/dist/server.js"
+.claude\backups\.claude.json.backup.1780636279463:131:        "C:/Users/yvan1/.claude/scripts/cc-wechat-fixed/dist/server.js"
+.claude\file-history\f20c21c6-7f95-4dec-8435-ff8a2fd26621\a702f5fdeabeb829@v2:3: * cc-wechat MCP Server 主入口
+.claude\file-history\f20c21c6-7f95-4dec-8435-ff8a2fd26621\a702f5fdeabeb829@v1:3: * cc-wechat MCP Server 主入口
+.claude\file-history\f20c21c6-7f95-4dec-8435-ff8a2fd26621\7a2d3a2d4d95b33e@v3:131:        "C:/Users/yvan1/.claude/scripts/cc-wechat-fixed/dist/server.js"
+.claude\file-history\f20c21c6-7f95-4dec-8435-ff8a2fd26621\7a2d3a2d4d95b33e@v2:131:        "C:/Users/yvan1/.claude/scripts/cc-wechat-fixed/dist/server.js"
+.claude\file-history\f20c21c6-7f95-4dec-8435-ff8a2fd26621\7a2d3a2d4d95b33e@v1:129:        "cc-wechat@latest"
+.claude\file-history\f20c21c6-7f95-4dec-8435-ff8a2fd26621\158888ce18c5f7ae@v2:2: * cc-wechat 类型定义 — iLink Bot API 请求/响应/消息结构
+.claude\file-history\f20c21c6-7f95-4dec-8435-ff8a2fd26621\158888ce18c5f7ae@v1:2: * cc-wechat 类型定义 — iLink Bot API 请求/响应/消息结构
+.claude\tasks\f20c21c6-7f95-4dec-8435-ff8a2fd26621\1.json:4:  "description": "Add H5/link message type support to cc-wechat's MessageItemType enum and extractText function. Currently only TEXT(1)/IMAGE(2)/VOICE(3)/FILE(4)/VIDEO(5) are handled — H5/链接卡片 messages silently fall through to '[空消息]'.",
+.claude\tasks\f20c21c6-7f95-4dec-8435-ff8a2fd26621\1.json:5:  "activeForm": "Fixing H5 message handling in cc-wechat",
+.claude\file-history\ae3d62a0-f729-466c-8b99-563805c28c60\622404c52baac556@v2:3: * Launch cc-wechat browser-based QR login.
+.claude\file-history\ae3d62a0-f729-466c-8b99-563805c28c60\622404c52baac556@v2:7:import { loginBrowser } from 'file:///C:/Users/yvan1/AppData/Local/npm-cache/_npx/19953a4e823081bf/node_modules/cc-wechat/dist/auth.js';
+.claude\file-history\ae3d62a0-f729-466c-8b99-563805c28c60\622404c52baac556@v2:8:import { saveAccount } from 'file:///C:/Users/yvan1/AppData/Local/npm-cache/_npx/19953a4e823081bf/node_modules/cc-wechat/dist/store.js';
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:4:{"parentUuid":null,"isSidechain":false,"promptId":"ade7c0ff-d131-4b43-b9d7-37796e74e0b1","type":"user","message":{"role":"user","content":"pc restarted, claude code restarted, how's cc-wechat"},"uuid":"da48a631-68b2-406c-aab5-544de0c544b4","timestamp":"2026-06-05T02:45:34.005Z","permissionMode":"default","promptSource":"typed","userType":"external","entrypoint":"cli","cwd":"C:\\Users\\yvan1","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621","version":"2.1.163","gitBranch":"HEAD"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:7:{"type":"last-prompt","lastPrompt":"pc restarted, claude code restarted, how's cc-wechat","leafUuid":"187ce713-2a17-4540-b2b6-2962fa74fda9","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:10:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:11:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:41:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:59:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:86:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:88:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:92:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:93:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:95:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:96:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:97:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:100:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:101:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:102:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:103:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:105:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:106:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:107:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:108:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:109:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:110:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:111:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:113:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:117:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:118:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:119:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:120:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:121:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:122:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:124:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:127:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:130:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:131:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:132:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:133:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:134:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:137:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:139:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:140:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:142:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:145:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:147:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:149:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:151:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:155:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:157:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:159:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:160:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:161:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:162:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:164:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:167:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:169:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:170:{"type":"file-history-snapshot","messageId":"553e788e-abde-460d-9416-c7f607efe3ca","snapshot":{"messageId":"59aa9705-bc73-404f-bf2e-0ceff5721f34","trackedFileBackups":{".claude\\scripts\\cc-wechat-fixed\\dist\\types.js":{"backupFileName":"158888ce18c5f7ae@v1","version":1,"backupTime":"2026-06-05T02:57:41.128Z"}},"timestamp":"2026-06-05T02:47:22.914Z"},"isSnapshotUpdate":true}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:171:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:174:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:175:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:176:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:179:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:180:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:182:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:184:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:185:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:188:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:190:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:193:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:195:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:196:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:197:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:198:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:200:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:201:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:202:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:204:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:207:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:208:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:210:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:211:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:212:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:214:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:218:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:227:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:230:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:232:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:236:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:237:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:241:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:244:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:256:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:258:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:261:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:264:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:266:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:271:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:273:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:276:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:280:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:282:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:285:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:290:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:297:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:300:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:302:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:312:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:313:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:315:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:321:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:322:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:323:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:327:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:336:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:345:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:353:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:356:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:357:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:358:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:359:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:360:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:361:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:362:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:363:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:365:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:368:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:369:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:370:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:371:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:372:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:373:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:374:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:375:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:376:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621.jsonl:377:{"parentUuid":"6b73d7d1-7c45-4521-95d6-20176a8ff58d","isSidechain":false,"type":"system","subtype":"turn_duration","durationMs":151738,"messageCount":288,"timestamp":"2026-06-05T05:07:18.898Z","uuid":"1fc89a0b-2e51-4609-918d-e39450a96f7b","isMeta":false,"userType":"external","entrypoint":"cli","cwd":"C:\\Users\\yvan1\\.claude\\scripts\\cc-wechat-fixed","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621","version":"2.1.163","gitBranch":"HEAD","slug":"elegant-meandering-kurzweil"}
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:4:{"parentUuid":null,"isSidechain":false,"promptId":"19b71e5a-1c9c-4223-911e-f7d335eed44f","type":"user","message":{"role":"user","content":"check the cc-wechat"},"uuid":"d40bbfd6-471f-4722-ad40-bb89fe5ddd8b","timestamp":"2026-06-05T02:12:50.446Z","permissionMode":"default","promptSource":"typed","userType":"external","entrypoint":"cli","cwd":"C:\\Users\\yvan1","sessionId":"354b1657-02d8-41c8-980e-8398aef2dc18","version":"2.1.163","gitBranch":"HEAD"}
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:7:{"type":"last-prompt","lastPrompt":"check the cc-wechat","leafUuid":"c6b21a4f-daf8-4763-8a2a-eee4b812096f","sessionId":"354b1657-02d8-41c8-980e-8398aef2dc18"}
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:10:{"type":"ai-title","aiTitle":"Check cc-wechat project","sessionId":"354b1657-02d8-41c8-980e-8398aef2dc18"}
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:11:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:18:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:19:{"type":"last-prompt","lastPrompt":"check the cc-wechat","leafUuid":"2d4baad0-4636-44d4-b6eb-12860592398e","sessionId":"354b1657-02d8-41c8-980e-8398aef2dc18"}
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:20:{"type":"ai-title","aiTitle":"Check cc-wechat project","sessionId":"354b1657-02d8-41c8-980e-8398aef2dc18"}
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:23:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:27:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:28:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:31:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:32:{"type":"last-prompt","lastPrompt":"check the cc-wechat","leafUuid":"a411f0ee-173d-4244-b71a-13e3e3378a9c","sessionId":"354b1657-02d8-41c8-980e-8398aef2dc18"}
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:33:{"type":"ai-title","aiTitle":"Check cc-wechat project","sessionId":"354b1657-02d8-41c8-980e-8398aef2dc18"}
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:37:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:39:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:40:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:44:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:49:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:55:{"type":"ai-title","aiTitle":"Check cc-wechat project","sessionId":"354b1657-02d8-41c8-980e-8398aef2dc18"}
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:62:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:64:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:65:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:73:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:74:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:75:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:80:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:82:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:84:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:88:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:89:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:90:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:92:{"type":"ai-title","aiTitle":"Check cc-wechat project","sessionId":"354b1657-02d8-41c8-980e-8398aef2dc18"}
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:98:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:99:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:100:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:101:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:103:{"type":"ai-title","aiTitle":"Check cc-wechat project","sessionId":"354b1657-02d8-41c8-980e-8398aef2dc18"}
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:106:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:110:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:113:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:116:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:118:{"type":"ai-title","aiTitle":"Check cc-wechat project","sessionId":"354b1657-02d8-41c8-980e-8398aef2dc18"}
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:121:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:126:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:127:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:133:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\354b1657-02d8-41c8-980e-8398aef2dc18.jsonl:134:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bzt6anzen.txt:1:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bzt6anzen.txt:2:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bzt6anzen.txt:3:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bzt6anzen.txt:4:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bzt6anzen.txt:5:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\byhiioii2.txt:1:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\byhiioii2.txt:2:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\byhiioii2.txt:9:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\byhiioii2.txt:10:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\byhiioii2.txt:15:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\byhiioii2.txt:16:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\byhiioii2.txt:17:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\byhiioii2.txt:18:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\byhiioii2.txt:20:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\by8tdw8e1.txt:1:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\by8tdw8e1.txt:3:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\by8tdw8e1.txt:5:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\by8tdw8e1.txt:6:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\by8tdw8e1.txt:7:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\by8tdw8e1.txt:9:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\by8tdw8e1.txt:11:{"type":"ai-title","aiTitle":"Check cc-wechat after restart","sessionId":"f20c21c6-7f95-4dec-8435-ff8a2fd26621"}
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\by8tdw8e1.txt:13:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\by8tdw8e1.txt:15:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bi607ei3j.txt:8:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bi607ei3j.txt:9:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bi607ei3j.txt:10:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:1:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:2:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:3:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:4:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:5:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:6:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:7:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:8:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:9:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:10:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:11:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:12:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:13:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:14:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:15:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:19:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\bcs3q88oa.txt:20:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\b3pkmfub3.txt:3:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\b3pkmfub3.txt:4:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\b3pkmfub3.txt:5:[Omitted long matching line]
+.claude\projects\C--Users-yvan1\f20c21c6-7f95-4dec-8435-ff8a2fd26621\tool-results\b3pkmfub3.txt:6:[Omitted long matching line]
+
+[Showing results with pagination = limit: 250]

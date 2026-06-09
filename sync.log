@@ -1,22 +1,22 @@
 ﻿**********************
 Windows PowerShell 脚本开始
-开始时间: 20260609105121
-用户名: PMO-10268\10268
-RunAs 用户: PMO-10268\10268
+开始时间: 20260609115134
+用户名: NAS-VM\yvan1
+RunAs 用户: NAS-VM\yvan1
 配置名称: 
-计算机: PMO-10268 (Microsoft Windows NT 10.0.26220.0)
-主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File C:\Users\10268\.claude\config-sync.ps1
-进程 ID: 24980
-PSVersion: 5.1.26100.8544
+计算机: NAS-VM (Microsoft Windows NT 10.0.26200.0)
+主机应用程序: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File C:\Users\yvan1\.claude\config-sync.ps1
+进程 ID: 7960
+PSVersion: 5.1.26100.8457
 PSEdition: Desktop
-PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8544
-BuildVersion: 10.0.26100.8544
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8457
+BuildVersion: 10.0.26100.8457
 CLRVersion: 4.0.30319.42000
 WSManStackVersion: 3.0
 PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
-=== sync 2026-06-09 10:51:21 ===
+=== sync 2026-06-09 11:51:34 ===
 [sync-plugins] Marketplaces...
 
   ok: claude-plugins-official
@@ -24,112 +24,32 @@ SerializationVersion: 1.1.0.1
   ok: anthropic-agent-skills
 
   ok: caveman
-PS>TerminatingError(ConvertFrom-Json):“无法识别的转义序列。 (4418): {
-  "permissions": {
-    "allow": [
-      "PowerShell(Get-ChildItem *)",
-      "mcp__MiniMax__understand_image",
-      "WebSearch",
-      "mcp__MiniMax__web_search",
-      "PowerShell(npm *)",
-      "PowerShell(git clone *)",
-      "PowerShell(git config *)",
-      "PowerShell(Test-NetConnection *)",
-      "PowerShell(Get-StartApps *)",
-      "PowerShell(Start-Process \"D:\\\\Program Files\\\\VPN.AC Client\\\\vpnac.exe\")",
-      "PowerShell(Expand-Archive *)",
-      "PowerShell(Remove-Item *)",
-      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\10268\\\\clawd-on-desk-main\\\\package.json\" | ForEach-Object { \\(Get-Content $_.FullName -Raw | ConvertFrom-Json\\).main; \\(Get-Content $_.FullName -Raw | ConvertFrom-Json\\).scripts.start })",
-      "PowerShell(if \\(Test-Path \"C:\\\\Users\\\\10268\\\\clawd-on-desk-main\\\\node_modules\\\\electron\\\\dist\\\\electron.exe\"\\) { \\(Get-Item \"C:\\\\Users\\\\10268\\\\clawd-on-desk-main\\\\node_modules\\\\electron\\\\dist\\\\electron.exe\"\\).Length } else { \"electron.exe not found at expected path\"; Get-ChildItem \"C:\\\\Users\\\\10268\\\\clawd-on-desk-main\\\\node_modules\\\\electron\\\\dist\" -Recurse -Depth 2 -ErrorAction SilentlyContinue | Select-Object FullName, Length })",
-      "PowerShell(Get-Process *)",
-      "PowerShell(Stop-Process -Force)",
-      "PowerShell(git *)",
-      "PowerShell(node -e \"require\\('./src/main.js'\\)\")",
-      "PowerShell(node --check C:\\\\Users\\\\10268\\\\clawd-on-desk-main\\\\src\\\\pet-interaction-ipc.js 2>&1)",
-      "PowerShell(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\10268\\\\.claude\\\\scripts\\\\session-index.ps1\"; Write-Host \"---\"; Get-Content \"C:\\\\Users\\\\10268\\\\.claude\\\\projects\\\\C--Users-10268\\\\memory\\\\sessions-index.md\")",
-      "PowerShell(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\10268\\\\.claude\\\\scripts\\\\session-index.ps1\"; if \\($?\\) { Get-Content \"C:\\\\Users\\\\10268\\\\.claude\\\\projects\\\\C--Users-10268\\\\memory\\\\sessions-index.md\" })",
-      "PowerShell($electronPath = \"C:\\\\Users\\\\10268\\\\clawd-on-desk-main\\\\node_modules\\\\electron\\\\dist\\\\electron.exe\"; if \\(Test-Path $electronPath\\) { Write-Host \"electron.exe found at: $electronPath\"; \\(Get-Item $electronPath\\).Length } else { Write-Host \"electron.exe NOT found\" })",
-      "PowerShell(Set-Location \"C:\\\\Users\\\\10268\\\\clawd-on-desk-main\"; $env:ELECTRON_RUN_AS_NODE = $null; $env:ELECTRON_NO_ATTACH_CONSOLE = $null; $nodeExe = \"D:\\\\Program Files\\\\nodejs\\\\node.exe\"; & $nodeExe launch.js)",
-      "PowerShell(& \"D:\\\\Program Files\\\\nodejs\\\\node.exe\" \"C:/Users/10268/clawd-on-desk-main/hooks/auto-start.js\"; Write-Host \"Exit code: $LASTEXITCODE\")",
-      "PowerShell(try { $response = Invoke-WebRequest -Uri \"https://github.com\" -TimeoutSec 10 -UseBasicParsing; Write-Host \"Status: $\\($response.StatusCode\\)\"; Write-Host \"Content length: $\\($response.Content.Length\\)\" } catch { Write-Host \"Error: $\\($_.Exception.Message\\)\" })",
-      "PowerShell(claude plugin *)",
-      "PowerShell(git clone https://github.com/claude-plugins-official/claude-md-management $env:TEMP\\\\claude-md-management 2>&1)",
-      "PowerShell(claude *)",
-      "WebFetch(domain:github.com)",
-      "PowerShell(git clone https://github.com/JuliusBrussee/caveman.git $env:TEMP\\\\caveman 2>&1)",
-      "PowerShell(git clone https://github.com/JuliusBrussee/caveman.git $env:TEMP\\\\caveman --depth 1 2>&1)",
-      "PowerShell(if \\(Test-Path \"$env:TEMP\\\\caveman\\\\.git\"\\) { Write-Host \"Clone OK\"; Get-ChildItem $env:TEMP\\\\caveman | Select-Object Name, Length } else { Write-Host \"Clone failed\" })",
-      "PowerShell(if \\(Test-Path \"$env:APPDATA\\\\clawd-on-desk\\\\clawd-prefs.json\"\\) { Get-Content \"$env:APPDATA\\\\clawd-on-desk\\\\clawd-prefs.json\" -Encoding utf8 } else { \"clawd-prefs.json NOT FOUND\" })",
-      "PowerShell(if \\(Test-Path \"$env:USERPROFILE\\\\clawd-on-desk-main\"\\) { Get-ChildItem \"$env:USERPROFILE\\\\clawd-on-desk-main\" -Depth 0 | Select-Object Name } else { \"clawd-on-desk-main directory NOT FOUND\" })",
-      "PowerShell(Get-CimInstance *)",
-      "PowerShell($ErrorActionPreference = 'Stop'; try { $word = New-Object -ComObject Word.Application; $word.Visible = $false; $doc = $word.Documents.Open\\(\"D:\\\\00. Personal\\\\绠€鍘哱\\\Sihang Cheng_CH_V4.0.docx\"\\); $doc.Content.Text; $doc.Close\\(\\); $word.Quit\\(\\); [System.Runtime.InteropServices.Marshal]::ReleaseComObject\\($word\\) | Out-Null } catch { \"COM failed, trying alternative...\"; $Error[0] })",
-      "PowerShell($ErrorActionPreference = 'Stop'; try { $word = New-Object -ComObject Word.Application; $word.Visible = $false; $doc = $word.Documents.Open\\(\"D:\\\\00. Personal\\\\绠€鍘哱\\\Sihang Cheng_EN_V4.0.docx\"\\); $doc.Content.Text; $doc.Close\\(\\); $word.Quit\\(\\); [System.Runtime.InteropServices.Marshal]::ReleaseComObject\\($word\\) | Out-Null } catch { \"COM failed, trying alternative...\"; $Error[0] })",
-      "PowerShell(Out-Null *)",
-      "PowerShell(pip install *)",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.0.html\")",
-      "PowerShell(claude-tap *)",
-      "PowerShell(Copy-Item *)",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.1.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.2.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.3.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.4.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.6.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.7.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.8.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.9.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.10.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.11.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.12.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.13.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.14.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.16.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.17.html\")",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.15.html\")",
-      "PowerShell(Copy-Item \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.8.html\" \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.14.html\" -Force; \\(Get-Item \"C:\\\\Users\\\\10268\\\\Desktop\\\\Project Tracker\\\\pmo-portal-v1.14.html\"\\).Length)",
-      "PowerShell(Get-ChildItem $env:USERPROFILE\\\\.claude\\\\skills -Directory -ErrorAction SilentlyContinue | Select-Object Name)",
-      "PowerShell(git -C \"$env:USERPROFILE\\\\.claude\\\\skills\\\\humanizer-zh\" remote get-url origin 2>$null; git -C \"$env:USERPROFILE\\\\.claude\\\\skills\\\\code-review-graph\" remote get-url origin 2>$null)",
-      "PowerShell(git -C \"$env:USERPROFILE\\\\.claude\" status 2>&1)",
-      "PowerShell(git -C $env:USERPROFILE\\\\.claude push origin master 2>&1)",
-      "PowerShell(\\(Get-Item C:\\\\Users\\\\10268\\\\Desktop\\\\Claude-Sync.bat\\).Length)",
-      "PowerShell(cd \"$env:USERPROFILE\\\\.claude\"; git status --short)",
-      "PowerShell(powershell -ExecutionPolicy Bypass -File \"$env:USERPROFILE\\\\.claude\\\\sync-status.ps1\")",
-      "PowerShell(powershell -ExecutionPolicy Bypass -File \"$env:USERPROFILE\\\\.claude\\\\install-sync-hook.ps1\")",
-      "PowerShell(Test-Path *)",
-      "PowerShell(powershell -ExecutionPolicy Bypass -File \"$env:USERPROFILE\\\\.claude\\\\config-sync.ps1\"; Get-Content \"$env:USERPROFILE\\\\.claude\\\\sync.log\")",
-      "PowerShell(New-Item -ItemType Directory -Force \"$env:USERPROFILE\\\\.claude\\\\templates\" | Out-Null; Copy-Item \"$env:APPDATA\\\\clawd-on-desk\\\\clawd-prefs.json\" \"$env:USERPROFILE\\\\.claude\\\\templates\\\\clawd-prefs.json\" -Force; Write-Host \"Copied\")",
-      "PowerShell(cd \"$env:USERPROFILE\\\\.claude\"; git add templates/clawd-prefs.json install-clawd.ps1; git commit -m \"feat: clawd template prefs + installer script + optional bat prompt\"; git push origin master)",
-      "PowerShell(& \"$env:USERPROFILE\\\\.claude\\\\config-sync.ps1\")",
-      "PowerShell(& \"$env:USERPROFILE\\\\.claude\\\\sync-plugins-skills.ps1\")",
-      "PowerShell(New-Item *)",
-      "PowerShell(cd \"$env:USERPROFILE\\\\.claude\"; git add commands/sync-push.md; git commit -m \"feat: /sync-push command 鈥?push config changes to GitHub\"; git push origin master)",
-      "PowerShell(cd \"$env:USERPROFILE\\\\.claude\"; git push origin master)",
-      "PowerShell($env:HTTPS_PROXY)",
-      "PowerShell($env:HTTP_PROXY)",
-      "PowerShell(git -C \"$env:USERPROFILE\\\\.claude\" log --oneline -5)",
-      "PowerShell(git push *)",
-      "PowerShell(cd \"$env:USERPROFILE\\\\.claude\"; git diff --stat config-sync.ps1 sync-plugins-skills.ps1)",
-      "PowerShell(cd \"$env:USERPROFILE\\\\.claude\"; git diff config-sync.ps1 sync-plugins-skills.ps1)"
-    ]
-  }
-}”
 [sync-plugins] Plugins...
-  ok: caveman@caveman
-  ok: claude-md-management@claude-plugins-official
-  ok: document-skills@anthropic-agent-skills
-  ok: frontend-design@claude-plugins-official
-  ok: github@claude-plugins-official
-  ok: skill-creator@claude-plugins-official
+  installing: caveman@caveman
+Installing plugin "caveman@caveman"...鈭?Successfully installed plugin: caveman@caveman (scope: user)
+  installing: claude-md-management@claude-plugins-official
+Installing plugin "claude-md-management@claude-plugins-official"...鈭?Successfully installed plugin: claude-md-management@claude-plugins-official (scope: user)
+  installing: document-skills@anthropic-agent-skills
+Installing plugin "document-skills@anthropic-agent-skills"...鈭?Successfully installed plugin: document-skills@anthropic-agent-skills (scope: user)
+  installing: frontend-design@claude-plugins-official
+Installing plugin "frontend-design@claude-plugins-official"...鈭?Successfully installed plugin: frontend-design@claude-plugins-official (scope: user)
+  installing: github@claude-plugins-official
+Installing plugin "github@claude-plugins-official"...鈭?Successfully installed plugin: github@claude-plugins-official (scope: user)
+  installing: skill-creator@claude-plugins-official
+Installing plugin "skill-creator@claude-plugins-official"...鈭?Successfully installed plugin: skill-creator@claude-plugins-official (scope: user)
 [sync-plugins] Skills...
   ok: humanizer-zh
-  ok: code-review-graph (Requirement already satisfied: code-review-graph in C:\Python314\Lib\site-packages (2.3.5))
+  ok: code-review-graph (Requirement already satisfied: code-review-graph in c:\users\yvan1\appdata\local\packages\pythonsoftwarefoundation.python.3.12_qbz5n2kfra8p0\localcache\local-packages\python312\site-packages (2.3.5))
 [sync-plugins] Done.
 
 ============================================
-  Claude Sync 鈥?PMO-10268
-  CLAUDE.md=True | memory=True | plugins=6 | skills=2 | clawd=True
+  Claude Sync 鈥?NAS-VM
+  CLAUDE.md=True | memory=True | plugins=0 | skills=271 | clawd=False
 ============================================
 
+[push] pull failed: error: cannot pull with rebase: You have unstaged changes. error: additionally, your index contains uncommitted changes. error: Please commit or stash them.
+[push] push failed: To https://github.com/yvanapplecheng/claude-config-sync.git  ! [rejected]        master -> master (fetch first) error: failed to push some refs to 'https://github.com/yvanapplecheng/claude-config-sync.git' hint: Updates were rejected because the remote contains work that you do not hint: have locally. This is usually caused by another repository pushing to hint: the same ref. If you want to integrate the remote changes, use hint: 'git pull' before pushing again. hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 **********************
 Windows PowerShell 脚本结束
-结束时间: 20260609105129
+结束时间: 20260609115204
 **********************

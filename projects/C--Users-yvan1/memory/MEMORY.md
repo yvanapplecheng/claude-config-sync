@@ -1,0 +1,4 @@
+- [Preferred Address](user-title.md) — user prefers to be called "Master"
+- [User Role](user-role.md) — PMO Director at Venus Medtech (structural heart valves)
+- [Skill/Plugin Autonomy](standing-permission-skills.md) — user grants blanket permission to find/install/create skills
+- [Session Index](session_index/index.md) — auto-updated master index of all sessions (7 sessions, 5.7 MB)
