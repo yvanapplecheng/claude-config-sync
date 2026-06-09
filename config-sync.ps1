@@ -1,34 +1,58 @@
 # config-sync.ps1 — Auto-pull Claude config repo + skills + plugins on startup
 # Hooked via SessionStart in ~/.claude/settings.json
+# Writes to sync.log for cross-machine verification
 $ErrorActionPreference = "Continue"
 $syncDir = "$env:USERPROFILE\.claude"
+$logFile = "$syncDir\sync.log"
+$remoteUrl = "https://github.com/yvanapplecheng/claude-config-sync.git"
+
+# Timestamp log header
+$now = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+$logLines = @()
+$logLines += "=== sync $now ==="
+
+# 0. Auto-init .git if missing (zip-bootstrap scenario)
+if (-not (Test-Path "$syncDir\.git")) {
+    try {
+        git -C $syncDir init 2>&1 | Out-Null
+        git -C $syncDir remote add origin $remoteUrl 2>&1 | Out-Null
+        git -C $syncDir fetch origin master 2>&1 | Out-Null
+        git -C $syncDir branch -M master 2>&1 | Out-Null
+        git -C $syncDir reset --hard origin/master 2>&1 | Out-Null
+        $logLines += "[init] .git created, synced from remote"
+    } catch {
+        $logLines += "[init] ERROR: $_"
+    }
+}
 
 # 1. Pull config repo (CLAUDE.md + memory + scripts + manifest)
 if (Test-Path "$syncDir\.git") {
     try {
-        $result = git -C $syncDir pull --rebase 2>&1
+        $result = git -C $syncDir pull --rebase origin master 2>&1
         if ($LASTEXITCODE -eq 0) {
-            Write-Output "[sync] config repo: $result"
+            $logLines += "[pull] $result"
         } else {
-            Write-Output "[sync] config repo pull failed: $result"
+            $logLines += "[pull] FAIL: $result"
         }
     } catch {
-        Write-Output "[sync] config repo error: $_"
+        $logLines += "[pull] ERROR: $_"
     }
 } else {
-    Write-Output "[sync] no .git in $syncDir — skipping config pull"
+    $logLines += "[pull] SKIP: no .git"
 }
+
 
 # 2. Install missing plugins/skills from manifest (merges cross-machine)
 $manifestPath = "$syncDir\plugin-skill-manifest.json"
 if (Test-Path $manifestPath) {
     try {
-        & "$syncDir\sync-plugins-skills.ps1" 2>&1 | Write-Output
+        $syncResult = & "$syncDir\sync-plugins-skills.ps1" 2>&1
+        $logLines += $syncResult
     } catch {
-        Write-Output "[sync] plugin/skill sync error: $_"
+        $logLines += "[sync-plugins] ERROR: $_"
     }
 } else {
-    Write-Output "[sync] no manifest — run export-plugins-skills.ps1 first"
+    $logLines += "[sync-plugins] SKIP: no manifest"
 }
 
 # 3. Pull each installed skill repo for updates
@@ -39,11 +63,14 @@ if (Test-Path $skillsDir) {
         if (Test-Path $gitDir) {
             try {
                 $result = git -C $_.FullName pull --rebase 2>&1
-                Write-Output "[sync] skills/$($_.Name): $result"
+                $logLines += "[skill:$($_.Name)] $result"
             } catch {
-                Write-Output "[sync] skills/$($_.Name) error: $_"
+                $logLines += "[skill:$($_.Name)] ERROR: $_"
             }
         }
     }
 }
-Write-Output "[sync] done"
+
+$logLines += "[done]"
+# Write log
+$logLines | Out-File -Encoding utf8 $logFile
