@@ -1,0 +1,175 @@
+{
+  "version": 8,
+  "x": -8,
+  "y": 1029,
+  "positionSaved": true,
+  "positionThemeId": "clawd",
+  "positionVariantId": "default",
+  "positionDisplay": {
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 2560,
+      "height": 1440
+    },
+    "workArea": {
+      "x": 0,
+      "y": 0,
+      "width": 2560,
+      "height": 1392
+    },
+    "id": 3671704123,
+    "scaleFactor": 1.5
+  },
+  "savedPixelWidth": 230,
+  "savedPixelHeight": 231,
+  "size": "P:9",
+  "miniMode": false,
+  "miniEdge": "right",
+  "preMiniX": 0,
+  "preMiniY": 0,
+  "lang": "en",
+  "showTray": true,
+  "showDock": true,
+  "manageClaudeHooksAutomatically": true,
+  "autoStartWithClaude": true,
+  "openAtLogin": true,
+  "openAtLoginHydrated": true,
+  "bubbleFollowPet": false,
+  "sessionHudEnabled": true,
+  "sessionHudShowStateLabels": true,
+  "sessionHudShowElapsed": true,
+  "sessionHudCleanupDetached": false,
+  "sessionHudPinned": false,
+  "sessionStaleMs": 600000,
+  "workingStaleMs": 300000,
+  "detachedIdleStaleMs": 30000,
+  "hideBubbles": false,
+  "permissionBubblesEnabled": true,
+  "notificationBubbleAutoCloseSeconds": 6,
+  "permissionBubbleAutoCloseSeconds": 0,
+  "updateBubbleAutoCloseSeconds": 9,
+  "soundMuted": false,
+  "soundVolume": 1,
+  "flashTaskbarOnComplete": true,
+  "flashIntervalMs": 500,
+  "flashDurationMs": 5000,
+  "lowPowerIdleMode": false,
+  "mobilePreviewEnabled": false,
+  "keepAwakeWhileWorking": false,
+  "allowEdgePinning": false,
+  "keepSizeAcrossDisplays": false,
+  "shortcuts": {
+    "togglePet": "CommandOrControl+Shift+Alt+C",
+    "permissionAllow": "CommandOrControl+Shift+Y",
+    "permissionDeny": "CommandOrControl+Shift+N"
+  },
+  "theme": "clawd",
+  "agents": {
+    "claude-code": {
+      "enabled": true,
+      "permissionsEnabled": true,
+      "notificationHookEnabled": true
+    },
+    "codex": {
+      "enabled": true,
+      "permissionsEnabled": true,
+      "notificationHookEnabled": true,
+      "permissionMode": "intercept",
+      "nativeNotificationSoundEnabled": false
+    },
+    "copilot-cli": {
+      "enabled": true,
+      "permissionsEnabled": true,
+      "notificationHookEnabled": true
+    },
+    "cursor-agent": {
+      "enabled": true,
+      "permissionsEnabled": true,
+      "notificationHookEnabled": true
+    },
+    "gemini-cli": {
+      "enabled": true,
+      "permissionsEnabled": true,
+      "notificationHookEnabled": true
+    },
+    "antigravity-cli": {
+      "enabled": true,
+      "permissionsEnabled": false
+    },
+    "codebuddy": {
+      "enabled": true,
+      "permissionsEnabled": true,
+      "notificationHookEnabled": true
+    },
+    "kiro-cli": {
+      "enabled": true,
+      "permissionsEnabled": true,
+      "notificationHookEnabled": true
+    },
+    "kimi-cli": {
+      "enabled": true,
+      "permissionsEnabled": true,
+      "notificationHookEnabled": true
+    },
+    "qwen-code": {
+      "enabled": true,
+      "permissionsEnabled": true,
+      "notificationHookEnabled": true
+    },
+    "opencode": {
+      "enabled": true,
+      "permissionsEnabled": true,
+      "notificationHookEnabled": true
+    },
+    "pi": {
+      "enabled": true,
+      "permissionsEnabled": false,
+      "notificationHookEnabled": true
+    },
+    "openclaw": {
+      "enabled": true,
+      "permissionsEnabled": false,
+      "notificationHookEnabled": true
+    },
+    "hermes": {
+      "enabled": true,
+      "permissionsEnabled": true,
+      "notificationHookEnabled": true
+    }
+  },
+  "themeOverrides": {},
+  "themeVariant": {},
+  "sessionAliases": {},
+  "remoteSsh": {
+    "profiles": []
+  },
+  "tgApproval": {
+    "enabled": false,
+    "allowedTgUserId": "",
+    "targetSessionKey": "",
+    "notifyOnComplete": false,
+    "completionOutputMode": "full",
+    "r3DirectSendEnabled": false
+  },
+  "tgMigration": {
+    "transport": null,
+    "nativeVerifiedAt": null,
+    "legacyEnabled": null,
+    "migration": {
+      "importedAt": null,
+      "importError": null
+    }
+  },
+  "hardwareBuddy": {
+    "enabled": false,
+    "backend": "bleak",
+    "address": "",
+    "namePrefix": "Clawstick",
+    "permissionsEnabled": false,
+    "quickCommandsEnabled": false
+  },
+  "autoUpdateCheck": true,
+  "pendingUpdateVersion": "",
+  "dismissedUpdateVersions": {}
+}
