@@ -116,6 +116,30 @@ if (Test-Path "$syncDir\skills") {
     }
 }
 
+# 8. Update manifest from current state (new plugins/skills auto-captured)
+$manifestPath = "$syncDir\plugin-skill-manifest.json"
+$manifestBefore = if (Test-Path $manifestPath) { (Get-FileHash $manifestPath -Algorithm MD5).Hash } else { "none" }
+try {
+    & "$syncDir\export-plugins-skills.ps1" 2>&1 | ForEach-Object { Write-Host $_ -ForegroundColor DarkGray }
+    $status.manifestUpdated = "ok"
+} catch {
+    $status.manifestUpdated = "ERROR"
+}
+$manifestAfter = if (Test-Path $manifestPath) { (Get-FileHash $manifestPath -Algorithm MD5).Hash } else { "none" }
+if ($manifestBefore -ne $manifestAfter) {
+    Write-Host "[manifest] New plugins/skills detected — auto-pushing..." -ForegroundColor Yellow
+    git -C $syncDir add $manifestPath 2>&1 | Out-Null
+    git -C $syncDir commit -m "sync: auto-update manifest — $env:COMPUTERNAME" 2>&1 | Out-Null
+    try {
+        git -C $syncDir pull --rebase origin master 2>&1 | Out-Null
+        git -C $syncDir push origin master 2>&1 | Out-Null
+        Write-Host "[manifest] Pushed updated manifest." -ForegroundColor Green
+    } catch {
+        Write-Host "[manifest] Push failed — will retry next sync" -ForegroundColor Red
+        $status.errors += "manifest-push"
+    }
+}
+
 # Print summary to terminal on launch
 Write-Host ""
 Write-Host "============================================" -ForegroundColor Cyan
