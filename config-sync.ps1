@@ -86,7 +86,8 @@ try {
 $manifestPath = "$syncDir\plugin-skill-manifest.json"
 if (Test-Path $manifestPath) {
     try {
-        & "$syncDir\sync-plugins-skills.ps1" 2>&1 | Out-Null
+        $syncOutput = & "$syncDir\sync-plugins-skills.ps1" 2>&1
+        $syncOutput | ForEach-Object { Write-Host $_ }
         $status.manifestSync = "ok"
     } catch {
         $status.manifestSync = "ERROR"

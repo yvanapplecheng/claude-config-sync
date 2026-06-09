@@ -56,7 +56,16 @@ foreach ($skill in $manifest.skills) {
     if ($skill.url -match '^pip:(.+)$') {
         $pkg = $Matches[1]
         Write-Output "  pip install: $pkg"
-        pip install $pkg 2>&1 | Write-Output
+        $pipResult = pip install $pkg --disable-pip-version-check 2>&1
+        $statusLine = ($pipResult | Select-String "Requirement already satisfied: $pkg|Successfully installed $pkg|Installing collected packages: $pkg" | Select-Object -First 1)
+        if ($statusLine) {
+            Write-Output "  ok: $pkg ($($statusLine.Line.Trim()))"
+        } elseif ($LASTEXITCODE -ne 0) {
+            $errLine = ($pipResult | Select-String "ERROR|error" | Select-Object -Last 1)
+            Write-Output "  FAIL: $pkg — $errLine"
+        } else {
+            Write-Output "  ok: $pkg"
+        }
         continue
     }
 
