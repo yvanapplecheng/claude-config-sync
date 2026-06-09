@@ -127,4 +127,11 @@ $status | ConvertTo-Json -Depth 3 | Out-File -Encoding utf8 $statusFile
 $machineFile = "$syncDir\status-$($env:COMPUTERNAME).json"
 $status | ConvertTo-Json -Depth 3 | Out-File -Encoding utf8 $machineFile
 
+# Auto-commit + push status file so other machines see it
+try {
+    git -C $syncDir add $machineFile $statusFile 2>&1 | Out-Null
+    git -C $syncDir commit -m "sync: $env:COMPUTERNAME status $now" 2>&1 | Out-Null
+    git -C $syncDir push origin master 2>&1 | Out-Null
+} catch {}
+
 Stop-Transcript | Out-Null
