@@ -22,10 +22,10 @@ $currentPlugins = @{}
 $settingsPath = "$syncDir\settings.json"
 $settingsLocalPath = "$syncDir\settings.local.json"
 $curJson = @{}
-if (Test-Path $settingsPath) { $curJson = Get-Content $settingsPath | ConvertFrom-Json }
+if (Test-Path $settingsPath) { try { $curJson = Get-Content $settingsPath | ConvertFrom-Json } catch {} }
 if (Test-Path $settingsLocalPath) {
-    $localJson = Get-Content $settingsLocalPath | ConvertFrom-Json
-    if ($localJson.enabledPlugins) { $curJson.enabledPlugins = $localJson.enabledPlugins }
+    try { $localJson = Get-Content $settingsLocalPath | ConvertFrom-Json } catch {}
+    if ($localJson -and $localJson.enabledPlugins) { $curJson.enabledPlugins = $localJson.enabledPlugins }
 }
 if ($curJson.enabledPlugins) {
     $curJson.enabledPlugins.PSObject.Properties | ForEach-Object {
