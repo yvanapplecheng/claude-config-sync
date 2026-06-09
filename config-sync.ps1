@@ -108,9 +108,14 @@ if (Test-Path "$syncDir\skills") {
     }
 }
 
-$status.errors = ($status.errors -join ",")
+# Print summary to terminal on launch
+Write-Host ""
+Write-Host "  [sync] $env:COMPUTERNAME | CLAUDE.md=$($status.claudeMd) | memory=$($status.memory) | plugins=$($status.plugins) | skills=$($status.skills) | clawd=$($status.clawdRunning)" -ForegroundColor Cyan
+Write-Host ""
 $status.ok = ([string]$status.errors).Length -eq 0
 $status | ConvertTo-Json -Depth 3 | Out-File -Encoding utf8 $statusFile
+
+Write-Host ""
 
 # Also write machine-named file for cross-machine comparison
 $machineFile = "$syncDir\status-$($env:COMPUTERNAME).json"

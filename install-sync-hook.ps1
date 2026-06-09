@@ -35,7 +35,7 @@ if (-not $already) {
                 command = "powershell -ExecutionPolicy Bypass -File `"$SyncDir\config-sync.ps1`""
                 shell = 'powershell'
                 timeout = 120
-                async = $true
+                async = $false
             }
         )
     }
