@@ -23,6 +23,7 @@ if (-not (Test-Path "$syncDir\.git")) {
     try {
         git -C $syncDir init 2>&1 | Out-Null
         git -C $syncDir remote add origin $remoteUrl 2>&1 | Out-Null
+        git -C $syncDir config --local http.sslVerify false 2>&1 | Out-Null
         git -C $syncDir fetch origin master 2>&1 | Out-Null
         git -C $syncDir branch -M master 2>&1 | Out-Null
         git -C $syncDir reset --hard origin/master 2>&1 | Out-Null
@@ -129,10 +130,24 @@ $status | ConvertTo-Json -Depth 3 | Out-File -Encoding utf8 $machineFile
 
 # Auto-commit + push status file so other machines see it
 try {
+    git -C $syncDir config --local http.sslVerify false 2>&1 | Out-Null
     git -C $syncDir add $machineFile $statusFile 2>&1 | Out-Null
     git -C $syncDir commit -m "sync: $env:COMPUTERNAME status $now" 2>&1 | Out-Null
-    git -C $syncDir -c http.sslVerify=false pull --rebase origin master 2>&1 | Out-Null
-    git -C $syncDir -c http.sslVerify=false push origin master 2>&1 | Out-Null
-} catch {}
+    $pullResult = git -C $syncDir pull --rebase origin master 2>&1
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "[push] pull failed: $pullResult" -ForegroundColor Red
+        $status.errors += "push-pull"
+    }
+    $pushResult = git -C $syncDir push origin master 2>&1
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "[push] push failed: $pushResult" -ForegroundColor Red
+        $status.errors += "push"
+    } else {
+        Write-Host "[push] status pushed to GitHub" -ForegroundColor DarkGray
+    }
+} catch {
+    Write-Host "[push] exception: $_" -ForegroundColor Red
+    $status.errors += "push-exception"
+}
 
 Stop-Transcript | Out-Null
