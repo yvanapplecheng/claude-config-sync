@@ -81,30 +81,68 @@ if ($curJson.enabledPlugins) {
 
 # === 6. Skills ===
 Write-Host "`n--- Skills ---" -ForegroundColor Yellow
+
+# Collect all skill names from all sources
+$allSkills = @{}
+
+# 6a. Standalone skills (~/.claude/skills/)
 $skillsDir = "$syncDir\skills"
 if (Test-Path $skillsDir) {
-    $dirs = Get-ChildItem $skillsDir -Directory
-    if ($dirs.Count -gt 0) {
-        $dirs | ForEach-Object {
-            $gitDir = Join-Path $_.FullName ".git"
-            $pipFlag = ""
-            if (Test-Path $gitDir) {
-                $remote = ""
-                try { $remote = (git -C $_.FullName remote get-url origin 2>&1) -join " " } catch {}
-                $branch = ""
-                try { $branch = (git -C $_.FullName branch --show-current 2>&1) -join " " } catch {}
-                $mt = (Get-Item $gitDir).LastWriteTime.ToString("MM-dd HH:mm")
-                Write-Host "  [OK] $($_.Name) | $remote | $branch | $mt"
-            } else {
-                Write-Host "  [OK] $($_.Name) (no .git, likely pip)"
+    Get-ChildItem $skillsDir -Directory -ErrorAction SilentlyContinue | ForEach-Object {
+        $allSkills[$_.Name] = "standalone"
+    }
+}
+
+# 6b. Plugin-provided skills (~/.claude/plugins/marketplaces/*/skills/)
+$mpSkillsDir = "$syncDir\plugins\marketplaces"
+if (Test-Path $mpSkillsDir) {
+    Get-ChildItem $mpSkillsDir -Directory -ErrorAction SilentlyContinue | ForEach-Object {
+        $mpSkills = Join-Path $_.FullName "skills"
+        if (Test-Path $mpSkills) {
+            Get-ChildItem $mpSkills -Directory -ErrorAction SilentlyContinue | ForEach-Object {
+                if (-not $allSkills.ContainsKey($_.Name)) {
+                    $allSkills[$_.Name] = "plugin:$($_.Parent.Parent.Name)"
+                }
             }
         }
-    } else {
-        Write-Host "  [--] No skills installed"
     }
-} else {
-    Write-Host "  [--] No skills directory"
 }
+
+# 6c. Skills from installed plugins cache (~/.claude/plugins/cache/*/plugins/*/skills/)
+$cacheDir = "$syncDir\plugins\cache"
+if (Test-Path $cacheDir) {
+    Get-ChildItem $cacheDir -Directory -ErrorAction SilentlyContinue | ForEach-Object {
+        Get-ChildItem $_.FullName -Directory -ErrorAction SilentlyContinue | ForEach-Object {
+            $ps = Join-Path $_.FullName "skills"
+            if (Test-Path $ps) {
+                Get-ChildItem $ps -Directory -ErrorAction SilentlyContinue | ForEach-Object {
+                    if (-not $allSkills.ContainsKey($_.Name)) {
+                        $allSkills[$_.Name] = "plugin"
+                    }
+                }
+            }
+        }
+    }
+}
+
+# 6d. ECC plugin skills (~/.claude/plugins/ecc/skills/)
+if (Test-Path "$syncDir\plugins\ecc\skills") {
+    Get-ChildItem "$syncDir\plugins\ecc\skills" -Directory -ErrorAction SilentlyContinue | ForEach-Object {
+        if (-not $allSkills.ContainsKey($_.Name)) {
+            $allSkills[$_.Name] = "plugin:ecc"
+        }
+    }
+}
+
+$standaloneCount = ($allSkills.GetEnumerator() | Where-Object { $_.Value -eq "standalone" } | Measure-Object).Count
+$pluginCount = ($allSkills.GetEnumerator() | Where-Object { $_.Value -match "^plugin" } | Measure-Object).Count
+Write-Host "  [OK] Total: $($allSkills.Count) skills ($standaloneCount standalone, $pluginCount from plugins)"
+# Show first 5 standalone if any
+$standalone = $allSkills.GetEnumerator() | Where-Object { $_.Value -eq "standalone" } | Select-Object -First 5
+foreach ($s in $standalone) { Write-Host "       [standalone] $($s.Name)" }
+# Show count per source
+$sources = $allSkills.GetEnumerator() | Group-Object Value | Sort-Object Count -Descending
+foreach ($src in $sources) { Write-Host "       $($src.Name): $($src.Count)" }
 
 # === 7. Sync log ===
 Write-Host "`n--- Last Sync ---" -ForegroundColor Yellow
