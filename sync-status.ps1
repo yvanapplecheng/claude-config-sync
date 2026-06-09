@@ -158,14 +158,14 @@ if ($statusFiles.Count -ge 2) {
         try {
             $s = Get-Content $sf.FullName -Raw | ConvertFrom-Json
             $rows += [PSCustomObject]@{
-                Machine = $s.machine
-                Sync = $s.lastSync
-                CLAUDE = if($s.claudeMd){"✅"}else{"❌"}
-                Memory = if($s.memory){"✅"}else{"❌"}
-                Plugins = $s.plugins
-                Clawd = if($s.clawdRunning){"🟢"}else{"🔴"}
-                Hook = if($s.hook){"✅"}else{"❌"}
-            }
+    Machine = $s.machine
+    Sync = $s.lastSync
+    CLAUDE = if($s.claudeMd){"OK"}else{"XX"}
+    Memory = if($s.memory){"OK"}else{"XX"}
+    Plugins = $s.plugins
+    Clawd = if($s.clawdRunning){"LIVE"}else{"DEAD"}
+    Hook = if($s.hook){"OK"}else{"XX"}
+}
         } catch {}
     }
     $rows | Format-Table -AutoSize
