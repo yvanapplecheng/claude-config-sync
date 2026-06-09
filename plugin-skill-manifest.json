@@ -14,6 +14,6 @@
   ],
   "skills": [
     {"name": "humanizer-zh", "url": "https://github.com/anthropic-skills/humanizer-zh.git"},
-    {"name": "code-review-graph", "url": "https://github.com/anthropic-skills/code-review-graph.git"}
+    {"name": "code-review-graph", "url": "pip:code-review-graph"}
   ]
 }
