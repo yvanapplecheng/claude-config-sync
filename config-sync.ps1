@@ -34,6 +34,9 @@ if (-not (Test-Path "$syncDir\.git")) {
     }
 } else { $status.init = "already" }
 
+# Ensure sslVerify=false for proxy (every run)
+git -C $syncDir config --local http.sslVerify false 2>&1 | Out-Null
+
 # 1. Pull config repo
 if (Test-Path "$syncDir\.git") {
     try {
